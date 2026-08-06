@@ -1,4 +1,4 @@
-# Master Enterprise Reference Architecture v2.0
+# Master Enterprise Reference Architecture v2.1
 
 > **Evolution of the Enterprise Reference Architecture for the HoldCo Digital Enterprise Ecosystem**
 
@@ -2175,7 +2175,185 @@ Objectives include:
 Sustainability supports continuous enterprise growth while minimizing unnecessary complexity.
 
 ---
+---
 
+# Enterprise Ownership Model
+
+The HoldCo ecosystem distinguishes between **owned enterprise domains** and **federated operational ecosystems**.
+
+This distinction is fundamental to the Master Enterprise Reference Architecture.
+
+## Owned Enterprise Domains
+
+Owned domains are governed directly by HoldCo.
+
+Examples include:
+
+- HoldCo
+- Subsidiaries
+- Enterprise Operating Platform
+- Enterprise Frameworks
+- Enterprise Registries
+- Product Portfolio
+- Factory
+- Product Foundry
+- QAI Laboratory
+- Technology Transfer Office
+- Corporate Affairs
+- Enterprise Intellectual Property
+
+HoldCo establishes enterprise strategy, governance, standards and architectural direction for these domains.
+
+---
+
+## Federated Enterprise Domains
+
+Federated domains are not owned by HoldCo.
+
+Instead, HoldCo participates through enterprise capabilities, products, services and collaborative governance.
+
+Examples include:
+
+- Digital Valleys
+- Smart Cities
+- National Ecosystems
+- Space Ecosystems
+- Universities
+- Government Agencies
+- Industry Consortia
+- Customer Ecosystems
+- International Research Networks
+
+Federated domains maintain their own governance while interoperating through agreed architectural standards and federation models.
+
+---
+
+## Enterprise Principle
+
+**HoldCo owns enterprises. HoldCo federates ecosystems.**
+
+This principle enables enterprise scalability without requiring centralized ownership of every operational domain.
+---
+---
+
+# Enterprise Federation Boundary
+
+The Master Enterprise Reference Architecture introduces an explicit Enterprise Federation Boundary.
+
+```
+                    HoldCo
+
+────────────────────────────────────────────
+
+Owned Enterprise
+
+• Enterprise Governance
+• Enterprise Architecture
+• Enterprise Frameworks
+• Enterprise Operating Platform
+• Enterprise Products
+• Enterprise Registries
+• Factory
+• QAI Laboratory
+• Product Foundry
+• Technology Transfer Office
+• Corporate Affairs
+
+════════════════════════════════════════════
+          Enterprise Federation Boundary
+════════════════════════════════════════════
+
+Digital Valley
+
+Smart City
+
+Country
+
+Space
+
+Universities
+
+Government
+
+Industry
+
+Partners
+
+Customers
+```
+
+Above the federation boundary, HoldCo provides enterprise governance and ownership.
+
+Below the federation boundary, HoldCo collaborates through federated operational relationships while respecting the governance and sovereignty of participating organizations.
+
+---
+---
+
+# Enterprise Operational Topology
+
+The HoldCo ecosystem operates through multiple organizational layers.
+
+```
+HoldCo
+    │
+Subsidiaries
+    │
+Factory
+    │
+══════════════════════════════════
+Federation Boundary
+══════════════════════════════════
+    │
+Digital Valley
+    │
+Smart City
+    │
+National Ecosystem
+    │
+Global Ecosystem
+```
+
+The architecture intentionally distinguishes owned enterprise assets from collaborative operational ecosystems.
+
+Enterprise capabilities may execute across all operational layers while governance responsibilities differ according to ownership and federation agreements.
+
+---
+---
+
+# Enterprise Factory
+
+The Enterprise Factory represents the primary operational engineering environment owned by HoldCo.
+
+Unlike traditional manufacturing facilities, the Enterprise Factory integrates enterprise governance, research, engineering, innovation and commercialization into a unified operational platform.
+
+Typical Enterprise Factory capabilities include:
+
+- Factory Governance
+- Corporate Affairs
+- Product Foundry
+- Technology Transfer Office
+- QAI Laboratory
+- Applied Research Center
+- Engineering Center
+- Platform Engineering
+- Runtime Engineering
+- Product Engineering
+- AI Engineering
+- Quantum Engineering
+- Working Groups
+- Validation Center
+- Patent Office
+- Knowledge Management
+- Digital Twin Center
+- Enterprise Operations Center
+- Security Operations
+- Compliance Office
+
+The Enterprise Factory serves as the primary innovation and industrialization node responsible for transforming enterprise capabilities into products, services and customer solutions.
+
+Operational ecosystems such as Digital Valleys and Smart Cities consume and extend these capabilities through federated collaboration rather than enterprise ownership.
+
+---
 # Long-Term Vision
 
 The HoldCo Enterprise Architecture aims to establish a reusable Digital Enterprise Engineering Framework capable of supporting future generations of intelligent enterprises.
@@ -2261,3 +2439,10 @@ It establishes a common language, reusable architectural patterns and a composab
 MERA is intended to evolve continuously, providing a stable yet adaptable foundation for future enterprise innovation and the responsible adoption of emerging technologies.
 
 ---
+## Version History
+
+| Version | Description |
+|----------|-------------|
+| 1.0 | Initial Master Enterprise Reference Architecture |
+| 2.0 | Expanded Enterprise Architecture, Repository Architecture and Enterprise Operating Platform |
+| 2.1 | Introduced Enterprise Ownership Model, Federation Boundary, Enterprise Operational Topology and Enterprise Factory Architecture |

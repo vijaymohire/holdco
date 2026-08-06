@@ -1,4 +1,4 @@
-# Enterprise Operating Platform v1.0
+# Enterprise Operating Platform v1.1
 
 > **Enterprise Operating Platform Specification for the HoldCo Digital Enterprise Ecosystem**
 
@@ -580,7 +580,251 @@ The Enterprise Operating Platform follows several design principles.
 - Continuous Evolution
 
 ---
+---
 
+# Enterprise Ownership and Federation
+
+The Enterprise Operating Platform (EOP) is responsible for coordinating both **owned enterprise assets** and **federated operational ecosystems**.
+
+Unlike traditional enterprise platforms that operate solely within organizational boundaries, the EOP enables secure collaboration across independently governed organizations while preserving enterprise governance, digital sovereignty and operational autonomy.
+
+The platform therefore distinguishes between two primary operational models:
+
+## Owned Enterprise Domains
+
+The Enterprise Operating Platform directly manages enterprise-owned assets including:
+
+- HoldCo
+- Subsidiaries
+- Enterprise Factory
+- Product Foundry
+- QAI Laboratory
+- Enterprise Registries
+- Enterprise Products
+- Enterprise Services
+- Technology Transfer Office
+- Corporate Affairs
+
+These domains operate under direct HoldCo governance.
+
+---
+
+## Federated Operational Domains
+
+The Enterprise Operating Platform also supports collaboration with independently governed ecosystems.
+
+Examples include:
+
+- Digital Valleys
+- Smart Cities
+- Government Agencies
+- Universities
+- Research Organizations
+- Industry Partners
+- Customer Environments
+- National Programs
+- International Collaborations
+- Space Ecosystems
+
+The EOP provides shared runtime services without assuming ownership of these environments.
+---
+---
+
+# Enterprise Federation Boundary
+
+The Enterprise Operating Platform recognizes an explicit federation boundary between enterprise-owned assets and external collaborative ecosystems.
+
+```
+                    HoldCo
+
+────────────────────────────────────────────
+
+Owned Enterprise
+
+Enterprise Governance
+
+Enterprise Architecture
+
+Enterprise Operating Platform
+
+Enterprise Factory
+
+Product Foundry
+
+Enterprise Products
+
+Enterprise Registries
+
+════════════════════════════════════════════
+        Enterprise Federation Boundary
+════════════════════════════════════════════
+
+Digital Valley
+
+Smart City
+
+Government
+
+Universities
+
+Industry
+
+Partners
+
+Customers
+
+International Programs
+```
+
+Above the federation boundary, the Enterprise Operating Platform enforces enterprise governance.
+
+Below the federation boundary, collaboration is achieved through federation agreements, shared standards and interoperable runtime services.
+---
+---
+
+# Enterprise Operating Domains
+
+The Enterprise Operating Platform coordinates multiple operational domains.
+
+## Enterprise Domain
+
+Responsible for enterprise governance and strategic coordination.
+
+---
+
+## Factory Domain
+
+Responsible for engineering, product development and innovation.
+
+Key capabilities include:
+
+- Factory Governance
+- Product Foundry
+- QAI Laboratory
+- Engineering Centers
+- Validation Centers
+- Technology Transfer Office
+- Corporate Affairs
+- Working Groups
+- Patent Management
+
+---
+
+## Runtime Domain
+
+Responsible for execution of enterprise services.
+
+Examples include:
+
+- Runtime Services
+- Platform Services
+- AI Runtime
+- Quantum Runtime
+- Orchestration Services
+
+---
+
+## Federation Domain
+
+Responsible for coordinating external operational ecosystems.
+
+Examples include:
+
+- Digital Valleys
+- Smart Cities
+- University Networks
+- Industry Partnerships
+- Government Programs
+- Customer Ecosystems
+
+---
+
+## Customer Domain
+
+Responsible for customer-facing products, services and operational support.
+
+---
+---
+
+# Enterprise Control Plane Architecture
+
+The Enterprise Operating Platform coordinates operational domains through multiple specialized control planes.
+
+Examples include:
+
+- Enterprise Control Plane
+- Governance Control Plane
+- Operations Control Plane
+- Runtime Control Plane
+- Security Control Plane
+- Platform Control Plane
+- AI Control Plane
+- Quantum Control Plane
+- Federation Control Plane
+- Knowledge Control Plane
+
+Each control plane governs a specific operational concern while collaborating through shared enterprise registries, metadata and orchestration services.
+
+---
+---
+
+# Operational Principles
+
+The Enterprise Operating Platform follows several guiding principles.
+
+## Enterprise First
+
+Enterprise governance remains authoritative for all owned assets.
+
+---
+
+## Federated by Design
+
+External ecosystems collaborate through federation rather than centralized ownership.
+
+---
+
+## Control Plane Managed
+
+Operational coordination is achieved through specialized control planes.
+
+---
+
+## Capability Driven
+
+Enterprise capabilities are reusable across owned and federated environments.
+
+---
+
+## Runtime Native
+
+All operational capabilities execute through shared runtime services.
+
+---
+
+## Observable
+
+Operational health is continuously monitored across enterprise and federated domains.
+
+---
+
+## Adaptive
+
+The platform dynamically responds to changing workloads, enterprise priorities and federation requirements.
+
+---
+
+---
+
+# Relationship with Enterprise Federation Model
+
+The Enterprise Operating Platform implements the operational aspects of the Enterprise Federation Model (EFM).
+
+While the Enterprise Federation Model defines ownership boundaries, governance principles and collaboration models, the Enterprise Operating Platform provides the runtime services, control planes and orchestration capabilities required to operate across owned enterprises and federated ecosystems.
+
+Together they enable HoldCo to scale from enterprise operations to regional, national and global Hybrid Classical + Quantum AI ecosystems while preserving governance, interoperability and digital sovereignty.
+
+---
 # Future Evolution
 
 Future Enterprise Operating Platform capabilities may include:
@@ -620,3 +864,12 @@ The Enterprise Operating Platform establishes the operational foundation of the 
 By integrating Enterprise Services, Enterprise Registries, Metadata, Knowledge Graphs, Control Planes, Capability Fabrics, Adaptive QAI Overlay and QAI CoreOS into a unified operational platform, the Enterprise Operating Platform enables scalable, composable and adaptive Hybrid Classical + Quantum AI enterprises.
 
 The platform transforms enterprise architecture into intelligent operational ecosystems capable of supporting future cloud, industrial, research, government and quantum-enabled environments.
+
+---
+
+## Version History
+
+| Version | Description |
+|----------|-------------|
+| 1.0 | Initial Enterprise Operating Platform specification |
+| 1.1 | Added Enterprise Ownership Model, Federation Boundary, Operational Domains, Control Plane Architecture and Enterprise Federation Model integration |
