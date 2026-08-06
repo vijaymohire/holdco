@@ -1,0 +1,31 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../iafe_foundation"
+        },
+        {
+            "path": "../iafe-repository-bootstrap"
+        },
+        {
+            "path": "../iafe_ecosystem"
+        },
+        {
+            "path": "../faep-academy"
+        },
+        {
+            "path": "../faep-client-lab"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/__pycache__": true
+        },
+        "search.exclude": {
+            "**/.git": true
+        }
+    }
+}

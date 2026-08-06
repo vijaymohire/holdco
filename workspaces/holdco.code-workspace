@@ -1,31 +1,93 @@
 {
     "folders": [
         {
-            "path": "."
+            "path": "..",
+            "name": "🏛 HoldCo"
         },
         {
-            "path": "../iafe_foundation"
+            "path": "../../iafe-repository-bootstrap",
+            "name": "🚀 Repository Bootstrap"
         },
         {
-            "path": "../iafe-repository-bootstrap"
+            "path": "../../iafe_ecosystem",
+            "name": "⚙️ IAFE Ecosystem"
         },
         {
-            "path": "../iafe_ecosystem"
+            "path": "../../faep-client-lab",
+            "name": "🧪 FAEP Client Lab"
         },
         {
-            "path": "../faep-academy"
+            "path": "../../faep-education",
+            "name": "🎓 FAEP Education"
         },
         {
-            "path": "../faep-client-lab"
+            "path": "../../gitlab/00_holdco_governance",
+            "name": "🏢 HoldCo Governance"
+        },
+        {
+            "path": "../../gitlab/00_holdco_factory",
+            "name": "🏭 HoldCo Factory"
+        },
+        {
+            "path": "../../gitlab/00_qai_base_platform",
+            "name": "🖥 QAI Base Platform"
+        },
+        {
+            "path": "../../gitlab/01_qai_valley_city",
+            "name": "🌐 QAI Valley & City"
+        },
+        {
+            "path": "../../gitlab/02_faep_ecosystem",
+            "name": "🤝 FAEP Ecosystem"
         }
     ],
     "settings": {
         "files.exclude": {
             "**/.git": true,
-            "**/__pycache__": true
+            "**/__pycache__": true,
+            "**/.pytest_cache": true,
+            "**/.mypy_cache": true,
+            "**/.DS_Store": true,
+            "**/.vs": true
         },
         "search.exclude": {
-            "**/.git": true
-        }
+            "**/.git": true,
+            "**/__pycache__": true,
+            "**/.pytest_cache": true,
+            "**/.mypy_cache": true
+        },
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on",
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": true,
+        "explorer.compactFolders": false,
+        "explorer.confirmDelete": true,
+        "markdown.preview.breaks": true,
+        "git.enableSmartCommit": true,
+        "git.autofetch": true,
+        "git.confirmSync": false,
+        "git.openRepositoryInParentFolders": "always",
+        "workbench.startupEditor": "none",
+        "terminal.integrated.defaultProfile.windows": "PowerShell",
+        "terminal.integrated.cwd": "${workspaceFolder:🏛 HoldCo}",
+        "window.restoreWindows": "all",
+        "breadcrumbs.enabled": true
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-toolsai.jupyter",
+            "ms-vscode.powershell",
+            "redhat.vscode-yaml",
+            "yzhang.markdown-all-in-one",
+            "DavidAnson.vscode-markdownlint",
+            "GitHub.vscode-pull-request-github",
+            "mhutchie.git-graph",
+            "eamodio.gitlens",
+            "ms-azuretools.vscode-docker"
+        ]
     }
 }
