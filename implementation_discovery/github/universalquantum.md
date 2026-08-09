@@ -124,7 +124,34 @@ _TODO_
 - Preserve as Historical Asset
 - Archive / Reference Only
 
-## 15. References
+
+## 15. Discovery Structure
+
+Detailed extraction is maintained under:
+
+implementation_discovery/github/universalquantum/
+
+The discovery structure separates:
+
+- repository-level overview;
+- actual repository structure;
+- architecture;
+- framework;
+- quantum OS;
+- runtime;
+- control;
+- gates and algorithms;
+- pipelines;
+- hardware;
+- FTQC;
+- runtime/platform evidence;
+- execution evidence;
+- current architecture mapping;
+- QAI reuse opportunities.
+
+The repository-level document remains the authoritative discovery summary,
+while detailed evidence is maintained in the corresponding discovery files.
+
+## 16. References
 
 _TODO_
-
