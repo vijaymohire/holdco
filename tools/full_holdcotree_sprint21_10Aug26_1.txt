@@ -1,0 +1,597 @@
+Folder PATH listing
+Volume serial number is 000000BA 60BA:9B53
+E:.
+|   AI_NATIVE_ENTERPRISE_ENGINEERING_MODEL_v1.0.md
+|   ARCHITECTURE.md
+|   CHANGELOG.md
+|   CONTRIBUTING.md
+|   ENTERPRISE_BOOTSTRAP_FRAMEWORK_v1.0.md
+|   ENTERPRISE_CAPABILITY_EXTENSION_FRAMEWORK_v1.0.md
+|   ENTERPRISE_FEDERATION_MODEL.md
+|   ENTERPRISE_OPERATING_PLATFORM_v1.1.md
+|   ENTERPRISE_WORKSPACE_ARCHITECTURE_v1.0.md
+|   full_holdcotree_sprint21_07Aug26_1.txt
+|   full_holdcotree_sprint21_10Aug26_1.txt
+|   HoldCo_Enterprise_Alignment_Workspace_Generator.ps1
+|   HoldCo_Enterprise_Discovery_Workspace_Bootstrap.ps1
+|   HoldCo_Enterprise_Knowledge_Foundation_Bootstrap_v2.0.ps1
+|   HoldCo_Quantum_Repo_Discovery_Bootstrap.ps1
+|   LICENSE
+|   MASTER_ENTERPRISE_REFERENCE_ARCHITECTURE.md
+|   MASTER_ENTERPRISE_REFERENCE_ARCHITECTURE_v2.1.md
+|   QAI_ADAPTIVE_NETWORK_FABRIC_ARCHITECTURE_v1.0.md
+|   QAI_PLATFORM_COMPATIBILITY_AND_RUNTIME_ARCHITECTURE_v1.0.md
+|   README.md
+|   REPOSITORY_ARCHITECTURE_MAPPING.md
+|   REPOSITORY_ARCHITECTURE_MAPPING_v2.0.md
+|   Repository_universalquantum.ps1
+|   ROADMAP.md
+|   START_HERE.md
+|   Week_1_GitHub_Discovery.ps1
+|   WORKSPACE.md
+|   _week2_remaining_discovery.ps1
+|   
++---assets
+|   |   README.md
+|   |   
+|   +---diagrams
+|   +---icons
+|   \---images
++---blueprints
+|   |   README.md
+|   |   
+|   +---consulting
+|   +---customer
+|   +---digital_valley
+|   +---enterprise
+|   +---factory
+|   +---holdco
+|   +---managed_services
+|   +---marketplace
+|   +---operations
+|   +---platform
+|   +---products
+|   +---regional
+|   +---research
+|   +---smart_city
+|   +---space_operations
+|   +---startup
+|   +---subsidiary
+|   \---university
++---deployment
+|   |   README.md
+|   |   
+|   +---autonomous_zone
+|   +---city
+|   +---cloud
+|   +---country
+|   +---datacenter
+|   +---edge
+|   +---factory
+|   +---hybrid
+|   +---onprem
+|   +---region
+|   +---space
+|   \---valley
++---docs
+|   |   README.md
+|   |   
+|   +---architecture
+|   +---blueprints
+|   +---deployment
+|   +---operations
+|   \---reference_architecture
++---enterprise_alignment
+|   |   ENTERPRISE_ALIGNMENT.md
+|   |   ENTERPRISE_ALIGNMENT_ROADMAP.md
+|   |   ENTERPRISE_CAPABILITY_ARCHITECTURE.md
+|   |   ENTERPRISE_CAPABILITY_CATALOG.md
+|   |   ENTERPRISE_DOMAIN_MODEL.md
+|   |   ENTERPRISE_REFERENCE_MODEL.md
+|   |   README.md
+|   |   
+|   +---capability_architecture
+|   |       business_capabilities.md
+|   |       commercialization_capabilities.md
+|   |       engineering_capabilities.md
+|   |       knowledge_capabilities.md
+|   |       operations_capabilities.md
+|   |       README.md
+|   |       runtime_capabilities.md
+|   |       
+|   +---capability_catalog
+|   |       README.md
+|   |       
+|   +---diagrams
+|   +---domain_models
+|   |       README.md
+|   |       
+|   +---framework_alignment
+|   |       engineering_frameworks.md
+|   |       enterprise_frameworks.md
+|   |       governance_frameworks.md
+|   |       README.md
+|   |       runtime_frameworks.md
+|   |       
+|   +---gap_analysis
+|   |       future_work.md
+|   |       identified_gaps.md
+|   |       README.md
+|   |       
+|   +---images
+|   +---legacy_assets
+|   |       erp_mapping.md
+|   |       existing_frameworks.md
+|   |       README.md
+|   |       research_mapping.md
+|   |       tto_mapping.md
+|   |       
+|   +---operations_alignment
+|   |       city.md
+|   |       ecosystem.md
+|   |       factory.md
+|   |       holdco.md
+|   |       README.md
+|   |       subsidiaries.md
+|   |       valley.md
+|   |       
+|   +---product_alignment
+|   |       marketplace.md
+|   |       products.md
+|   |       product_foundry.md
+|   |       README.md
+|   |       services.md
+|   |       
+|   +---reference_models
+|   |       README.md
+|   |       
+|   +---repository_alignment
+|   |       github_mapping.md
+|   |       gitlab_mapping.md
+|   |       README.md
+|   |       repository_dependencies.md
+|   |       repository_interfaces.md
+|   |       
+|   +---repository_registry
+|   |       README.md
+|   |       
+|   +---roadmap
+|   |       future_alignment.md
+|   |       README.md
+|   |       sprint4_alignment.md
+|   |       
+|   +---templates
+|   |       README.md
+|   |       
+|   +---workspace_alignment
+|   |       README.md
+|   |       vscode_workspaces.md
+|   |       workspace_bootstrap.md
+|   |       workspace_dependencies.md
+|   |       
+|   \---workspace_registry
+|           README.md
+|           
++---enterprise_bootstrap
+|   |   README.md
+|   |   
+|   +---examples
+|   +---generators
+|   +---profiles
+|   +---scripts
+|   \---templates
++---enterprise_hierarchy
+|   |   README.md
+|   |   
+|   +---autonomous_zone
+|   +---city
+|   +---country
+|   +---factory
+|   |       README.md
+|   |       
+|   +---global
+|   +---holdco
+|   |       README.md
+|   |       
+|   +---region
+|   +---subsidiary
+|   |       README.md
+|   |       
+|   \---valley
++---enterprise_os
+|   |   README.md
+|   |   
+|   +---adaptive_overlay
+|   +---capability_fabrics
+|   +---control_planes
+|   +---coreos
+|   \---gateway_fabric
++---enterprise_patterns
+|       agent_patterns.md
+|       capability_patterns.md
+|       control_plane_patterns.md
+|       metadata_patterns.md
+|       notebook_patterns.md
+|       orchestration_patterns.md
+|       pipeline_patterns.md
+|       prompt_patterns.md
+|       qai_patterns.md
+|       rag_patterns.md
+|       README.md
+|       runtime_patterns.md
+|       
++---examples
+|       README.md
+|       
++---governance
+|   |   README.md
+|   |   
+|   +---capability_fabrics
+|   +---control_planes
+|   \---policies
++---implementation_discovery
+|   |   capability_discovery.md
+|   |   IMPLEMENTATION_DISCOVERY_REPORT_v1.0.md
+|   |   implementation_gaps.md
+|   |   implementation_inventory.md
+|   |   implementation_roadmap.md
+|   |   metadata_inventory.md
+|   |   notebook_inventory.md
+|   |   pipeline_inventory.md
+|   |   README.md
+|   |   repository_discovery.md
+|   |   runtime_inventory.md
+|   |   
+|   +---architecture_mapping
+|   |       ai_neem_mapping.md
+|   |       ecef_mapping.md
+|   |       efm_mapping.md
+|   |       eop_mapping.md
+|   |       mera_mapping.md
+|   |       README.md
+|   |       
+|   +---capability_registry
+|   |       automation.md
+|   |       experiments.md
+|   |       extensions.md
+|   |       products.md
+|   |       runtimes.md
+|   |       services.md
+|   |       
+|   +---github
+|   |   |   2030_and_beyond_products.md
+|   |   |   2030_and_beyond_services.md
+|   |   |   2030_and_beyond_tech.md
+|   |   |   business_plan.md
+|   |   |   digital_xfm_agile_org.md
+|   |   |   faep_client_lab.md
+|   |   |   faep_education.md
+|   |   |   GITHUB_ARCHITECTURE_EXTRACTION_v1.0.md
+|   |   |   github_discovery_matrix.md
+|   |   |   holdco.md
+|   |   |   humanoids_cobots.md
+|   |   |   iafe_ecosystem.md
+|   |   |   investor_relations.md
+|   |   |   mit_courses.md
+|   |   |   national_governance_frameworks.md
+|   |   |   organization_frameworks.md
+|   |   |   org_to_ops_framework.md
+|   |   |   patent_registry.md
+|   |   |   qai_catalogues.md
+|   |   |   qai_datacenter.md
+|   |   |   qai_os.md
+|   |   |   qai_poc.md
+|   |   |   qai_poc_lab.md
+|   |   |   qai_processor.md
+|   |   |   qai_products_services.md
+|   |   |   qai_product_foundry.md
+|   |   |   repository_bootstrap.md
+|   |   |   universalquantum.md
+|   |   |   
+|   |   +---bhadaleit-qai
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       bhadaleit-qai_overview.md
+|   |   |       bhadaleit-qai_structure_inventory.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       qai_architecture.md
+|   |   |       qai_compatibility.md
+|   |   |       qai_control_plane.md
+|   |   |       qai_execution.md
+|   |   |       qai_frameworks.md
+|   |   |       qai_hybrid_runtime.md
+|   |   |       qai_language.md
+|   |   |       qai_os.md
+|   |   |       qai_platform.md
+|   |   |       qai_primitives.md
+|   |   |       qai_products.md
+|   |   |       qai_projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qai_runtime.md
+|   |   |       qai_services.md
+|   |   |       README.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---bhadaleit-qasi
+|   |   |       agent_architecture.md
+|   |   |       architecture_mapping.md
+|   |   |       autonomous_systems.md
+|   |   |       bhadaleit_qasi_overview.md
+|   |   |       bhadaleit_qasi_structure_inventory.md
+|   |   |       decision_architecture.md
+|   |   |       distributed_intelligence.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       intelligence_architecture.md
+|   |   |       knowledge_architecture.md
+|   |   |       orchestration.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qasi_architecture.md
+|   |   |       qasi_control_plane.md
+|   |   |       qasi_runtime.md
+|   |   |       README.md
+|   |   |       security.md
+|   |   |       simulation.md
+|   |   |       
+|   |   +---bhadaleit-QASI-Distributed-Supercomputer
+|   |   |       architecture_mapping.md
+|   |   |       autonomous_execution.md
+|   |   |       compute_fabric.md
+|   |   |       distributed_compute.md
+|   |   |       execution_matrix.md
+|   |   |       extraction_status.md
+|   |   |       fault_tolerance.md
+|   |   |       final_summary.md
+|   |   |       intelligence_fabric.md
+|   |   |       network_fabric.md
+|   |   |       node_architecture.md
+|   |   |       orchestration.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qasi_architecture.md
+|   |   |       qasi_control_plane.md
+|   |   |       qasi_distributed_supercomputer_overview.md
+|   |   |       qasi_distributed_supercomputer_structure_inventory.md
+|   |   |       qasi_runtime.md
+|   |   |       README.md
+|   |   |       resource_management.md
+|   |   |       resource_mapping.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       scheduling.md
+|   |   |       security.md
+|   |   |       simulation.md
+|   |   |       
+|   |   +---cross_repository_mapping
+|   |   |       architecture_consolidation.md
+|   |   |       capability_consolidation.md
+|   |   |       extraction_status.md
+|   |   |       final_architecture_inputs.md
+|   |   |       final_implementation_inputs.md
+|   |   |       final_summary.md
+|   |   |       platform_compatibility_consolidation.md
+|   |   |       qai_reuse_consolidation.md
+|   |   |       README.md
+|   |   |       repository_comparison_matrix.md
+|   |   |       runtime_consolidation.md
+|   |   |       
+|   |   +---multi_quantum_tech
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       framework_matrix.md
+|   |   |       hardware_matrix.md
+|   |   |       hybrid_execution.md
+|   |   |       interoperability.md
+|   |   |       multi_quantum_tech_overview.md
+|   |   |       multi_quantum_tech_structure_inventory.md
+|   |   |       platform_compatibility.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       quantum_algorithms.md
+|   |   |       quantum_hardware.md
+|   |   |       README.md
+|   |   |       runtime_matrix.md
+|   |   |       technology_matrix.md
+|   |   |       
+|   |   +---QSP
+|   |   |       algorithms.md
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       frameworks.md
+|   |   |       implementation_evidence.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qsp_architecture.md
+|   |   |       qsp_overview.md
+|   |   |       qsp_structure_inventory.md
+|   |   |       quantum_platform.md
+|   |   |       quantum_software.md
+|   |   |       README.md
+|   |   |       runtime.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---quantum
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       post_quantum_cryptography.md
+|   |   |       quantum_academics.md
+|   |   |       quantum_algorithms.md
+|   |   |       quantum_communication.md
+|   |   |       quantum_computing.md
+|   |   |       quantum_internet.md
+|   |   |       quantum_network.md
+|   |   |       quantum_projects.md
+|   |   |       quantum_repository_overview.md
+|   |   |       quantum_sensors.md
+|   |   |       quantum_software_engineering.md
+|   |   |       quantum_structure_inventory.md
+|   |   |       quantum_system_engineering.md
+|   |   |       quantum_theory.md
+|   |   |       README.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---quantum_ai_datacenter
+|   |   |       architecture_mapping.md
+|   |   |       classical_compute.md
+|   |   |       control_plane.md
+|   |   |       datacenter_architecture.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       hardware_architecture.md
+|   |   |       hybrid_compute.md
+|   |   |       infrastructure.md
+|   |   |       network_architecture.md
+|   |   |       orchestration.md
+|   |   |       qai_processor.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       quantum_ai_datacenter_overview.md
+|   |   |       quantum_ai_datacenter_structure_inventory.md
+|   |   |       quantum_compute.md
+|   |   |       README.md
+|   |   |       resource_architecture.md
+|   |   |       resource_mapping.md
+|   |   |       runtime_architecture.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       storage_memory.md
+|   |   |       
+|   |   \---universalquantum
+|   |           algorithm_execution_matrix.md
+|   |           architecture_mapping.md
+|   |           extraction_status.md
+|   |           ftqc.md
+|   |           qai_reuse_mapping.md
+|   |           quantum_os.md
+|   |           README.md
+|   |           runtime_platform_matrix.md
+|   |           universalquantum_overview.md
+|   |           universalquantum_structure_inventory.md
+|   |           universal_architecture.md
+|   |           universal_control.md
+|   |           universal_gates_algorithms.md
+|   |           universal_hardware.md
+|   |           universal_pipelines.md
+|   |           universal_runtime.md
+|   |           uqc_framework.md
+|   |           
+|   +---gitlab
+|   |       faep_ecosystem.md
+|   |       gitlab_runner.md
+|   |       holdco_factory.md
+|   |       holdco_governance.md
+|   |       qai_base_platform.md
+|   |       valley_city.md
+|   |       
+|   +---research_assets
+|   |       algorithms.md
+|   |       colab_assets.md
+|   |       notebooks.md
+|   |       quantum_assets.md
+|   |       README.md
+|   |       
+|   \---sprint_history
+|           architectural_evolution.md
+|           important_decisions.md
+|           README.md
+|           sprint_summary.md
+|           
++---innovation_assets
+|   |   capability_candidates.md
+|   |   innovation_inventory.md
+|   |   innovation_pipeline.md
+|   |   innovation_roadmap.md
+|   |   patent_candidates.md
+|   |   product_candidates.md
+|   |   README.md
+|   |   research_candidates.md
+|   |   technology_transfer_candidates.md
+|   |   
+|   +---algorithms
+|   +---frameworks
+|   +---patent_registry
+|   |       classification.md
+|   |       commercialization.md
+|   |       maturity_levels.md
+|   |       portfolio.md
+|   |       README.md
+|   |       
+|   +---products
+|   +---publications
+|   +---research
+|   \---technology_transfer
++---knowledge_assets
+|   |   architecture_assets.md
+|   |   courses.md
+|   |   engineering_assets.md
+|   |   framework_catalogs.md
+|   |   images.md
+|   |   knowledge_inventory.md
+|   |   modernization_catalogs.md
+|   |   notebooks.md
+|   |   product_catalogs.md
+|   |   publications.md
+|   |   README.md
+|   |   research_catalogs.md
+|   |   service_catalogs.md
+|   |   
+|   +---courses
+|   +---frameworks
+|   +---images
+|   +---modernization
+|   +---notebooks
+|   +---products
+|   +---publications
+|   +---research
+|   \---services
++---marketplace
+|   |   README.md
+|   |   
+|   +---catalog
+|   +---offerings
+|   \---partners
++---operations
+|   |   README.md
+|   |   
+|   +---deployment
+|   +---monitoring
+|   +---observability
+|   \---runbooks
++---organization
+|   |   README.md
+|   |   
+|   +---board
+|   +---business_units
+|   +---executive
+|   +---innovation
+|   +---policies
+|   \---shared_services
++---shared_services
+|   |   README.md
+|   |   
+|   +---governance
+|   +---identity
+|   +---knowledge
+|   \---security
++---subsidiaries
+|   |   README.md
+|   |   
+|   +---academy
+|   +---consulting
+|   +---marketplace
+|   +---operations
+|   +---platform
+|   +---products
+|   +---research
+|   +---shared_services
+|   \---venture_studio
++---tools
+|       HoldCo-Repo-Bootstrap-v1.0.ps1
+|       HoldCo_Blueprint_Org_Bootstrap.ps1
+|       
+\---workspaces
+        HoldCo.code-workspace
+        holdco_v1.0.code-workspace
+        
