@@ -1,22 +1,58 @@
-# mit_8_370_1x Course Map
+# Architectural Knowledge Progression
 
-Purpose:
-Preserve the original MIT Open Learning Library course hierarchy.
+SU1
+Classical / Reversible Computation
+        ↓
+Primitive Gates
+        ↓
+Composition / Decomposition
+        ↓
+Circuit Representation
 
-Structure:
+SU2
+Quantum State
+        ↓
+Unitary Operator
+        ↓
+Eigenstructure
+        ↓
+Basis Transformation
+        ↓
+Tensor Composition
+        ↓
+Controlled Operation
+        ↓
+Circuit / Operator / Matrix Representation
 
-Course
-  ->
-Subunit
-  ->
-Lecture / Problem Set / Assessment
-  ->
-Questions
-  ->
-Solved Questions
-  ->
-Extraction
+SU3
+Observable
+        ↓
+Measurement Basis
+        ↓
+Measurement Probability
+        ↓
+Expectation Value
+        ↓
+Entanglement
+        ↓
+Correlation
+        ↓
+CHSH / GHZ Benchmark
 
-Important:
-Populate this file from the actual MIT OLL course structure.
-Do not infer missing subunits, lectures or problem sets.
+Emerging QAI abstraction:
+
+STATE
+  ↓
+OPERATOR
+  ↓
+COMPOSE
+  ↓
+TRANSFORM
+  ↓
+MEASURE
+  ↓
+ESTIMATE / CORRELATE
+  ↓
+BENCHMARK
+  ↓
+FEEDBACK

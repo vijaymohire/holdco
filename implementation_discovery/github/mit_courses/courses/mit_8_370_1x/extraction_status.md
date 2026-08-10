@@ -1,37 +1,48 @@
-# Course Extraction Status
+# MITx 8.370.1x Extraction Status
 
-Status:
-Not Started
+## Overall
 
-Course Overview:
-[ ] Complete
+**Status:** Complete for supplied SU1–SU3 evidence
 
-Curriculum:
-[ ] Complete
+| Area | Status |
+|---|---|
+| Course hierarchy | Complete for supplied evidence |
+| SU1 | Complete |
+| SU2 | Complete |
+| SU3 | Complete |
+| Lectures / content | Captured |
+| Problem sets | Complete for supplied evidence |
+| Solved questions | Complete for supplied evidence |
+| Mathematical models | Captured |
+| Algorithms / procedures | Captured |
+| Patterns | Captured |
+| Primitive candidates | Candidate |
+| QAI mapping | Captured |
+| Cross-course mapping | Partially captured |
+| Notebooks | Pending / not supplied |
+| Independent implementation | Pending |
+| Simulator validation | Planned |
+| Hardware / QPU validation | Future |
+| Final review | Complete for supplied evidence |
 
-Problem Sets:
-[ ] Complete
+## Evidence Limitation
 
-Solutions:
-[ ] Complete
+The package is based on supplied course structure, screenshots, accepted
+answers, hints and solution discussions.
 
-Notebooks:
-[ ] Complete
+It is not a complete independent crawl of every MIT OLL page.
 
-Experiments:
-[ ] Complete
+Exact complete question counts are therefore not asserted.
 
-Implementation Assets:
-[ ] Complete
+## Promotion Status
 
-Patterns:
-[ ] Complete
+No candidate is considered a production primitive.
 
-Primitive Candidates:
-[ ] Complete
+Promotion path:
 
-QAI Mapping:
-[ ] Complete
-
-Final Review:
-[ ] Complete
+Candidate
+→ Specification
+→ Reference Implementation
+→ Validation
+→ Reusable Primitive
+→ Enterprise Library
