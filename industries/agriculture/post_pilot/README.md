@@ -1223,3 +1223,93 @@ The high-level post-pilot structure should remain stable while these domain-spec
 
 ---
 
+---
+
+# Post-Pilot Capability Expansion and Market Offer
+
+This section extends the existing Agriculture Post-Pilot architecture with the
+capabilities identified during the Agriculture pilot planning and market-offer
+discussions.
+
+The purpose is to establish a forward-looking capability map without implying
+that every capability is already implemented or production-ready.
+
+The Post-Pilot direction is to progressively transform the Agriculture QAI
+realization from a pilot demonstration into an intelligent, resilient,
+integrated and continuously operated agriculture ecosystem.
+
+The guiding principle is:
+
+> The QAI contribution should augment and extend the farmer's existing assets,
+> investments, systems and operational knowledge rather than requiring wholesale
+> replacement of them.
+
+The Post-Pilot architecture therefore treats existing farm infrastructure,
+third-party systems, new QAI capabilities and human expertise as cooperating
+elements of a larger cyber-physical agriculture system.
+
+---
+
+## Post-Pilot Expansion Principle
+
+The Agriculture Pilot establishes a proven and measurable foundation.
+
+The Post-Pilot phase progressively adds:
+
+- broader sensing
+- external intelligence
+- agronomy
+- agrometeorology
+- satellite observations
+- drone observations
+- robotics
+- climate resilience
+- water resilience
+- crop planning
+- harvest intelligence
+- post-harvest intelligence
+- storage intelligence
+- transportation intelligence
+- market intelligence
+- enterprise integration
+- AI-agent operations
+- RAG and knowledge services
+- model operations
+- software operations
+- standards
+- compliance
+- AI ethics
+- calibration
+- maintenance
+- validation
+- recurring operational services
+
+The objective is not to build all capabilities simultaneously.
+
+The objective is to establish a controlled progression from:
+
+Pilot
+
+to:
+
+Post-Pilot Capability Expansion
+
+to:
+
+Managed Agriculture QAI Operations
+
+to:
+
+Reusable Agriculture Products and Services
+
+to:
+
+HoldCo Enterprise Reuse.
+
+---
+
+## Expanded Post-Pilot Architecture
+
+The Post-Pilot capability model is organized into seven major capability
+domains.
+---
