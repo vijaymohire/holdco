@@ -1,0 +1,1866 @@
+Folder PATH listing
+Volume serial number is 60BA-9B53
+E:.
+|   AI_Digital_Farm_Mgmt.ps1
+|   AI_NATIVE_ENTERPRISE_ENGINEERING_MODEL_v1.0.md
+|   ARCHITECTURE.md
+|   CHANGELOG.md
+|   CONTRIBUTING.md
+|   ENTERPRISE_BOOTSTRAP_FRAMEWORK_v1.0.md
+|   ENTERPRISE_CAPABILITY_EXTENSION_FRAMEWORK_v1.0.md
+|   ENTERPRISE_FEDERATION_MODEL.md
+|   ENTERPRISE_OPERATING_PLATFORM_v1.1.md
+|   ENTERPRISE_WORKSPACE_ARCHITECTURE_v1.0.md
+|   full_holdcotree_02Sept26_1.txt
+|   full_holdcotree_02Sept26_2.txt
+|   full_holdcotree_30Aug26_1.txt
+|   full_holdcotree_sprint21_10Aug26_2.txt
+|   LICENSE
+|   MASTER_ENTERPRISE_REFERENCE_ARCHITECTURE.md
+|   MASTER_ENTERPRISE_REFERENCE_ARCHITECTURE_v2.1.md
+|   QAI_ADAPTIVE_NETWORK_FABRIC_ARCHITECTURE_v1.0.md
+|   QAI_Agriculture_Document_Ingestion_Bootstrap.ps1
+|   QAI_Agriculture_PostPilot_Expansion_Bootstrap.ps1
+|   QAI_HoldCo_Industry_Bootstrap.ps1
+|   QAI_PLATFORM_COMPATIBILITY_AND_RUNTIME_ARCHITECTURE_v1.0.md
+|   README.md
+|   REPOSITORY_ARCHITECTURE_MAPPING.md
+|   REPOSITORY_ARCHITECTURE_MAPPING_v2.0.md
+|   ROADMAP.md
+|   START_HERE.md
+|   WORKSPACE.md
+|   
++---assets
+|   |   README.md
+|   |   
+|   +---diagrams
+|   +---icons
+|   \---images
+|       \---agriculture
+|           |   README.md
+|           |   
+|           +---architecture
+|           |       QAI CPS Agri system.png
+|           |       README.md
+|           |       
+|           +---pilot
+|           |       ChatGPT Image Aug 26, 2026, 11_16_32 AM.png
+|           |       ChatGPT Image Aug 26, 2026, 11_18_55 AM.png
+|           |       ChatGPT Image Aug 26, 2026, 11_20_25 AM.png
+|           |       ChatGPT Image Aug 27, 2026, 09_27_27 AM.png
+|           |       QAI Arch-Pilot and Post Pilot offers- Agri4.jpg
+|           |       README.md
+|           |       
+|           +---post_pilot
+|           |       README.md
+|           |       
+|           \---qai
+|                   QAI Intelligent Processor3.jpg
+|                   README.md
+|                   
++---blueprints
+|   |   README.md
+|   |   
+|   +---consulting
+|   +---customer
+|   +---digital_valley
+|   +---enterprise
+|   +---factory
+|   +---holdco
+|   +---managed_services
+|   +---marketplace
+|   +---operations
+|   +---platform
+|   +---products
+|   +---regional
+|   +---research
+|   +---smart_city
+|   +---space_operations
+|   +---startup
+|   +---subsidiary
+|   \---university
++---deployment
+|   |   README.md
+|   |   
+|   +---autonomous_zone
+|   +---city
+|   +---cloud
+|   +---country
+|   +---datacenter
+|   +---edge
+|   +---factory
+|   +---hybrid
+|   +---onprem
+|   +---region
+|   +---space
+|   \---valley
++---docs
+|   |   README.md
+|   |   
+|   +---architecture
+|   +---blueprints
+|   +---deployment
+|   +---operations
+|   \---reference_architecture
++---enterprise_alignment
+|   |   ENTERPRISE_ALIGNMENT.md
+|   |   ENTERPRISE_ALIGNMENT_ROADMAP.md
+|   |   ENTERPRISE_CAPABILITY_ARCHITECTURE.md
+|   |   ENTERPRISE_CAPABILITY_CATALOG.md
+|   |   ENTERPRISE_DOMAIN_MODEL.md
+|   |   ENTERPRISE_REFERENCE_MODEL.md
+|   |   README.md
+|   |   
+|   +---capability_architecture
+|   |       business_capabilities.md
+|   |       commercialization_capabilities.md
+|   |       engineering_capabilities.md
+|   |       knowledge_capabilities.md
+|   |       operations_capabilities.md
+|   |       README.md
+|   |       runtime_capabilities.md
+|   |       
+|   +---capability_catalog
+|   |       README.md
+|   |       
+|   +---diagrams
+|   +---domain_models
+|   |       README.md
+|   |       
+|   +---framework_alignment
+|   |       engineering_frameworks.md
+|   |       enterprise_frameworks.md
+|   |       governance_frameworks.md
+|   |       README.md
+|   |       runtime_frameworks.md
+|   |       
+|   +---gap_analysis
+|   |       future_work.md
+|   |       identified_gaps.md
+|   |       README.md
+|   |       
+|   +---images
+|   +---legacy_assets
+|   |       erp_mapping.md
+|   |       existing_frameworks.md
+|   |       README.md
+|   |       research_mapping.md
+|   |       tto_mapping.md
+|   |       
+|   +---operations_alignment
+|   |       city.md
+|   |       ecosystem.md
+|   |       factory.md
+|   |       holdco.md
+|   |       README.md
+|   |       subsidiaries.md
+|   |       valley.md
+|   |       
+|   +---product_alignment
+|   |       marketplace.md
+|   |       products.md
+|   |       product_foundry.md
+|   |       README.md
+|   |       services.md
+|   |       
+|   +---reference_models
+|   |       README.md
+|   |       
+|   +---repository_alignment
+|   |       github_mapping.md
+|   |       gitlab_mapping.md
+|   |       README.md
+|   |       repository_dependencies.md
+|   |       repository_interfaces.md
+|   |       
+|   +---repository_registry
+|   |       README.md
+|   |       
+|   +---roadmap
+|   |       future_alignment.md
+|   |       README.md
+|   |       sprint4_alignment.md
+|   |       
+|   +---templates
+|   |       README.md
+|   |       
+|   +---workspace_alignment
+|   |       README.md
+|   |       vscode_workspaces.md
+|   |       workspace_bootstrap.md
+|   |       workspace_dependencies.md
+|   |       
+|   \---workspace_registry
+|           README.md
+|           
++---enterprise_bootstrap
+|   |   README.md
+|   |   
+|   +---examples
+|   +---generators
+|   +---profiles
+|   +---scripts
+|   \---templates
++---enterprise_hierarchy
+|   |   README.md
+|   |   
+|   +---autonomous_zone
+|   +---city
+|   +---country
+|   +---factory
+|   |       README.md
+|   |       
+|   +---global
+|   +---holdco
+|   |       README.md
+|   |       
+|   +---region
+|   +---subsidiary
+|   |       README.md
+|   |       
+|   \---valley
++---enterprise_os
+|   |   README.md
+|   |   
+|   +---adaptive_overlay
+|   +---capability_fabrics
+|   +---control_planes
+|   +---coreos
+|   \---gateway_fabric
++---enterprise_patterns
+|       agent_patterns.md
+|       capability_patterns.md
+|       control_plane_patterns.md
+|       metadata_patterns.md
+|       notebook_patterns.md
+|       orchestration_patterns.md
+|       pipeline_patterns.md
+|       prompt_patterns.md
+|       qai_patterns.md
+|       rag_patterns.md
+|       README.md
+|       runtime_patterns.md
+|       
++---examples
+|       README.md
+|       
++---governance
+|   |   README.md
+|   |   
+|   +---capability_fabrics
+|   +---control_planes
+|   \---policies
++---implementation_discovery
+|   |   capability_discovery.md
+|   |   IMPLEMENTATION_DISCOVERY_REPORT_v1.0.md
+|   |   implementation_gaps.md
+|   |   implementation_inventory.md
+|   |   implementation_roadmap.md
+|   |   metadata_inventory.md
+|   |   notebook_inventory.md
+|   |   pipeline_inventory.md
+|   |   README.md
+|   |   repository_discovery.md
+|   |   runtime_inventory.md
+|   |   
+|   +---architecture_mapping
+|   |       ai_neem_mapping.md
+|   |       ecef_mapping.md
+|   |       efm_mapping.md
+|   |       eop_mapping.md
+|   |       mera_mapping.md
+|   |       README.md
+|   |       
+|   +---capability_registry
+|   |       automation.md
+|   |       experiments.md
+|   |       extensions.md
+|   |       products.md
+|   |       runtimes.md
+|   |       services.md
+|   |       
+|   +---github
+|   |   |   2030_and_beyond_products.md
+|   |   |   2030_and_beyond_services.md
+|   |   |   2030_and_beyond_tech.md
+|   |   |   business_plan.md
+|   |   |   digital_xfm_agile_org.md
+|   |   |   faep_client_lab.md
+|   |   |   faep_education.md
+|   |   |   GITHUB_ARCHITECTURE_EXTRACTION_v1.0.md
+|   |   |   github_discovery_matrix.md
+|   |   |   holdco.md
+|   |   |   humanoids_cobots.md
+|   |   |   iafe_ecosystem.md
+|   |   |   investor_relations.md
+|   |   |   mit_courses.md
+|   |   |   national_governance_frameworks.md
+|   |   |   organization_frameworks.md
+|   |   |   org_to_ops_framework.md
+|   |   |   patent_registry.md
+|   |   |   qai_catalogues.md
+|   |   |   qai_datacenter.md
+|   |   |   qai_os.md
+|   |   |   qai_poc.md
+|   |   |   qai_poc_lab.md
+|   |   |   qai_processor.md
+|   |   |   qai_products_services.md
+|   |   |   qai_product_foundry.md
+|   |   |   repository_bootstrap.md
+|   |   |   universalquantum.md
+|   |   |   
+|   |   +---bhadaleit-qai
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       bhadaleit-qai_overview.md
+|   |   |       bhadaleit-qai_structure_inventory.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       qai_architecture.md
+|   |   |       qai_compatibility.md
+|   |   |       qai_control_plane.md
+|   |   |       qai_execution.md
+|   |   |       qai_frameworks.md
+|   |   |       qai_hybrid_runtime.md
+|   |   |       qai_language.md
+|   |   |       qai_os.md
+|   |   |       qai_platform.md
+|   |   |       qai_primitives.md
+|   |   |       qai_products.md
+|   |   |       qai_projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qai_runtime.md
+|   |   |       qai_services.md
+|   |   |       README.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---bhadaleit-qasi
+|   |   |       agent_architecture.md
+|   |   |       architecture_mapping.md
+|   |   |       autonomous_systems.md
+|   |   |       bhadaleit_qasi_overview.md
+|   |   |       bhadaleit_qasi_structure_inventory.md
+|   |   |       decision_architecture.md
+|   |   |       distributed_intelligence.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       intelligence_architecture.md
+|   |   |       knowledge_architecture.md
+|   |   |       orchestration.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qasi_architecture.md
+|   |   |       qasi_control_plane.md
+|   |   |       qasi_runtime.md
+|   |   |       README.md
+|   |   |       security.md
+|   |   |       simulation.md
+|   |   |       
+|   |   +---bhadaleit-QASI-Distributed-Supercomputer
+|   |   |       architecture_mapping.md
+|   |   |       autonomous_execution.md
+|   |   |       compute_fabric.md
+|   |   |       distributed_compute.md
+|   |   |       execution_matrix.md
+|   |   |       extraction_status.md
+|   |   |       fault_tolerance.md
+|   |   |       final_summary.md
+|   |   |       intelligence_fabric.md
+|   |   |       network_fabric.md
+|   |   |       node_architecture.md
+|   |   |       orchestration.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qasi_architecture.md
+|   |   |       qasi_control_plane.md
+|   |   |       qasi_distributed_supercomputer_overview.md
+|   |   |       qasi_distributed_supercomputer_structure_inventory.md
+|   |   |       qasi_runtime.md
+|   |   |       README.md
+|   |   |       resource_management.md
+|   |   |       resource_mapping.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       scheduling.md
+|   |   |       security.md
+|   |   |       simulation.md
+|   |   |       
+|   |   +---cross_repository_mapping
+|   |   |       architecture_consolidation.md
+|   |   |       capability_consolidation.md
+|   |   |       extraction_status.md
+|   |   |       final_architecture_inputs.md
+|   |   |       final_implementation_inputs.md
+|   |   |       final_summary.md
+|   |   |       platform_compatibility_consolidation.md
+|   |   |       qai_reuse_consolidation.md
+|   |   |       README.md
+|   |   |       repository_comparison_matrix.md
+|   |   |       runtime_consolidation.md
+|   |   |       
+|   |   +---mit_courses
+|   |   |   |   course_architecture_mapping.md
+|   |   |   |   course_inventory.md
+|   |   |   |   course_to_primitive_matrix.md
+|   |   |   |   course_to_problem_solution_matrix.md
+|   |   |   |   cross_course_convergence.md
+|   |   |   |   enterprise_library_mapping.md
+|   |   |   |   evidence_hierarchy.md
+|   |   |   |   extraction_status.md
+|   |   |   |   final_summary.md
+|   |   |   |   primitive_candidates.md
+|   |   |   |   qai_reuse_mapping.md
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---courses
+|   |   |   |   +---mit_6_036
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   learning_models.md
+|   |   |   |   |   |   machine_learning_patterns.md
+|   |   |   |   |   |   optimization.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---source_structure
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           notebook_inventory.md
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   +---mit_8_370_1x
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   error_correction.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   noise_models.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   quantum_states.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   syndrome_and_recovery.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---source_structure
+|   |   |   |   |   |       +---su1
+|   |   |   |   |   |       |       README.md
+|   |   |   |   |   |       |       
+|   |   |   |   |   |       +---su2
+|   |   |   |   |   |       |       README.md
+|   |   |   |   |   |       |       
+|   |   |   |   |   |       \---su3
+|   |   |   |   |   |               README.md
+|   |   |   |   |   |               
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   inventory.md
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       enterprise_library_mapping.md
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   inventory.md
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       inventory.md
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---docs
+|   |   |   |   |       |       MIT_8_370_1x_Complete_Course_Extraction_SU1_SU2_SU3.pdf
+|   |   |   |   |       |       MIT_8_370_1x_SU1_Quantum_Classical_Computing_Fundamentals_Extraction.pdf
+|   |   |   |   |       |       MIT_8_370_1x_SU2_Quantum_Mechanics_Qubits_Tensor_Products_Extraction.pdf
+|   |   |   |   |       |       MIT_8_370_1x_SU3_Quantum_Measurement_Quantum_Weirdness_Extraction.pdf
+|   |   |   |   |       |       MIT_OLL_Standard_Course_Extraction_Template.docx
+|   |   |   |   |       |       MIT_OLL_Standard_Course_Extraction_Template.pdf
+|   |   |   |   |       |       MIT_QAI_Course_Extraction_Process_Instructions.docx
+|   |   |   |   |       |       MIT_QAI_Course_Extraction_Process_Instructions.pdf
+|   |   |   |   |       |       
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   +---mit_8_370_2x
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   mathematical_models.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   quantum_algorithms.md
+|   |   |   |   |   |   quantum_information.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---source_structure
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   +---mit_8_370_3x
+|   |   |   |   |   |   advanced_topics.md
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   information_theory.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   quantum_algorithms.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---source_structure
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   +---mit_8_371_1x
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   mathematical_models.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   quantum_operations.md
+|   |   |   |   |   |   quantum_states.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---source_structure
+|   |   |   |   |   |   \---su1_quantum_classical_computing_fundamentals
+|   |   |   |   |   |       |   README.md
+|   |   |   |   |   |       |   
+|   |   |   |   |   |       +---lectures
+|   |   |   |   |   |       |   +---u1_1_history_and_development_of_quantum_computation
+|   |   |   |   |   |       |   |       extracted_patterns.md
+|   |   |   |   |   |       |   |       lecture_notes.md
+|   |   |   |   |   |       |   |       questions.md
+|   |   |   |   |   |       |   |       README.md
+|   |   |   |   |   |       |   |       
+|   |   |   |   |   |       |   \---u1_2_classical_computation_and_reversibility
+|   |   |   |   |   |       |           extracted_patterns.md
+|   |   |   |   |   |       |           lecture_notes.md
+|   |   |   |   |   |       |           questions.md
+|   |   |   |   |   |       |           README.md
+|   |   |   |   |   |       |           
+|   |   |   |   |   |       \---problem_sets
+|   |   |   |   |   |           \---ps01_reversible_circuits
+|   |   |   |   |   |               |   extracted_patterns.md
+|   |   |   |   |   |               |   primitive_candidates.md
+|   |   |   |   |   |               |   problem_statement.md
+|   |   |   |   |   |               |   questions.md
+|   |   |   |   |   |               |   README.md
+|   |   |   |   |   |               |   solved_questions.md
+|   |   |   |   |   |               |   
+|   |   |   |   |   |               +---extracted
+|   |   |   |   |   |               +---notebooks
+|   |   |   |   |   |               \---source_files
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   +---mit_8_371_2x
+|   |   |   |   |   |   concepts.md
+|   |   |   |   |   |   course_map.md
+|   |   |   |   |   |   course_overview.md
+|   |   |   |   |   |   curriculum.md
+|   |   |   |   |   |   efficient_quantum_computing.md
+|   |   |   |   |   |   error_correction.md
+|   |   |   |   |   |   experiments.md
+|   |   |   |   |   |   extraction_status.md
+|   |   |   |   |   |   fault_tolerance.md
+|   |   |   |   |   |   implementation_assets.md
+|   |   |   |   |   |   primitive_candidates.md
+|   |   |   |   |   |   problem_set_inventory.md
+|   |   |   |   |   |   qai_mapping.md
+|   |   |   |   |   |   quantum_complexity.md
+|   |   |   |   |   |   README.md
+|   |   |   |   |   |   solution_evidence.md
+|   |   |   |   |   |   
+|   |   |   |   |   +---experiments
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---extracted_patterns
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---modules
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   \---source_structure
+|   |   |   |   |   +---notebooks
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---reference
+|   |   |   |   |   |   \---solved
+|   |   |   |   |   |           README.md
+|   |   |   |   |   |           
+|   |   |   |   |   +---primitive_candidates
+|   |   |   |   |   |       README.md
+|   |   |   |   |   |       
+|   |   |   |   |   +---problem_sets
+|   |   |   |   |   |   |   README.md
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   +---extracted
+|   |   |   |   |   |   +---raw
+|   |   |   |   |   |   +---solutions
+|   |   |   |   |   |   +---solved_questions
+|   |   |   |   |   |   |       README.md
+|   |   |   |   |   |   |       
+|   |   |   |   |   |   \---source_files
+|   |   |   |   |   \---source_material
+|   |   |   |   |       |   README.md
+|   |   |   |   |       |   
+|   |   |   |   |       +---lectures
+|   |   |   |   |       +---readings
+|   |   |   |   |       \---slides
+|   |   |   |   \---mit_8_371_3x
+|   |   |   |       |   advanced_algorithms.md
+|   |   |   |       |   concepts.md
+|   |   |   |       |   course_map.md
+|   |   |   |       |   course_overview.md
+|   |   |   |       |   curriculum.md
+|   |   |   |       |   experiments.md
+|   |   |   |       |   extraction_status.md
+|   |   |   |       |   implementation_assets.md
+|   |   |   |       |   information_theory.md
+|   |   |   |       |   mathematical_models.md
+|   |   |   |       |   primitive_candidates.md
+|   |   |   |       |   problem_set_inventory.md
+|   |   |   |       |   qai_mapping.md
+|   |   |   |       |   quantum_algorithms.md
+|   |   |   |       |   README.md
+|   |   |   |       |   solution_evidence.md
+|   |   |   |       |   
+|   |   |   |       +---experiments
+|   |   |   |       |       README.md
+|   |   |   |       |       
+|   |   |   |       +---extracted_patterns
+|   |   |   |       |       README.md
+|   |   |   |       |       
+|   |   |   |       +---modules
+|   |   |   |       |   |   README.md
+|   |   |   |       |   |   
+|   |   |   |       |   \---source_structure
+|   |   |   |       +---notebooks
+|   |   |   |       |   |   README.md
+|   |   |   |       |   |   
+|   |   |   |       |   +---extracted
+|   |   |   |       |   +---raw
+|   |   |   |       |   +---reference
+|   |   |   |       |   \---solved
+|   |   |   |       |           README.md
+|   |   |   |       |           
+|   |   |   |       +---primitive_candidates
+|   |   |   |       |       README.md
+|   |   |   |       |       
+|   |   |   |       +---problem_sets
+|   |   |   |       |   |   README.md
+|   |   |   |       |   |   
+|   |   |   |       |   +---extracted
+|   |   |   |       |   +---raw
+|   |   |   |       |   +---solutions
+|   |   |   |       |   +---solved_questions
+|   |   |   |       |   |       README.md
+|   |   |   |       |   |       
+|   |   |   |       |   \---source_files
+|   |   |   |       \---source_material
+|   |   |   |           |   README.md
+|   |   |   |           |   
+|   |   |   |           +---lectures
+|   |   |   |           +---readings
+|   |   |   |           \---slides
+|   |   |   \---patterns
+|   |   |           adaptive_quantum_loop.md
+|   |   |           adaptive_sampling.md
+|   |   |           digital_twin_feedback.md
+|   |   |           error_detection_correction.md
+|   |   |           fault_tolerant_execution.md
+|   |   |           hybrid_algorithm.md
+|   |   |           learning_loop.md
+|   |   |           measurement_to_estimation.md
+|   |   |           observe_estimate_feedback.md
+|   |   |           optimization_loop.md
+|   |   |           phase_kickback.md
+|   |   |           quantum_classical_feedback.md
+|   |   |           quantum_information_flow.md
+|   |   |           quantum_probe.md
+|   |   |           README.md
+|   |   |           uncertainty_management.md
+|   |   |           
+|   |   +---multi_quantum_tech
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       framework_matrix.md
+|   |   |       hardware_matrix.md
+|   |   |       hybrid_execution.md
+|   |   |       interoperability.md
+|   |   |       multi_quantum_tech_overview.md
+|   |   |       multi_quantum_tech_structure_inventory.md
+|   |   |       platform_compatibility.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       quantum_algorithms.md
+|   |   |       quantum_hardware.md
+|   |   |       README.md
+|   |   |       runtime_matrix.md
+|   |   |       technology_matrix.md
+|   |   |       
+|   |   +---qai_enterprise_library
+|   |   |   |   course_to_primitive_matrix.md
+|   |   |   |   cross_course_convergence.md
+|   |   |   |   enterprise_capability_mapping.md
+|   |   |   |   implementation_status.md
+|   |   |   |   library_registry.md
+|   |   |   |   library_taxonomy.md
+|   |   |   |   primitive_promotion_policy.md
+|   |   |   |   qai_architecture_mapping.md
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---adaptive_intelligence
+|   |   |   |       adaptive_sampling.md
+|   |   |   |       experiment_selection.md
+|   |   |   |       feedback_policy.md
+|   |   |   |       information_gain.md
+|   |   |   |       README.md
+|   |   |   |       resource_aware_control.md
+|   |   |   |       uncertainty_aware_control.md
+|   |   |   |       
+|   |   |   +---algorithms
+|   |   |   |       classical_algorithms.md
+|   |   |   |       error_correction_algorithms.md
+|   |   |   |       estimation_algorithms.md
+|   |   |   |       hybrid_algorithms.md
+|   |   |   |       learning_algorithms.md
+|   |   |   |       optimization_algorithms.md
+|   |   |   |       quantum_algorithms.md
+|   |   |   |       README.md
+|   |   |   |       
+|   |   |   +---core_primitives
+|   |   |   |       compose.md
+|   |   |   |       evolve.md
+|   |   |   |       feedback.md
+|   |   |   |       measure.md
+|   |   |   |       observe.md
+|   |   |   |       README.md
+|   |   |   |       trace.md
+|   |   |   |       
+|   |   |   +---enterprise_services
+|   |   |   |       audit.md
+|   |   |   |       digital_twin.md
+|   |   |   |       experiment_management.md
+|   |   |   |       governance.md
+|   |   |   |       orchestration.md
+|   |   |   |       README.md
+|   |   |   |       registry.md
+|   |   |   |       telemetry.md
+|   |   |   |       
+|   |   |   +---error_correction_primitives
+|   |   |   |       error_detection.md
+|   |   |   |       error_model.md
+|   |   |   |       fault_tolerance.md
+|   |   |   |       logical_operation.md
+|   |   |   |       logical_state.md
+|   |   |   |       README.md
+|   |   |   |       recovery.md
+|   |   |   |       syndrome.md
+|   |   |   |       
+|   |   |   +---estimation_primitives
+|   |   |   |       adaptive_quantum_spectral_estimation.md
+|   |   |   |       bayesian_estimation.md
+|   |   |   |       parameter_estimation.md
+|   |   |   |       phase_estimation.md
+|   |   |   |       README.md
+|   |   |   |       spectral_estimation.md
+|   |   |   |       uncertainty_estimation.md
+|   |   |   |       
+|   |   |   +---experiments
+|   |   |   |       benchmarks.md
+|   |   |   |       hybrid_experiments.md
+|   |   |   |       quantum_experiments.md
+|   |   |   |       README.md
+|   |   |   |       reference_implementations.md
+|   |   |   |       simulator_experiments.md
+|   |   |   |       validation.md
+|   |   |   |       
+|   |   |   +---hybrid_solvers
+|   |   |   |       domain_solvers.md
+|   |   |   |       factoring.md
+|   |   |   |       machine_learning.md
+|   |   |   |       optimization.md
+|   |   |   |       quantum_machine_learning.md
+|   |   |   |       README.md
+|   |   |   |       simulation.md
+|   |   |   |       
+|   |   |   +---learning_primitives
+|   |   |   |       classification.md
+|   |   |   |       hypothesis.md
+|   |   |   |       inference.md
+|   |   |   |       model_selection.md
+|   |   |   |       optimization.md
+|   |   |   |       README.md
+|   |   |   |       regression.md
+|   |   |   |       training.md
+|   |   |   |       
+|   |   |   +---mappings
+|   |   |   |       course_to_pattern.md
+|   |   |   |       pattern_to_primitive.md
+|   |   |   |       primitive_to_control_plane.md
+|   |   |   |       primitive_to_lab.md
+|   |   |   |       primitive_to_patent_candidate.md
+|   |   |   |       primitive_to_product.md
+|   |   |   |       primitive_to_qai.md
+|   |   |   |       primitive_to_runtime.md
+|   |   |   |       README.md
+|   |   |   |       
+|   |   |   \---quantum_primitives
+|   |   |           controlled_operation.md
+|   |   |           entanglement.md
+|   |   |           interference.md
+|   |   |           measurement.md
+|   |   |           quantum_channel.md
+|   |   |           quantum_operator.md
+|   |   |           quantum_probe.md
+|   |   |           quantum_state.md
+|   |   |           README.md
+|   |   |           
+|   |   +---QSP
+|   |   |       algorithms.md
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       frameworks.md
+|   |   |       implementation_evidence.md
+|   |   |       projects.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       qsp_architecture.md
+|   |   |       qsp_overview.md
+|   |   |       qsp_structure_inventory.md
+|   |   |       quantum_platform.md
+|   |   |       quantum_software.md
+|   |   |       README.md
+|   |   |       runtime.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---quantum
+|   |   |       algorithm_execution_matrix.md
+|   |   |       architecture_mapping.md
+|   |   |       extraction_status.md
+|   |   |       post_quantum_cryptography.md
+|   |   |       quantum_academics.md
+|   |   |       quantum_algorithms.md
+|   |   |       quantum_communication.md
+|   |   |       quantum_computing.md
+|   |   |       quantum_internet.md
+|   |   |       quantum_network.md
+|   |   |       quantum_projects.md
+|   |   |       quantum_repository_overview.md
+|   |   |       quantum_sensors.md
+|   |   |       quantum_software_engineering.md
+|   |   |       quantum_structure_inventory.md
+|   |   |       quantum_system_engineering.md
+|   |   |       quantum_theory.md
+|   |   |       README.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       
+|   |   +---quantum_ai_datacenter
+|   |   |       architecture_mapping.md
+|   |   |       classical_compute.md
+|   |   |       control_plane.md
+|   |   |       datacenter_architecture.md
+|   |   |       extraction_status.md
+|   |   |       final_summary.md
+|   |   |       hardware_architecture.md
+|   |   |       hybrid_compute.md
+|   |   |       infrastructure.md
+|   |   |       network_architecture.md
+|   |   |       orchestration.md
+|   |   |       qai_processor.md
+|   |   |       qai_reuse_mapping.md
+|   |   |       quantum_ai_datacenter_overview.md
+|   |   |       quantum_ai_datacenter_structure_inventory.md
+|   |   |       quantum_compute.md
+|   |   |       README.md
+|   |   |       resource_architecture.md
+|   |   |       resource_mapping.md
+|   |   |       runtime_architecture.md
+|   |   |       runtime_platform_matrix.md
+|   |   |       storage_memory.md
+|   |   |       
+|   |   \---universalquantum
+|   |           algorithm_execution_matrix.md
+|   |           architecture_mapping.md
+|   |           extraction_status.md
+|   |           ftqc.md
+|   |           qai_reuse_mapping.md
+|   |           quantum_os.md
+|   |           README.md
+|   |           runtime_platform_matrix.md
+|   |           universalquantum_overview.md
+|   |           universalquantum_structure_inventory.md
+|   |           universal_architecture.md
+|   |           universal_control.md
+|   |           universal_gates_algorithms.md
+|   |           universal_hardware.md
+|   |           universal_pipelines.md
+|   |           universal_runtime.md
+|   |           uqc_framework.md
+|   |           
+|   +---gitlab
+|   |       faep_ecosystem.md
+|   |       gitlab_runner.md
+|   |       holdco_factory.md
+|   |       holdco_governance.md
+|   |       qai_base_platform.md
+|   |       valley_city.md
+|   |       
+|   +---research_assets
+|   |       algorithms.md
+|   |       colab_assets.md
+|   |       notebooks.md
+|   |       quantum_assets.md
+|   |       README.md
+|   |       
+|   \---sprint_history
+|           architectural_evolution.md
+|           important_decisions.md
+|           README.md
+|           sprint_summary.md
+|           
++---industries
+|   |   README.md
+|   |   
+|   \---agriculture
+|       |   HOLDCO_INDUSTRY_MAPPING.md
+|       |   INDUSTRY_STATUS.md
+|       |   README.md
+|       |   
+|       +---architecture
+|       |       README.md
+|       |       
+|       +---cps
+|       |       README.md
+|       |       
+|       +---deployment
+|       |       README.md
+|       |       
+|       +---digital_farm
+|       |   |   ARCHITECTURE_CHECKLIST.md
+|       |   |   README.md
+|       |   |   
+|       |   +---advantage_gate
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---advantage_assessment
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---classical_hpc_fallback
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---problem_ingestion
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---quantum_execution
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---representation
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---resource_estimation
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---data
+|       |   |   |   .gitkeep
+|       |   |   |   
+|       |   |   +---farm_state
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---geospatial
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---historical
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---knowledge
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---market
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---telemetry
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---docs
+|       |   |   |   .gitkeep
+|       |   |   |   
+|       |   |   +---architecture
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---decisions
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---diagrams
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---interfaces
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---schemas
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---service_catalog
+|       |   |           README.md
+|       |   |           
+|       |   +---domain_services
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---asset
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---crop
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---economy
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---inventory
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---water
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---workforce
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---execution_modes
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---emulation
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---physical
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---simulation
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---virtualization
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---fabrics
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---digital_twin
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---qai_resource_advantage
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---realtime_qai
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---security_trust
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---transduction
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---virtual_qubit
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---foundation
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---classical_control
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---hybrid_execution
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---quantum_resources
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---synchronization
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---governance
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---ai_ethics
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---assurance
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---compliance
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---data_sovereignty
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---metrology
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---quality
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---safety
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---security
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---standards
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---hub_cloud
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---edge
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---external_networks
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---private_cloud
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---public_cloud
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---regional
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---human_ai
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---augmentation
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---automation
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---productivity
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---safety
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---workforce
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---integration
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---enterprise_systems
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---external_platforms
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---holdco_factory
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---qai_base_platform
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---intelligence
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---act
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---decide
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---learn
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---process
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---sense
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---interfaces
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---downstream
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---enterprise
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---erp
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---external_services
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---iot
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---market
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---satellite
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---upstream
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---management
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---administration
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---lifecycle
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---maintenance
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---monitoring
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---operations
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---orchestration
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---paths
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---communication
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---computational
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---sensing
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---profiles
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---pilot
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---post_pilot
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---research
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---resource_management
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---budget
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---compute
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---edge
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---energy
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---network
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---quantum
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---service_management
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---addons
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---changes
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---configuration
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---incidents
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---patches
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---release
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---upgrades
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---service_models
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---iaas
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---paas
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---saas
+|       |   |           .gitkeep
+|       |   |           
+|       |   +---simulation
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---cps_models
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---farm_models
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---iot_models
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---ml_emulators
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---physics_models
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---satellite_models
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   +---scenario
+|       |   |   |       .gitkeep
+|       |   |   |       
+|       |   |   \---sensor_models
+|       |   |           .gitkeep
+|       |   |           
+|       |   \---value_management
+|       |       |   README.md
+|       |       |   
+|       |       +---liquidity
+|       |       |       .gitkeep
+|       |       |       
+|       |       +---mvv
+|       |       |       .gitkeep
+|       |       |       
+|       |       +---roi
+|       |       |       .gitkeep
+|       |       |       
+|       |       +---sustainability
+|       |       |       .gitkeep
+|       |       |       
+|       |       \---tolerance
+|       |               .gitkeep
+|       |               
+|       +---digital_twin
+|       |       README.md
+|       |       
+|       +---documents
+|       |   |   README.md
+|       |   |   
+|       |   +---architecture
+|       |   |       README.md
+|       |   |       
+|       |   +---inventory
+|       |   |       QAI_CPS_Integrated_Solution_Inventory_Addendum_v1.xlsx
+|       |   |       QAI_Pilot_Physical_Asset_Inventory_and_Deployment_Map_CPS_v2_RT_Adaptive_Fabric.xlsx
+|       |   |       README.md
+|       |   |       
+|       |   +---pilot
+|       |   |       Agriculture Pilot - NSW.docx
+|       |   |       Agriculture Pilot Options-NSW.docx
+|       |   |       QAI_Agri4_Model_Farm_Pilot_Implementation_Plan_NSW.docx
+|       |   |       QAI_Agriculture_Pilot_RFP_Proposal_Response_and_Assurance_Framework.docx
+|       |   |       QAI_Cyber_Physical_Smart_Agriculture_Pilot_v1.docx
+|       |   |       README.md
+|       |   |       
+|       |   \---post_pilot
+|       |           QAI_Post_Pilot_Inventory_NSWAgriculture_v1.xlsx
+|       |           QAI_Post_Pilot_Offer_NSWAgriculture_v1.docx
+|       |           README.md
+|       |           
+|       +---inventory
+|       |       README.md
+|       |       
+|       +---pilot
+|       |   |   README.md
+|       |   |   
+|       |   +---cps
+|       |   |       README.md
+|       |   |       
+|       |   +---digital_twin
+|       |   |       README.md
+|       |   |       
+|       |   +---edge
+|       |   |       README.md
+|       |   |       
+|       |   +---networking
+|       |   |       README.md
+|       |   |       
+|       |   +---qai
+|       |   |       README.md
+|       |   |       
+|       |   +---sensing
+|       |   |       README.md
+|       |   |       
+|       |   \---validation
+|       |           README.md
+|       |           
+|       +---post_pilot
+|       |   |   README.md
+|       |   |   
+|       |   +---advanced_sensing
+|       |   |       README.md
+|       |   |       
+|       |   +---ai_operations
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---agents
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---knowledge
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---model_operations
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---software_operations
+|       |   |           README.md
+|       |   |           
+|       |   +---assurance
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---ai_ethics
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---calibration
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---compliance
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---maintenance
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---standards
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---validation
+|       |   |           README.md
+|       |   |           
+|       |   +---climate
+|       |   |       README.md
+|       |   |       
+|       |   +---communication
+|       |   |       README.md
+|       |   |       
+|       |   +---enterprise_integration
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---backoffice
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---crm
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---erp
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---external_services
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---farmer_systems
+|       |   |           README.md
+|       |   |           
+|       |   +---greenhouse
+|       |   |       README.md
+|       |   |       
+|       |   +---intelligence
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---agromet
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---agronomy
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---drones
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---market_intelligence
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---rag
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---satellite
+|       |   |           README.md
+|       |   |           
+|       |   +---qai_products
+|       |   |       README.md
+|       |   |       
+|       |   +---qai_services
+|       |   |       README.md
+|       |   |       
+|       |   +---research
+|       |   |       README.md
+|       |   |       
+|       |   +---resilience
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---climate
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---frost
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---protective_systems
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---snow_ice
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---water
+|       |   |           README.md
+|       |   |           
+|       |   +---robotics
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---field
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---greenhouse
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---rail
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---treatment
+|       |   |           README.md
+|       |   |           
+|       |   +---value_chain
+|       |   |   |   README.md
+|       |   |   |   
+|       |   |   +---harvest
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---market
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---post_harvest
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---storage
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   +---supply_chain
+|       |   |   |       README.md
+|       |   |   |       
+|       |   |   \---transportation
+|       |   |           README.md
+|       |   |           
+|       |   \---water
+|       |           README.md
+|       |           
+|       +---qai
+|       |       README.md
+|       |       
+|       \---validation
+|               README.md
+|               
++---innovation_assets
+|   |   capability_candidates.md
+|   |   innovation_inventory.md
+|   |   innovation_pipeline.md
+|   |   innovation_roadmap.md
+|   |   patent_candidates.md
+|   |   product_candidates.md
+|   |   README.md
+|   |   research_candidates.md
+|   |   technology_transfer_candidates.md
+|   |   
+|   +---algorithms
+|   +---frameworks
+|   +---patent_registry
+|   |       classification.md
+|   |       commercialization.md
+|   |       maturity_levels.md
+|   |       portfolio.md
+|   |       README.md
+|   |       
+|   +---products
+|   +---publications
+|   +---research
+|   \---technology_transfer
++---knowledge_assets
+|   |   architecture_assets.md
+|   |   courses.md
+|   |   engineering_assets.md
+|   |   framework_catalogs.md
+|   |   images.md
+|   |   knowledge_inventory.md
+|   |   modernization_catalogs.md
+|   |   notebooks.md
+|   |   product_catalogs.md
+|   |   publications.md
+|   |   README.md
+|   |   research_catalogs.md
+|   |   service_catalogs.md
+|   |   
+|   +---courses
+|   +---frameworks
+|   +---images
+|   +---modernization
+|   +---notebooks
+|   +---products
+|   +---publications
+|   +---research
+|   \---services
++---marketplace
+|   |   README.md
+|   |   
+|   +---catalog
+|   +---offerings
+|   \---partners
++---operations
+|   |   README.md
+|   |   
+|   +---deployment
+|   +---monitoring
+|   +---observability
+|   \---runbooks
++---organization
+|   |   README.md
+|   |   
+|   +---board
+|   +---business_units
+|   +---executive
+|   +---innovation
+|   +---policies
+|   \---shared_services
++---shared_services
+|   |   README.md
+|   |   
+|   +---governance
+|   +---identity
+|   +---knowledge
+|   \---security
++---subsidiaries
+|   |   README.md
+|   |   
+|   +---academy
+|   +---consulting
+|   +---marketplace
+|   +---operations
+|   +---platform
+|   +---products
+|   +---research
+|   +---shared_services
+|   \---venture_studio
++---tools
+|       full_holdcotree_29Aug26_1.txt
+|       full_holdcotree_sprint21_07Aug26_1.txt
+|       full_holdcotree_sprint21_10Aug26_1.txt
+|       HoldCo-Repo-Bootstrap-v1.0.ps1
+|       HoldCo_Blueprint_Org_Bootstrap.ps1
+|       HoldCo_Enterprise_Alignment_Workspace_Generator.ps1
+|       HoldCo_Enterprise_Discovery_Workspace_Bootstrap.ps1
+|       HoldCo_Enterprise_Knowledge_Foundation_Bootstrap_v2.0.ps1
+|       HoldCo_Quantum_Repo_Discovery_Bootstrap.ps1
+|       Repository_universalquantum.ps1
+|       Week2_MIT_Courses_QAI_Enter_Lib.ps1
+|       Week_1_GitHub_Discovery.ps1
+|       _update_mit_course_tree.ps1
+|       _week2_remaining_discovery.ps1
+|       
+\---workspaces
+        HoldCo.code-workspace
+        holdco_v1.0.code-workspace
+        
