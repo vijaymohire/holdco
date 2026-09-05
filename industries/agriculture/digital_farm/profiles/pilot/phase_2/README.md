@@ -11060,3 +11060,3151 @@ This layered validation model prevents a successful execution of one subsystem f
 
 **Part 6 status: COMPLETE — PHASE 2 VALIDATION ARCHITECTURE BASELINE**
 ---
+## 753. Phase 2 Architectural Extension
+
+Phase 2 establishes the minimum simulation and CPS experimentation architecture required for the Pilot while explicitly preserving extension points for Post-Pilot scalability, resilience, deployment, and productization.
+
+The Pilot remains intentionally bounded.
+
+Future capabilities are recorded as architectural extensions and handover items rather than being treated as Pilot implementation requirements.
+
+---
+
+## 754. Pilot Scope Preservation
+
+The addition of future capabilities must not expand the Pilot beyond its approved implementation boundary.
+
+The Pilot remains focused on:
+
+- minimum callable agriculture use case,
+- virtual assets,
+- emulation,
+- simulation,
+- CPS workflows,
+- QAI experimentation,
+- classical comparison,
+- measurable value,
+- controlled open-loop and closed-loop execution.
+
+---
+
+## 755. Architectural Readiness Versus Implementation
+
+Phase 2 distinguishes:
+
+**Architectural readiness**
+
+from
+
+**Pilot implementation**
+
+and from
+
+**Post-Pilot product implementation**.
+
+A capability may therefore be architecturally represented without being implemented during Pilot.
+
+---
+
+## 756. Capability Progression
+
+The intended progression is:
+
+~~~text
+Architecturally Anticipated
+          ↓
+Pilot Placeholder
+          ↓
+Pilot Evidence
+          ↓
+Post-Pilot Handover
+          ↓
+Post-Pilot Implementation
+          ↓
+Product Capability
+~~~
+
+---
+
+## 757. Presence-First Principle
+
+The Pilot should establish the first credible QAI presence before attempting to implement the complete future product ecosystem.
+
+The objective is to:
+
+- demonstrate capability,
+- demonstrate measurable value,
+- attract clients,
+- support grant applications,
+- obtain implementation feedback,
+- identify reusable capabilities.
+
+---
+
+## 758. Productization Principle
+
+The development sequence is:
+
+~~~text
+Build
+  ↓
+Prove
+  ↓
+Measure
+  ↓
+Reuse
+  ↓
+Package
+  ↓
+Harden
+  ↓
+Scale
+  ↓
+Commercialize
+~~~
+
+Pilot implementation should therefore prioritize working capability over premature productization.
+
+---
+
+## 759. QAI-Driven CPS
+
+The Post-Pilot architecture shall recognize QAI-driven CPS as a distinct architectural approach.
+
+It should be evaluated against:
+
+1. Classical CPS
+2. AI-driven CPS
+3. Quantum CPS
+4. QAI-driven CPS
+
+---
+
+## 760. Classical CPS
+
+Classical CPS primarily uses conventional computation, control, communication, sensing, and deterministic or rule-based methods.
+
+It provides the foundational baseline for comparison.
+
+---
+
+## 761. AI-Driven CPS
+
+AI-driven CPS incorporates machine learning or other AI techniques into sensing, prediction, classification, optimization, decision, or control functions.
+
+---
+
+## 762. Quantum CPS
+
+Quantum CPS uses quantum computational resources as a material part of the CPS computational architecture.
+
+Quantum execution may remain dependent on external or local quantum backends.
+
+---
+
+## 763. QAI-Driven CPS
+
+QAI-driven CPS treats classical, AI, quantum-inspired, hybrid, and quantum computational capabilities as selectable computational resources within an adaptive CPS architecture.
+
+---
+
+## 764. QAI-Driven CPS Principle
+
+QAI-driven CPS does not require every function to be quantum.
+
+The architecture determines which computational approach is appropriate for a given problem, state, objective, resource condition, and operational constraint.
+
+---
+
+## 765. Computational Method Selection
+
+The computational layer may evaluate:
+
+~~~text
+Classical
+    │
+Quantum-Inspired
+    │
+Hybrid QAI
+    │
+Quantum
+    │
+AI / ML
+    │
+HPC / Alternative
+~~~
+
+Selection should be evidence-driven rather than technology-driven.
+
+---
+
+## 766. Method Selection Context
+
+Computational selection may consider:
+
+- problem structure,
+- solution quality,
+- latency,
+- resource availability,
+- scalability,
+- confidence,
+- robustness,
+- cost,
+- energy,
+- operational constraints.
+
+---
+
+## 767. Adaptive Computational Selection
+
+Post-Pilot QAI architecture may dynamically select or substitute computational approaches according to runtime conditions.
+
+Pilot may demonstrate this concept with a bounded number of methods.
+
+---
+
+## 768. Resource-Aware QAI
+
+QAI execution should recognize that computational resources are finite.
+
+Relevant resources include:
+
+- CPU,
+- GPU,
+- NPU,
+- TPU,
+- FPGA,
+- HPC,
+- QPU,
+- memory,
+- storage,
+- network,
+- energy,
+- execution time,
+- queue capacity.
+
+---
+
+## 769. Computational Growth Boundary
+
+Some QAI problems may experience rapidly increasing computational or memory requirements as problem size grows.
+
+The architecture must therefore treat scalability and resource exhaustion as expected experimental conditions.
+
+---
+
+## 770. QAI Experiment Failure
+
+Failure of an individual QAI experiment does not necessarily constitute failure of the CPS or QAI Lab.
+
+The experiment may fail because of:
+
+- resource exhaustion,
+- unavailable accelerator,
+- QPU unavailability,
+- excessive queue delay,
+- memory limitations,
+- convergence failure,
+- invalid intermediate state,
+- computational complexity,
+- abnormal algorithm behavior.
+
+---
+
+## 771. QAI Graceful Fallback
+
+Where a suitable fallback exists, QAI execution should be able to transition to an alternative computational method.
+
+~~~text
+Preferred QAI Method
+        ↓
+Execution Check
+        ↓
+Healthy?
+   ┌────┴────┐
+  YES        NO
+   │          │
+   ▼          ▼
+Continue    Fallback
+              ↓
+        Alternate QAI
+              ↓
+        Classical / HPC
+              ↓
+         Safe Policy
+~~~
+
+---
+
+## 772. Fallback Transparency
+
+Fallback must never be hidden.
+
+The execution record should identify:
+
+- intended method,
+- failure condition,
+- fallback method,
+- transition time,
+- fallback result,
+- impact on experiment validity.
+
+---
+
+## 773. Fallback Validity
+
+A fallback result should not automatically be considered equivalent to the intended QAI result.
+
+The result must retain its execution classification.
+
+---
+
+## 774. Graceful Degradation
+
+Graceful degradation allows the system to continue operating with reduced capability when the preferred capability becomes unavailable.
+
+---
+
+## 775. Controlled Termination
+
+Fallback should not be forced when continued operation would violate:
+
+- safety,
+- validity,
+- integrity,
+- resource,
+- regulatory,
+- operational constraints.
+
+Controlled termination remains an acceptable outcome.
+
+---
+
+## 776. QAI Lab Resilience
+
+The QAI Lab should eventually support:
+
+**Detect → Classify → Isolate → Fallback → Continue / Terminate → Record**
+
+as a standard experimental lifecycle.
+
+---
+
+## 777. Long-Running Experiment Continuity
+
+Post-Pilot QAI Lab environments should support continuity for long-running experiments where interruption would cause significant loss of time, state, or accumulated evidence.
+
+---
+
+## 778. Experiment Checkpoint
+
+Long-running experiments should support checkpoints where practical.
+
+A checkpoint may preserve:
+
+- current state,
+- workflow position,
+- model version,
+- configuration,
+- intermediate results,
+- resource context.
+
+---
+
+## 779. Experiment Resume
+
+A validated checkpoint may allow an experiment to resume after an interruption.
+
+---
+
+## 780. Resume Validation
+
+A resumed experiment must validate the checkpoint before continuing.
+
+---
+
+## 781. CPS Fault Continuity
+
+Post-Pilot CPS environments should support continuity when an individual component becomes unavailable but a compatible alternative representation exists.
+
+---
+
+## 782. Physical Asset Failure
+
+A physical asset failure should be represented explicitly.
+
+The architecture should not silently continue to represent the failed asset as healthy.
+
+---
+
+## 783. Physical Asset Isolation
+
+A failed physical asset may be isolated from the active workflow when the system determines that continued use is unsafe or invalid.
+
+---
+
+## 784. Emulator Substitution
+
+Where a compatible validated emulator exists, it may temporarily substitute for an unavailable physical component.
+
+---
+
+## 785. Emulator Substitution Example
+
+~~~text
+Physical Pump
+     │
+     ▼
+Fault Detected
+     │
+     ▼
+Physical Pump Isolated
+     │
+     ▼
+Compatible Pump Emulator
+     │
+     ▼
+Workflow Continues
+     │
+     ▼
+Replacement Pump Available
+     │
+     ▼
+Replacement Validation
+     │
+     ▼
+Physical Reconnection
+~~~
+
+---
+
+## 786. Substitution Principle
+
+Substitution preserves logical service continuity without falsely claiming that the original physical component remains operational.
+
+---
+
+## 787. Representation Substitution
+
+Substitution may occur between:
+
+- physical asset,
+- emulator,
+- simulator,
+- virtual representation,
+- alternative computational resource,
+
+subject to compatibility and validation.
+
+---
+
+## 788. Substitution Compatibility
+
+A substitute must satisfy the required interface and semantic contract for the intended workflow.
+
+---
+
+## 789. Substitution Validation
+
+Before substitution becomes active, the system should verify:
+
+- identity,
+- interface,
+- state compatibility,
+- behavioral compatibility,
+- operating limits,
+- required fidelity,
+- safety conditions.
+
+---
+
+## 790. Substitution State
+
+The system should explicitly represent:
+
+- original component,
+- failure state,
+- isolation state,
+- substitute component,
+- substitution reason,
+- substitution validity.
+
+---
+
+## 791. Replacement Lifecycle
+
+A replacement component should follow:
+
+~~~text
+Available
+   ↓
+Validated
+   ↓
+Compatible
+   ↓
+Ready
+   ↓
+Connected
+   ↓
+Observed
+   ↓
+Operational
+~~~
+
+---
+
+## 792. Reconnection
+
+Reconnection should be controlled rather than automatic when the affected component is safety- or integrity-critical.
+
+---
+
+## 793. Reconnection Evidence
+
+The system should retain evidence showing:
+
+- why reconnection occurred,
+- which validation was performed,
+- which state was restored,
+- whether continuity was preserved.
+
+---
+
+## 794. Fault Isolation
+
+Fault isolation prevents an abnormal component from propagating invalid state or behavior into the remaining workflow.
+
+---
+
+## 795. Fault Domains
+
+Post-Pilot architecture may define independent fault domains for:
+
+- sensing,
+- computation,
+- communication,
+- control,
+- simulation,
+- emulation,
+- external services,
+- cloud,
+- HPC,
+- QPU.
+
+---
+
+## 796. Fault Propagation Control
+
+A fault in one domain should propagate only when the architecture explicitly permits or requires that dependency.
+
+---
+
+## 797. Fault-Aware Workflow
+
+Workflows should be capable of recognizing defined fault conditions and selecting an appropriate response.
+
+---
+
+## 798. Continuity Policy
+
+A continuity policy may define:
+
+- preferred operation,
+- acceptable degradation,
+- substitute representation,
+- fallback computation,
+- safe state,
+- termination condition.
+
+---
+
+## 799. Continuity Priority
+
+For long-running operational workflows, continuity may be preferred over maximum computational performance when:
+
+- safety is preserved,
+- validity remains acceptable,
+- service objectives remain achievable.
+
+---
+
+## 800. Performance Versus Continuity
+
+The architecture should distinguish:
+
+**best computational result**
+
+from
+
+**best continuously achievable operational result**.
+
+The latter may be preferable in operational CPS environments.
+
+---
+
+## 801. Universal Emulator Concept
+
+Post-Pilot may evolve the Emulator into a reusable and deployable QAI Emulator capability.
+
+The logical emulator contract should remain independent of deployment form.
+
+---
+
+## 802. Emulator Deployment Forms
+
+The same logical emulator may eventually be deployed as:
+
+- development software,
+- server software,
+- container,
+- edge service,
+- firmware-integrated capability,
+- rugged appliance.
+
+---
+
+## 803. Universal Simulator Concept
+
+Post-Pilot may similarly evolve the Simulator into a reusable and deployable QAI Simulator capability.
+
+---
+
+## 804. Emulator and Simulator Product Boundary
+
+Universal Emulator and Universal Simulator remain separate logical products even if they are eventually packaged within the same physical or software appliance.
+
+---
+
+## 805. Rugged QAI Operations
+
+Post-Pilot may support rugged QAI deployments where the computational environment must tolerate:
+
+- remote operation,
+- intermittent connectivity,
+- constrained resources,
+- environmental conditions,
+- limited maintenance access.
+
+---
+
+## 806. Firmware and Hardware Realization
+
+Selected QAI Emulator or Simulator functions may eventually be realized closer to hardware or firmware where doing so improves:
+
+- latency,
+- reliability,
+- autonomy,
+- deterministic operation,
+- field deployment.
+
+---
+
+## 807. Hardware Realization Boundary
+
+Hardware or firmware realization must not change the logical model, interface, identity, or governance semantics established by the architecture.
+
+---
+
+## 808. Containerized QAI Lab
+
+The QAI Lab should support containerized deployment for portability and controlled execution environments.
+
+---
+
+## 809. Remote QAI Lab
+
+A containerized QAI Lab may eventually be deployed in remote or field environments.
+
+---
+
+## 810. Air-Gapped QAI Lab
+
+Post-Pilot may support air-gapped operation where external connectivity is unavailable or intentionally prohibited.
+
+---
+
+## 811. Standalone QAI Lab
+
+A standalone QAI Lab should be capable of operating using local:
+
+- Emulator,
+- Simulator,
+- QAI runtime,
+- compute,
+- data,
+- models,
+- experiment management,
+- evidence storage.
+
+---
+
+## 812. Connectivity Independence
+
+External cloud, HPC, or QPU connectivity should enhance capability but should not be a mandatory dependency for a defined standalone operating mode.
+
+---
+
+## 813. Connected QAI Lab
+
+When connectivity is available, the QAI Lab may connect to:
+
+- private cloud,
+- public cloud,
+- regional cloud,
+- HPC,
+- quantum backends,
+- external data sources.
+
+---
+
+## 814. Modular QAI Data Center
+
+Post-Pilot may evolve the QAI architecture into a modular QAI Data Center facility.
+
+The facility should be expandable without requiring architectural redesign.
+
+---
+
+## 815. QAI Data Center Core
+
+A conceptual QAI Data Center core may include:
+
+~~~text
+              QAI DATA CENTER CORE
+                       │
+       ┌───────────────┼───────────────┐
+       ▼               ▼               ▼
+    Emulator        Simulator        QAI Lab
+       │               │               │
+       └───────────────┼───────────────┘
+                       ▼
+                QAI Runtime / Control
+                       │
+                Local Compute Fabric
+~~~
+
+---
+
+## 816. QAI Data Center Add-Ons
+
+Optional expansion may include:
+
+- GPU,
+- HPC,
+- QPU,
+- specialized accelerators,
+- storage,
+- networking,
+- external cloud connectivity.
+
+---
+
+## 817. Modular Expansion
+
+Expansion should be incremental.
+
+A deployment may begin with a QAI Core and add specialized capabilities when justified by workload or client demand.
+
+---
+
+## 818. Standalone Data Center Mode
+
+A QAI Data Center may operate using only local resources.
+
+This supports autonomous experimentation and local CPS execution.
+
+---
+
+## 819. Federated Data Center Mode
+
+Multiple QAI Data Centers may eventually participate in a federated architecture.
+
+Federation should preserve logical:
+
+- identity,
+- sovereignty,
+- tenancy,
+- policy,
+- security,
+- data boundaries.
+
+---
+
+## 820. Multi-Cloud Readiness
+
+Post-Pilot architecture should support multiple cloud environments without making any single cloud provider the architectural definition of QAI.
+
+---
+
+## 821. Cloud Abstraction
+
+Cloud resources should be consumed through technology-neutral resource and service contracts where practical.
+
+---
+
+## 822. Cloud Substitution
+
+Where compatible resources exist, workloads should be capable of moving between approved cloud or local execution environments.
+
+---
+
+## 823. Multi-Tenant Readiness
+
+Post-Pilot architecture should support logical tenant separation.
+
+Pilot may remain single-tenant or otherwise narrowly scoped.
+
+---
+
+## 824. Tenant Isolation
+
+Future tenant isolation should cover:
+
+- identity,
+- data,
+- models,
+- configurations,
+- workflows,
+- experiments,
+- evidence,
+- policies.
+
+---
+
+## 825. Shared Infrastructure
+
+Physical infrastructure may remain shared while logical tenant boundaries remain distinct.
+
+---
+
+## 826. Multi-Objective Readiness
+
+Post-Pilot QAI services should support problems with multiple objectives.
+
+---
+
+## 827. Objective Model
+
+A multi-objective problem should identify:
+
+- objectives,
+- priorities,
+- constraints,
+- trade-offs,
+- tolerance,
+- acceptable solution region.
+
+---
+
+## 828. Multi-Objective Evaluation
+
+The system should evaluate not only whether an objective improved, but how improvements trade against other objectives.
+
+---
+
+## 829. Pareto-Oriented Analysis
+
+Where appropriate, the system may identify non-dominated solution alternatives rather than forcing a single objective prematurely.
+
+---
+
+## 830. Client Problem Abstraction
+
+Future clients should ideally provide:
+
+- problem,
+- data,
+- constraints,
+- objectives,
+- configuration,
+- expected outcome.
+
+The QAI platform should absorb much of the computational and orchestration complexity.
+
+---
+
+## 831. Client Complexity Reduction
+
+The productization objective is to reduce the amount of specialized infrastructure knowledge required from the client.
+
+---
+
+## 832. Ready-to-Use Models
+
+Validated reusable cloud and QAI models may eventually be packaged so that clients can use them without rebuilding the underlying computational architecture.
+
+---
+
+## 833. Reusable QAI Functions
+
+Validated QAI functions should eventually become reusable service capabilities.
+
+---
+
+## 834. QAI Lab Productization
+
+The QAI Lab may evolve from an experimental environment into a reusable service and product development environment.
+
+---
+
+## 835. Productization Lifecycle
+
+~~~text
+Research
+   ↓
+Experiment
+   ↓
+Benchmark
+   ↓
+Validate
+   ↓
+Package
+   ↓
+Release
+   ↓
+Client Use
+   ↓
+Learn
+   ↓
+Improve
+~~~
+
+---
+
+## 836. Post-Pilot Handover
+
+Phase 2 shall maintain a formal handover record for capabilities intentionally deferred from Pilot.
+
+The handover record is maintained separately from the Pilot implementation scope.
+
+---
+
+## 837. Handover Categories
+
+Handover items may include:
+
+- resilience,
+- substitution,
+- scalability,
+- deployment,
+- infrastructure,
+- multi-cloud,
+- multi-tenancy,
+- multi-objective optimization,
+- QAI Lab expansion,
+- productization.
+
+---
+
+## 838. Handover Status
+
+Each handover item should have a status such as:
+
+- IDENTIFIED,
+- PILOT PLACEHOLDER,
+- EVIDENCE AVAILABLE,
+- READY FOR POST-PILOT,
+- DEFERRED,
+- REQUIRES RESEARCH.
+
+---
+
+## 839. Handover Evidence
+
+A handover item should identify the Phase 2 evidence supporting its creation.
+
+---
+
+## 840. Handover Ownership
+
+Each capability should eventually have an owning Post-Pilot workstream.
+
+---
+
+## 841. Handover Non-Commitment
+
+Recording a capability in the handover file does not commit the organization to immediate implementation.
+
+It records an architectural requirement or opportunity for controlled future evaluation.
+
+---
+
+## 842. Post-Pilot Feature Prioritization
+
+Post-Pilot capabilities should be prioritized according to:
+
+- client demand,
+- grant opportunity,
+- demonstrated value,
+- technical readiness,
+- operational risk,
+- scalability,
+- product potential.
+
+---
+
+## 843. Pilot Evidence as Product Input
+
+Pilot evidence should inform which future capabilities deserve investment.
+
+---
+
+## 844. Product Discovery
+
+The Pilot should therefore function not only as a technical demonstration but also as a product-discovery mechanism.
+
+---
+
+## 845. Client Feedback
+
+Client feedback should be captured as evidence for future product requirements.
+
+---
+
+## 846. Grant Alignment
+
+Pilot results should provide evidence useful for future grant proposals and technology-development programs.
+
+---
+
+## 847. Architecture Evolution
+
+Phase 2 should permit architecture evolution without forcing premature implementation of all future features.
+
+---
+
+## 848. Future Feature Boundary
+
+Future features should remain traceable to the architecture even when their implementation is deferred.
+
+---
+
+## 849. No Premature Platform
+
+Phase 2 should not become a complete commercial multi-cloud, multi-tenant platform.
+
+The Pilot must remain focused.
+
+---
+
+## 850. No Premature Hardware
+
+Rugged hardware, firmware integration, QAI Data Center infrastructure, and specialized accelerator integration remain future capabilities unless explicitly required by the Pilot.
+
+---
+
+## 851. No Premature Federation
+
+Federated multi-site or multi-data-center execution remains a Post-Pilot capability.
+
+---
+
+## 852. No Premature Multi-Tenancy
+
+Full multi-tenant service architecture remains outside the minimum Pilot implementation.
+
+---
+
+## 853. No Premature Multi-Objective Platform
+
+The Pilot may demonstrate bounded objectives but does not need to implement the complete future multi-objective service framework.
+
+---
+
+## 854. Phase 2 Architectural Completeness
+
+Phase 2 is considered architecturally complete when future capabilities have:
+
+- a defined conceptual boundary,
+- a known handover destination,
+- preserved interface compatibility,
+- explicit implementation status.
+
+---
+
+## 855. Phase 2 Implementation Completeness
+
+Phase 2 implementation completeness is evaluated only against the approved Pilot scope.
+
+Future Post-Pilot capabilities do not create Pilot implementation failures.
+
+---
+
+## 856. Architecture Versus Roadmap
+
+Architecture defines what the system can become.
+
+The roadmap defines when capabilities are introduced.
+
+The two must remain distinct.
+
+---
+
+## 857. Capability Deferred
+
+A deferred capability is not an architectural omission when its future interface and intended role are already defined.
+
+---
+
+## 858. Future Compatibility
+
+Pilot implementations should avoid unnecessary decisions that prevent future compatibility with:
+
+- containers,
+- edge deployment,
+- cloud,
+- HPC,
+- QPU,
+- rugged hardware,
+- multi-tenant operation.
+
+---
+
+## 859. Technology Neutrality
+
+Future deployment technologies should remain implementation choices rather than becoming architectural dependencies.
+
+---
+
+## 860. Vendor Neutrality
+
+The QAI architecture should not require a single:
+
+- cloud provider,
+- QPU provider,
+- HPC provider,
+- accelerator vendor,
+- container platform.
+
+---
+
+## 861. Deployment Portability
+
+Validated QAI capabilities should eventually be portable across supported execution environments where practical.
+
+---
+
+## 862. Evidence Before Scale
+
+Scale should follow evidence.
+
+The architecture should not assume that every capability must be distributed or accelerated before its value is demonstrated.
+
+---
+
+## 863. Reliability Before Automation
+
+Higher levels of automation should follow evidence of:
+
+- correctness,
+- reliability,
+- safety,
+- recoverability,
+- explainability where required.
+
+---
+
+## 864. Resilience Before Long-Running Operations
+
+Long-running autonomous operation should require stronger continuity and recovery mechanisms than the initial Pilot.
+
+---
+
+## 865. Product Readiness
+
+A technical capability becomes a product candidate only after sufficient:
+
+- validation,
+- repeatability,
+- packaging,
+- documentation,
+- supportability,
+- security,
+- operational evidence.
+
+---
+
+## 866. QAI Data Center as Future Product
+
+The QAI Data Center is a potential Post-Pilot product and infrastructure capability.
+
+It should not be treated as a prerequisite for the first Digital Farm Pilot.
+
+---
+
+## 867. QAI Appliance as Future Product
+
+A rugged QAI appliance may eventually provide:
+
+- local Emulator,
+- local Simulator,
+- local QAI Lab,
+- local compute,
+- local storage,
+- optional external connectivity.
+
+---
+
+## 868. QAI Lab as Future Product
+
+The QAI Lab may evolve into:
+
+- software,
+- containerized service,
+- edge deployment,
+- standalone appliance,
+- data-center service.
+
+---
+
+## 869. Universal Emulator as Future Product
+
+The Universal Emulator may evolve into a reusable product supporting multiple CPS domains while preserving domain-specific model interfaces.
+
+---
+
+## 870. Universal Simulator as Future Product
+
+The Universal Simulator may similarly evolve into a reusable simulation capability supporting multiple domains and scenarios.
+
+---
+
+## 871. Agriculture as Proving Ground
+
+Agriculture remains the first proving ground for the architecture.
+
+Successful patterns may later be generalized to other industries.
+
+---
+
+## 872. Generalization Principle
+
+Generalization should follow demonstrated reuse rather than assumption.
+
+---
+
+## 873. Domain Extension
+
+Future domains may reuse the common architecture while supplying domain-specific:
+
+- assets,
+- models,
+- workflows,
+- scenarios,
+- constraints,
+- metrics.
+
+---
+
+## 874. Cross-Domain QAI Core
+
+The QAI computational, orchestration, resilience, and evaluation layers may eventually become reusable across domains.
+
+---
+
+## 875. Domain-Specific Intelligence
+
+Domain-specific intelligence should remain separate from the universal infrastructure where practical.
+
+---
+
+## 876. Universal Infrastructure
+
+Universal infrastructure may include:
+
+- runtime,
+- experiment management,
+- resource management,
+- fallback,
+- evidence,
+- interfaces,
+- orchestration.
+
+---
+
+## 877. Domain Layer
+
+The domain layer may include:
+
+- farm models,
+- crop models,
+- irrigation models,
+- agricultural workflows,
+- domain-specific constraints.
+
+---
+
+## 878. Separation of Concerns
+
+Universal infrastructure and domain-specific models should not become unnecessarily coupled.
+
+---
+
+## 879. Phase 2 Handover Gate
+
+Before Pilot closure, future capabilities identified during Phase 2 should be reviewed and classified into the Post-Pilot handover record.
+
+---
+
+## 880. Handover Gate Outcome
+
+The Handover Gate may return:
+
+- ACCEPTED,
+- ACCEPTED WITH CONDITIONS,
+- DEFERRED,
+- REQUIRES RESEARCH.
+
+---
+
+## 881. Post-Pilot Entry Criteria
+
+A capability should enter Post-Pilot implementation only when:
+
+- its purpose is clear,
+- its architectural boundary is known,
+- dependencies are identified,
+- required evidence exists,
+- implementation priority is established.
+
+---
+
+## 882. Post-Pilot Expansion Principle
+
+Post-Pilot should expand capability incrementally.
+
+It should not automatically implement every feature recorded in the handover file.
+
+---
+
+## 883. Scalability Expansion
+
+Scalability may be introduced progressively:
+
+~~~text
+Single Experiment
+      ↓
+Multiple Experiments
+      ↓
+Multiple Assets
+      ↓
+Multiple Farms
+      ↓
+Multiple Clients
+      ↓
+Multi-Tenant
+      ↓
+Multi-Cloud
+      ↓
+Federated QAI
+~~~
+
+---
+
+## 884. Deployment Expansion
+
+Deployment may progress:
+
+~~~text
+Laptop
+  ↓
+Server
+  ↓
+Container
+  ↓
+Edge
+  ↓
+Rugged Appliance
+  ↓
+Modular QAI Data Center
+  ↓
+Federated Facilities
+~~~
+
+---
+
+## 885. Computational Expansion
+
+Computational resources may progress:
+
+~~~text
+CPU
+  ↓
+GPU / NPU / TPU / FPGA
+  ↓
+HPC
+  ↓
+Quantum Backend
+  ↓
+Hybrid Resource Fabric
+~~~
+
+---
+
+## 886. Operational Expansion
+
+Operational maturity may progress:
+
+~~~text
+Experiment
+  ↓
+Validated Experiment
+  ↓
+Reusable Workflow
+  ↓
+Reusable Service
+  ↓
+Product
+  ↓
+Managed Service
+~~~
+
+---
+
+## 887. Resilience Expansion
+
+Resilience may progress:
+
+~~~text
+Error Detection
+  ↓
+Fallback
+  ↓
+Fault Isolation
+  ↓
+Substitution
+  ↓
+Checkpoint / Resume
+  ↓
+Automated Recovery
+  ↓
+Continuous Autonomous Operation
+~~~
+
+---
+
+## 888. Pilot Principle
+
+The Pilot should prove the foundation rather than prematurely implement the entire progression.
+
+---
+
+## 889. Phase 2 Final Architectural Position
+
+The Phase 2 architecture is therefore:
+
+~~~text
+                    QAI-DRIVEN CPS
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+       Sensing        Computation     Communication
+          │                │                │
+          └────────────────┼────────────────┘
+                           │
+                    CPS State / Control
+                           │
+             ┌─────────────┴─────────────┐
+             ▼                           ▼
+         Emulator                    Simulator
+     Faithful Target             Scenario Exploration
+             │                           │
+             └─────────────┬─────────────┘
+                           ▼
+                       QAI Lab
+                           │
+          ┌────────────────┼────────────────┐
+          ▼                ▼                ▼
+      Classical      Quantum-Inspired    Hybrid / Quantum
+          │                │                │
+          └────────────────┼────────────────┘
+                           ▼
+                 Advantage / Evaluation
+                           │
+                           ▼
+                  Fault / Fallback Layer
+                           │
+                           ▼
+                Continuity / Recovery
+                           │
+                           ▼
+                  Post-Pilot Handover
+                           │
+        ┌──────────────────┼──────────────────┐
+        ▼                  ▼                  ▼
+     Edge/Rugged       Multi-Cloud       QAI Data Center
+        │                  │                  │
+        └──────────────────┼──────────────────┘
+                           ▼
+                    Future Products
+~~~
+
+---
+
+## 890. Final Scope Principle
+
+The architecture deliberately supports capabilities far beyond the initial Pilot.
+
+The Pilot implements only what is necessary to establish the first credible working presence.
+
+---
+
+## 891. Final Product Principle
+
+The future product ecosystem should grow from validated Pilot capabilities rather than from speculative platform construction.
+
+---
+
+## 892. Final Resilience Principle
+
+A fault should not automatically terminate a long-running operation when a safe, valid, and compatible fallback or substitution exists.
+
+---
+
+## 893. Final QAI Principle
+
+QAI should select and orchestrate computational capabilities according to measurable problem value, resource availability, operational constraints, and acceptable tolerance.
+
+---
+
+## 894. Final Deployment Principle
+
+QAI capabilities should eventually be deployable across laptop, cloud, edge, rugged, air-gapped, and modular data-center environments without changing their logical architectural contracts.
+
+---
+
+## 895. Final Scalability Principle
+
+Multi-cloud, multi-tenant, multi-objective, federated, and large-scale operation are Post-Pilot scalability dimensions.
+
+They are architecturally anticipated but not required for the initial Pilot.
+
+---
+
+## 896. Final Development Principle
+
+The development sequence remains:
+
+~~~text
+Build the Minimum
+       ↓
+Prove It
+       ↓
+Measure It
+       ↓
+Learn
+       ↓
+Handover
+       ↓
+Expand
+       ↓
+Productize
+~~~
+
+---
+
+## 897. Phase 2 Updated Status
+
+Phase 2 remains:
+
+**COMPLETE FOR PILOT ARCHITECTURAL BASELINE**
+
+with additional Post-Pilot capabilities explicitly captured as future architectural extensions.
+
+---
+
+## 898. Phase 2 Handover Status
+
+The Post-Pilot Handover becomes a formal Phase 2 output.
+
+It records future capabilities without making them Pilot implementation requirements.
+
+---
+
+## 899. Phase 2 Closure Principle
+
+The Phase 2 environment should leave the project with both:
+
+1. a working Pilot implementation path, and
+2. a controlled architectural path toward Post-Pilot products.
+
+---
+
+## 900. Final Phase 2 Principle
+
+> **Establish presence first. Prove value first. Preserve the architecture for scale. Build the products from what is proven.**
+
+---
+
+# END OF PHASE 2 README EXTENSION
+
+**Sections 753–900: COMPLETE**
+
+**Phase 2 status: PILOT BASELINE PRESERVED — POST-PILOT EXTENSIONS FORMALLY CAPTURED**
+---
+# Phase 2 — Post-Pilot Productization, Modular QAI Station, and Requirements Freeze
+
+## 901. Purpose of the Final Post-Pilot Extension
+
+This final extension formally records the Post-Pilot product direction established during Phase 2 architecture development.
+
+The purpose is to preserve the architectural requirements for evolving the demonstrated QAI Digital Farm capability into a reusable, modular, portable, scalable, domain-configurable QAI infrastructure and service platform.
+
+The requirements in Sections 901 onward are architectural requirements and future-development commitments. They do not expand the minimum Phase 2 Pilot implementation boundary.
+
+## 902. Post-Pilot Requirements Freeze
+
+The Post-Pilot requirements captured in this section are considered frozen at the architectural level.
+
+Future implementation work may refine, decompose, prioritize, or technically realize these requirements, but should not silently remove their architectural intent.
+
+Detailed hardware selection, enclosure engineering, manufacturing engineering, certification, procurement, costing, commercial packaging, and venture planning remain subsequent workstreams.
+
+## 903. Pilot-to-Product Principle
+
+The Pilot establishes technical presence, demonstrates the architecture, proves selected workflows, measures value, and generates evidence.
+
+Post-Pilot development converts proven capabilities into reusable infrastructure, domain services, products, and commercial deployment configurations.
+
+The progression is:
+
+~~~text
+Pilot
+  ↓
+Prove
+  ↓
+Measure
+  ↓
+Validate
+  ↓
+Harden
+  ↓
+Reuse
+  ↓
+Package
+  ↓
+Productize
+  ↓
+Commercialize
+~~~
+
+## 904. Presence-First Principle
+
+The first objective is to establish a credible technical presence and demonstrate measurable QAI capability.
+
+The architecture must therefore support a small, affordable and demonstrable implementation before progressing toward larger infrastructure.
+
+Future scale must emerge from the proven architecture rather than being imposed on the Pilot.
+
+## 905. QAI Modular Station Architecture
+
+The Post-Pilot architecture introduces a QAI Modular Station Architecture.
+
+The station is a configurable physical realization of the QAI Data Center and QAI Lab concepts.
+
+The station is not defined as one fixed appliance.
+
+It is defined as a modular platform whose capabilities, capacity, interfaces, enclosure and domain configuration may vary according to client requirements.
+
+## 906. Standard Platform, Configurable Deployment
+
+The product principle is:
+
+> Mass-produce the platform; customize the configuration.
+
+The common architecture, interfaces, software foundation, orchestration principles, security model and deployment lifecycle should remain reusable.
+
+Customer-specific requirements should primarily be addressed through configuration, modules, domain fabrics, models, interfaces and optional devices.
+
+## 907. Form-Factor Independence
+
+The QAI Modular Station shall support multiple physical form factors.
+
+Possible future configurations include:
+
+- portable QAI Mini Station;
+- field QAI Station;
+- edge QAI Server;
+- networking-oriented station;
+- sensor/IIoT station;
+- notebook or tablet docking station;
+- mid-size QAI Data Center;
+- dedicated QAI Data Center.
+
+The architecture shall not depend on one enclosure, processor, operating system, manufacturer or physical form factor.
+
+## 908. Portable QAI Mini Station
+
+The Portable QAI Mini Station is the smallest intended physical realization.
+
+Its purpose may include:
+
+- demonstrations;
+- field experimentation;
+- basic edge services;
+- local QAI Lab operation;
+- emulator execution;
+- simulator execution;
+- local data processing;
+- local networking;
+- selected sensing;
+- basic domain workflows.
+
+The Mini Station should remain sufficiently low-cost and modular to support eventual mass production.
+
+## 909. Field QAI Station
+
+The Field QAI Station extends the Mini Station for operational field environments.
+
+It may include:
+
+- ruggedized enclosure;
+- edge compute;
+- local storage;
+- local networking;
+- industrial interfaces;
+- IIoT gateway;
+- sensor interfaces;
+- local QAI pipelines;
+- local emulator and simulator;
+- field HMI;
+- protected power;
+- optional actuator interfaces.
+
+The exact configuration shall depend on the domain and field environment.
+
+## 910. Edge QAI Server Configuration
+
+A higher-capacity configuration may operate as an Edge QAI Server.
+
+It can provide:
+
+- higher local compute capacity;
+- larger local datasets;
+- multiple simultaneous services;
+- local QAI execution;
+- local Digital Twin services;
+- emulator and simulator services;
+- local orchestration;
+- local networking;
+- cloud synchronization when available.
+
+The edge configuration shall retain compatibility with the broader QAI Data Center architecture.
+
+## 911. Mid-Size QAI Data Center
+
+The Mid-Size QAI Data Center is a future Post-Pilot deployment profile intended to provide substantially greater capability than the portable field station.
+
+It may provide:
+
+- richer heterogeneous compute;
+- larger storage;
+- expanded QAI Lab capability;
+- multiple users or workloads;
+- cloud connectivity;
+- remote service access;
+- advanced networking;
+- HPC connectivity;
+- optional quantum-backend connectivity;
+- expanded domain fabrics;
+- stronger operational resilience.
+
+It should remain modular and expandable.
+
+## 912. Dedicated QAI Data Center
+
+Large clients may require a dedicated QAI Data Center.
+
+A dedicated deployment may be:
+
+- colocated at a partner site;
+- deployed at a customer site;
+- operated in a customer-controlled facility;
+- integrated into a larger enterprise environment.
+
+The same logical QAI Data Center architecture should support these deployments without requiring a fundamentally different platform.
+
+## 913. Deployment Continuum
+
+The Post-Pilot deployment continuum is:
+
+~~~text
+Portable Mini
+     ↓
+Field Station
+     ↓
+Edge QAI Server
+     ↓
+Mid-Size QAI Data Center
+     ↓
+Dedicated QAI Data Center
+     ↓
+Federated QAI Infrastructure
+~~~
+
+Each level adds capacity, connectivity, resilience, governance and service scope while retaining architectural continuity.
+
+## 914. HMI Modularity
+
+The Human-Machine Interface shall be configurable.
+
+Potential HMI configurations include:
+
+- rugged notebook;
+- notebook;
+- rugged tablet;
+- industrial Android tablet;
+- mobile pad;
+- fixed operator terminal;
+- docking station;
+- remote web interface.
+
+The HMI shall remain separated from core QAI execution so that replacing the HMI does not require redesigning the QAI platform.
+
+## 915. Notebook Configuration
+
+A notebook configuration is appropriate where the operator requires:
+
+- richer software tooling;
+- local development;
+- engineering diagnostics;
+- larger local computation;
+- extensive physical I/O;
+- model development;
+- QAI experiment development.
+
+The notebook remains an HMI and optional local compute resource rather than being architecturally required.
+
+## 916. Tablet and Industrial Android Configuration
+
+A rugged tablet or industrial Android device may provide the field-oriented HMI.
+
+It may support:
+
+- operator dashboards;
+- workflow control;
+- field observations;
+- configuration;
+- alerts;
+- local data access;
+- device interaction;
+- QAI recommendations.
+
+Heavy computation may remain on the edge station or QAI Data Center.
+
+## 917. Docking Station Configuration
+
+A docking architecture shall allow a mobile HMI to connect to additional field capabilities.
+
+~~~text
+Mobile Tablet / Notebook
+          │
+          ▼
+    Standard Dock
+          │
+    ┌─────┼─────┬──────┬───────┐
+    ↓     ↓     ↓      ↓       ↓
+  Power  Network Storage  I/O   IIoT
+                         Hub    Gateway
+                                  │
+                           Sensors / Devices
+~~~
+
+The docking interface should preserve modularity and permit replacement or upgrade of individual components.
+
+## 918. Compute Module
+
+The compute module shall be independently configurable.
+
+It may incorporate different classes of computing resources, including:
+
+- CPU;
+- GPU;
+- NPU;
+- TPU;
+- FPGA;
+- HPC resources;
+- future QPU access;
+- other specialized accelerators.
+
+The QAI architecture shall select computational resources according to workload, availability, performance, cost, energy, latency and other applicable constraints.
+
+## 919. Storage Module
+
+The station may provide local storage for:
+
+- operational data;
+- sensor data;
+- experiment datasets;
+- model artifacts;
+- emulator state;
+- simulator state;
+- logs;
+- evidence;
+- checkpoints;
+- cached cloud data.
+
+Local storage shall support standalone and disconnected operation where required.
+
+## 920. Networking Module
+
+The networking module shall support configurable communication capabilities.
+
+Potential interfaces include:
+
+- Ethernet;
+- Wi-Fi;
+- cellular connectivity;
+- private networks;
+- serial communication;
+- RS-485;
+- field buses;
+- industrial networking;
+- secure external connectivity.
+
+The architecture shall preserve separation between communication capabilities and domain application logic.
+
+## 921. IIoT and Industrial Protocol Integration
+
+The station may provide an IIoT integration module.
+
+It should support standardized or widely adopted industrial communication patterns where appropriate, including protocol gateways and message-oriented integration.
+
+Examples may include:
+
+- MQTT;
+- Modbus;
+- OPC UA;
+- industrial Ethernet;
+- serial interfaces;
+- other domain-required protocols.
+
+Specific protocol selection remains an implementation and client-integration decision.
+
+## 922. Sensor Module
+
+Sensor capabilities shall be modular.
+
+A station may support interchangeable sensor configurations for:
+
+- environmental monitoring;
+- agriculture;
+- industrial processes;
+- equipment monitoring;
+- energy;
+- water;
+- mechanical systems;
+- other domain requirements.
+
+Sensor modules should connect through defined interfaces rather than becoming inseparable from the core station.
+
+## 923. Sensor Pods and Replaceability
+
+Sensor pods may be independently installed, removed, replaced or upgraded.
+
+The architecture should permit:
+
+- sensor substitution;
+- sensor calibration;
+- sensor identification;
+- sensor health monitoring;
+- sensor provenance;
+- sensor data-quality assessment;
+- sensor failure isolation.
+
+This extends the Phase 1 asset, relationship, mapping and state principles into the physical deployment.
+
+## 924. Power Module
+
+The Post-Pilot station may include a dedicated power subsystem.
+
+Potential capabilities include:
+
+- battery operation;
+- UPS;
+- external power;
+- renewable power input;
+- generator input;
+- protected power distribution;
+- power monitoring;
+- controlled shutdown.
+
+Power design shall be matched to the selected deployment profile.
+
+## 925. Environmental Protection
+
+Field configurations may require protection against:
+
+- dust;
+- moisture;
+- rain;
+- vibration;
+- shock;
+- temperature variation;
+- transport stress;
+- other environmental conditions.
+
+Environmental protection is a product-engineering requirement and shall be determined according to the target deployment environment.
+
+## 926. Thermal Management
+
+Thermal management shall be treated as an independent station capability.
+
+The implementation may combine:
+
+- passive thermal management;
+- controlled airflow;
+- filtered airflow;
+- heat dissipation;
+- active cooling;
+- thermal monitoring;
+- workload-aware thermal management.
+
+Thermal constraints shall be visible to the QAI resource-management layer.
+
+## 927. Local-First Architecture
+
+The portable and field QAI station should be capable of meaningful local operation.
+
+Cloud connectivity shall enhance the station rather than become a universal dependency.
+
+~~~text
+             QAI FIELD STATION
+                    │
+          ┌─────────┴─────────┐
+          │                   │
+      Local Mode        Connected Mode
+          │                   │
+     Local QAI             QAI Cloud
+     Emulator              Remote Lab
+     Simulator             Extended Compute
+     Data                  HPC / QPU
+     Services              Services
+~~~
+
+## 928. Air-Gapped Operation
+
+The QAI Lab and station architecture shall support future air-gapped deployments where required.
+
+An air-gapped configuration may provide:
+
+- local models;
+- local datasets;
+- local QAI pipelines;
+- local emulator;
+- local simulator;
+- local orchestration;
+- local evidence collection;
+- local administration.
+
+External synchronization shall be controlled and policy-driven when connectivity becomes available.
+
+## 929. Cloud-Connected Operation
+
+Connected configurations may use QAI Cloud services for:
+
+- additional compute;
+- larger models;
+- centralized storage;
+- remote experimentation;
+- shared QAI services;
+- model updates;
+- remote support;
+- HPC resources;
+- quantum backend access.
+
+The local station remains a valid deployment even when cloud connectivity is unavailable.
+
+## 930. QAI Lab Module
+
+The QAI Lab shall be treated as a deployable capability.
+
+Depending on station capacity, it may provide:
+
+- classical experiments;
+- AI/ML experiments;
+- quantum-inspired experiments;
+- hybrid QAI experiments;
+- quantum experiments where backend access exists;
+- emulator-based experiments;
+- simulator-based experiments;
+- comparative benchmarking;
+- Advantage Gate evaluation.
+
+## 931. Emulator and Simulator Product Capability
+
+The Universal Emulator and Universal Simulator concepts identified during Phase 2 remain Post-Pilot product candidates.
+
+The Emulator shall focus on faithful reproduction of target-system behavior.
+
+The Simulator shall focus on controlled exploration of alternative conditions, parameters, policies and scenarios.
+
+They remain independent peer capabilities.
+
+## 932. Domain Fabric Principle
+
+A Domain Fabric is the domain-specific adaptation layer connecting the common QAI infrastructure with domain models, data, interfaces, workflows and services.
+
+It shall allow domain capabilities to be added without duplicating the common QAI Data Center architecture.
+
+## 933. Domain Fabric Structure
+
+A domain fabric may contain:
+
+- domain assets;
+- domain state;
+- domain models;
+- domain interfaces;
+- domain workflows;
+- domain scenarios;
+- domain datasets;
+- domain Digital Twin models;
+- domain CPS models;
+- domain QAI functions;
+- domain service definitions;
+- domain-specific HMI elements.
+
+## 934. Agriculture Domain Fabric
+
+Agriculture is the first proving-ground domain.
+
+The Agriculture Domain Fabric may contain:
+
+- farm;
+- field;
+- crop;
+- soil;
+- water;
+- irrigation;
+- weather;
+- machinery;
+- energy;
+- workforce;
+- farm operations;
+- agricultural Digital Twin;
+- agricultural CPS;
+- agricultural QAI models;
+- agricultural workflows.
+
+## 935. Cross-Domain Reuse
+
+The common QAI infrastructure shall be reusable across domains.
+
+Future domain fabrics may support areas such as:
+
+- manufacturing;
+- energy;
+- logistics;
+- infrastructure;
+- environmental monitoring;
+- other industrial or commercial domains.
+
+Domain expansion shall primarily occur through domain-specific models, data, interfaces, workflows and services.
+
+## 936. Domain Customization Principle
+
+A customer-specific station should be configured rather than independently engineered wherever practical.
+
+Customization may occur through:
+
+- hardware modules;
+- compute capacity;
+- network modules;
+- sensor packages;
+- HMI;
+- domain fabric;
+- models;
+- workflows;
+- QAI functions;
+- security policies;
+- deployment profile.
+
+## 937. Mass-Production Principle
+
+The target product strategy is:
+
+> Standardize the platform, modularize the hardware, configure the domain, and customize the service.
+
+This allows the same fundamental architecture to support many customers without requiring a completely independent product for each customer.
+
+## 938. Product Configuration Matrix
+
+Future product planning should classify configurations according to:
+
+| Dimension | Example Configurations |
+|---|---|
+| Form factor | Portable / Field / Edge / Rack |
+| Compute | CPU / GPU / NPU / FPGA / HPC / QPU access |
+| HMI | Tablet / Notebook / Industrial terminal |
+| Connectivity | Standalone / Private / Cellular / Cloud |
+| Sensors | None / Basic / Domain-specific |
+| QAI Lab | Basic / Extended / Full |
+| Storage | Local / Extended / Centralized |
+| Domain | Agriculture / Manufacturing / Other |
+| Deployment | Standalone / Connected / Federated |
+| Client model | Demo / SaaS / Enterprise / Dedicated |
+
+## 939. QAI Data Center Repository Separation
+
+The QAI Data Center shall remain a separate repository and engineering workspace.
+
+The Digital Farm repository shall not absorb the QAI Data Center implementation.
+
+The QAI Data Center repository provides the infrastructure platform.
+
+The Digital Farm repository provides the agriculture domain proving ground and service architecture.
+
+## 940. Digital Farm / QAI Data Center Boundary
+
+The architectural relationship shall be:
+
+~~~text
+QAI Data Center
+       │
+       │ Infrastructure
+       ▼
+QAI Platform / Runtime
+       │
+       │ Reusable QAI capability
+       ▼
+Agriculture Domain Fabric
+       │
+       ▼
+Digital Farm
+       │
+       ├── Emulator
+       ├── Simulator
+       ├── CPS
+       └── Digital Twin
+~~~
+
+The boundary prevents duplication while allowing strong integration.
+
+## 941. Product and Service Continuum
+
+The Post-Pilot business architecture may support several delivery models:
+
+- cloud SaaS;
+- portable field station;
+- edge QAI service;
+- managed QAI Lab;
+- mid-size QAI Data Center;
+- dedicated QAI Data Center;
+- domain-specific service package;
+- hybrid local/cloud service.
+
+## 942. Online SaaS Model
+
+Remote clients may consume QAI capabilities without owning QAI infrastructure.
+
+The service may provide:
+
+- reusable QAI models;
+- QAI functions;
+- workflows;
+- experiments;
+- benchmarking;
+- optimization;
+- Digital Twin services;
+- simulation;
+- decision support.
+
+The client should primarily provide the problem, data, configuration, constraints and desired outcome.
+
+## 943. Optional Field Device Model
+
+A SaaS client may optionally deploy field devices.
+
+The deployment may combine:
+
+~~~text
+Cloud SaaS
+    │
+    ▼
+QAI Platform
+    │
+    ▼
+Domain Service
+    │
+    ├───────────────┐
+    ▼               ▼
+Field Station    Field Devices
+    │               │
+    └───────┬───────┘
+            ▼
+       Local Data
+       / Feedback
+~~~
+
+This permits gradual migration from software-only services to physical field deployments.
+
+## 944. Dedicated Client Model
+
+Large clients may receive a dedicated QAI Data Center.
+
+The deployment may remain connected to shared QAI services or operate under stronger client-specific sovereignty and isolation requirements.
+
+This provides an intermediate model between SaaS and fully independent client infrastructure.
+
+## 945. Federated QAI Model
+
+Future deployments may operate as a federation of:
+
+- portable stations;
+- edge servers;
+- customer sites;
+- partner data centers;
+- QAI Data Centers;
+- cloud services;
+- specialized computational resources.
+
+Federation shall be policy-controlled and shall preserve identity, security, sovereignty, provenance and governance boundaries.
+
+## 946. Client Complexity Reduction
+
+A primary product objective is to reduce the technical complexity that clients must manage.
+
+The platform should absorb complexity associated with:
+
+- QAI execution;
+- algorithm selection;
+- classical comparison;
+- quantum-inspired methods;
+- hybrid execution;
+- resource selection;
+- cloud orchestration;
+- quantum backend access;
+- emulation;
+- simulation;
+- benchmarking;
+- fallback.
+
+The client should focus primarily on the business or engineering problem.
+
+## 947. Ready-to-Use QAI Models
+
+A future product offering should provide reusable, ready-to-use QAI models and functions.
+
+The objective is to reduce the effort required for customers to construct complete QAI solutions from first principles.
+
+Models should be configurable according to domain, data, constraints and objectives.
+
+## 948. Reusable QAI Functions
+
+Reusable QAI functions should be maintained as platform capabilities.
+
+Potential functions include:
+
+- optimization;
+- prediction;
+- anomaly detection;
+- resource allocation;
+- scheduling;
+- control;
+- classification;
+- parameter estimation;
+- scenario evaluation.
+
+The exact function catalogue shall evolve from validated Pilot and Post-Pilot experiments.
+
+## 949. QAI Lab Productization Lifecycle
+
+The QAI Lab productization lifecycle is:
+
+~~~text
+Research
+   ↓
+Experiment
+   ↓
+Benchmark
+   ↓
+Validate
+   ↓
+Package
+   ↓
+Release
+   ↓
+Client Use
+   ↓
+Learn
+   ↓
+Improve
+   └──────────────→ Experiment
+~~~
+
+This creates a controlled path from research capability to reusable commercial service.
+
+## 950. Open Innovation and Reuse
+
+Selected QAI code, examples, demonstrations and educational material may be openly published where appropriate.
+
+Open components can provide a starting point for users and researchers.
+
+Commercial value may reside in the integrated platform, validated models, domain fabrics, deployment infrastructure, QAI Lab, managed services and customer-specific capabilities.
+
+## 951. Grant Readiness
+
+The Post-Pilot architecture shall support future grant proposals by providing a traceable connection between:
+
+- technical innovation;
+- research objectives;
+- demonstrable prototypes;
+- domain impact;
+- scalability;
+- infrastructure innovation;
+- commercialization;
+- deployment;
+- measurable outcomes.
+
+Grant planning remains a separate strategic workstream.
+
+## 952. Venture Readiness
+
+The same architecture shall support future venture planning.
+
+Potential venture dimensions include:
+
+- QAI infrastructure;
+- portable QAI stations;
+- QAI Data Centers;
+- domain fabrics;
+- QAI SaaS;
+- managed QAI Labs;
+- Digital Twin services;
+- QAI optimization services;
+- field services;
+- enterprise deployments.
+
+Commercial planning shall be based on demonstrated evidence rather than unsupported projections.
+
+## 953. Key-Player and Ecosystem Strategy
+
+Future grant and venture planning should identify ecosystem participants capable of advancing the project.
+
+Relevant categories include:
+
+- funding agencies;
+- grant authorities;
+- government programs;
+- research institutions;
+- universities;
+- industry partners;
+- technology partners;
+- domain organizations;
+- incubators;
+- accelerators;
+- investors;
+- strategic partners;
+- project champions;
+- institutional introducers.
+
+## 954. Project Champion Principle
+
+A project champion may provide value by:
+
+- introducing the project to an agency;
+- connecting the team with grant programs;
+- identifying suitable consortium partners;
+- providing domain credibility;
+- opening enterprise opportunities;
+- facilitating institutional relationships.
+
+Champion identification shall become a future grant and venture planning activity.
+
+## 955. Economic Evaluation
+
+Future commercialization planning shall evaluate:
+
+- manufacturing cost;
+- deployment cost;
+- operating cost;
+- service revenue;
+- recurring revenue;
+- maintenance;
+- upgrade pathways;
+- customer acquisition;
+- expected utilization;
+- scalability;
+- margin;
+- grant contribution;
+- investment requirements;
+- expected return.
+
+These values shall be developed later using validated technical and market evidence.
+
+## 956. Product Scaling Ladder
+
+The product scaling ladder is:
+
+~~~text
+Research Prototype
+      ↓
+Pilot Demonstrator
+      ↓
+Portable QAI Station
+      ↓
+Field Product
+      ↓
+Edge Product
+      ↓
+Mid-Size QAI Data Center
+      ↓
+Enterprise / Dedicated Deployment
+      ↓
+Federated QAI Infrastructure
+~~~
+
+## 957. Technology Scaling Ladder
+
+The computational scaling path may progress from:
+
+~~~text
+Laptop / Local Compute
+        ↓
+Edge Compute
+        ↓
+Heterogeneous Edge
+        ↓
+Cloud Compute
+        ↓
+HPC
+        ↓
+Quantum Backend
+        ↓
+Federated Hybrid Infrastructure
+~~~
+
+The architecture shall permit this progression without changing the domain service model.
+
+## 958. Operational Scaling Ladder
+
+Operational maturity may progress from:
+
+- demonstration;
+- controlled Pilot;
+- supervised field operation;
+- resilient field operation;
+- managed deployment;
+- multi-site operation;
+- enterprise operation;
+- federated operation.
+
+## 959. Domain Scaling Ladder
+
+Domain expansion may progress from:
+
+~~~text
+Agriculture
+    ↓
+Validated Agriculture Fabric
+    ↓
+Reusable Common Platform
+    ↓
+Second Domain
+    ↓
+Multiple Domain Fabrics
+    ↓
+Cross-Domain QAI Platform
+~~~
+
+Agriculture remains the first proving ground rather than a permanent architectural limitation.
+
+## 960. Resilience as a Product Requirement
+
+Post-Pilot products shall progressively incorporate resilience against:
+
+- compute failure;
+- network failure;
+- sensor failure;
+- device failure;
+- QAI execution failure;
+- cloud unavailability;
+- quantum backend unavailability;
+- power interruption;
+- model failure;
+- data-quality deterioration;
+- abnormal CPS behavior.
+
+The appropriate resilience level shall depend on the deployment profile.
+
+## 961. Graceful Degradation
+
+A product shall degrade gracefully where technically and operationally appropriate.
+
+Examples include:
+
+- quantum → hybrid;
+- hybrid → classical;
+- cloud → local;
+- physical device → emulator;
+- high-capacity compute → lower-capacity compute;
+- advanced model → validated fallback model.
+
+Fallback must remain observable, controlled and auditable.
+
+## 962. Continuity of Long-Running Operations
+
+Post-Pilot systems should support continuity of long-running operations.
+
+Potential mechanisms include:
+
+- checkpointing;
+- state persistence;
+- recovery;
+- workload migration;
+- representation substitution;
+- emulator substitution;
+- alternate execution paths.
+
+The objective is to prevent avoidable loss of progress during infrastructure or asset failure.
+
+## 963. Product Safety Boundary
+
+The product architecture shall not assume that QAI recommendations are automatically safe for physical actuation.
+
+Safety-critical operations require appropriate validation, constraints, supervision, fallback and authorization.
+
+The level of automation shall correspond to demonstrated confidence and operational risk.
+
+## 964. Human-AI-QAI Operating Model
+
+The product maturity path remains:
+
+~~~text
+Human Only
+    ↓
+AI Assisted
+    ↓
+Human + AI Augmentation
+    ↓
+Supervised Automation
+    ↓
+High-Confidence Automation
+~~~
+
+Pilot deployments should remain appropriately supervised.
+
+Post-Pilot automation shall be introduced according to evidence and risk.
+
+## 965. Security and Sovereignty
+
+Portable, edge, cloud and dedicated deployments shall preserve the existing security and sovereignty principles.
+
+Security shall be treated as a cross-layer concern covering:
+
+- identity;
+- access;
+- communication;
+- data;
+- models;
+- execution;
+- devices;
+- QAI resources;
+- audit;
+- federation.
+
+## 966. Technology and Vendor Neutrality
+
+The Post-Pilot product architecture shall remain technology- and vendor-neutral.
+
+Specific processors, sensors, enclosures, networking products, operating systems, cloud providers and quantum backends may be selected during product engineering.
+
+Such selections shall not redefine the logical architecture.
+
+## 967. Product Engineering Deferred Scope
+
+The following are intentionally deferred from this architecture baseline:
+
+- final enclosure design;
+- final mechanical dimensions;
+- exact processor selection;
+- exact sensor selection;
+- exact battery chemistry;
+- manufacturing drawings;
+- certification;
+- production tooling;
+- bill of materials;
+- final unit economics;
+- manufacturing partners;
+- sales channels;
+- final commercial packaging.
+
+These require dedicated engineering and business workstreams.
+
+## 968. Phase 2 Architectural Handover
+
+The Phase 2 architecture shall hand over the following major capability groups to subsequent work:
+
+- Emulator;
+- Simulator;
+- CPS;
+- QAI Pipeline;
+- QAI execution resilience;
+- structural integrity;
+- calibration;
+- fidelity;
+- conditions;
+- integration;
+- testing;
+- validation;
+- QAI Lab;
+- Modular QAI Station;
+- QAI Data Center;
+- Domain Fabrics;
+- SaaS;
+- field deployment;
+- Post-Pilot productization.
+
+## 969. Phase 2 Implementation Boundary Remains Frozen
+
+None of the Post-Pilot product requirements in Sections 901–968 shall be interpreted as mandatory Pilot implementation scope.
+
+The minimum Pilot remains bounded by the approved Phase 2 architecture and implementation plan.
+
+Future capabilities shall be implemented only after the appropriate gate and evidence review.
+
+## 970. Architectural Continuity
+
+The Post-Pilot product architecture shall preserve continuity with:
+
+- Phase 0 requirements;
+- Phase 1 virtualization;
+- Phase 2 emulation;
+- Phase 2 simulation;
+- CPS workflows;
+- QAI evaluation;
+- Advantage Gate;
+- classical fallback;
+- Digital Twin evolution;
+- QAI Lab evolution.
+
+No Post-Pilot product should require unnecessary architectural redesign of these foundations.
+
+## 971. Separation of Concerns
+
+The following boundaries are frozen:
+
+~~~text
+QAI Data Center
+    = Infrastructure Platform
+
+QAI Platform
+    = Common QAI Execution Capability
+
+Domain Fabric
+    = Domain-Specific Adaptation
+
+Digital Farm
+    = Agriculture Service / Management Layer
+
+Digital Twin / CPS
+    = Technical Domain Realization
+
+QAI Lab
+    = Experimentation / Benchmarking / Validation
+
+SaaS
+    = Service Delivery
+
+Field Station
+    = Physical Deployment
+~~~
+
+## 972. Product Composition Principle
+
+Future QAI products should be assembled through composition of these capabilities rather than through independent monolithic architectures.
+
+This enables reuse, customization, maintenance, upgrades and domain expansion.
+
+## 973. Upgradeability
+
+Modules should be replaceable or upgradeable without requiring complete station replacement wherever practical.
+
+Upgrade targets may include:
+
+- compute;
+- storage;
+- network;
+- sensors;
+- HMI;
+- power;
+- QAI runtime;
+- models;
+- domain fabric;
+- cloud integration.
+
+## 974. Lifecycle Management
+
+Each physical and logical module should have an identifiable lifecycle.
+
+The lifecycle shall support:
+
+- provisioning;
+- registration;
+- configuration;
+- validation;
+- deployment;
+- operation;
+- maintenance;
+- upgrade;
+- replacement;
+- retirement.
+
+This extends the lifecycle principles established in Phase 1.
+
+## 975. Configuration Management
+
+Customer configurations shall be represented as controlled configurations rather than undocumented customizations.
+
+A configuration should identify:
+
+- station profile;
+- modules;
+- versions;
+- domain fabric;
+- models;
+- workflows;
+- interfaces;
+- resource policies;
+- security policies;
+- deployment mode.
+
+## 976. Reproducibility
+
+A QAI experiment or service deployment should be reproducible from its recorded:
+
+- configuration;
+- model version;
+- dataset;
+- execution mode;
+- computational method;
+- resource context;
+- software version;
+- experiment parameters;
+- results;
+- fallback events.
+
+## 977. Evidence-Based Productization
+
+Capabilities shall progress toward productization based on evidence.
+
+Evidence may include:
+
+- functional correctness;
+- fidelity;
+- performance;
+- reliability;
+- resilience;
+- value;
+- usability;
+- deployment experience;
+- customer feedback;
+- operational data.
+
+## 978. Productization Gate
+
+A future capability should pass an appropriate productization gate before being represented as a mature product.
+
+The gate may evaluate:
+
+~~~text
+Technical Readiness
+       +
+Validation
+       +
+Operational Readiness
+       +
+Safety / Security
+       +
+Economic Viability
+       +
+Customer Value
+       ↓
+Productization Decision
+~~~
+
+## 979. Commercialization Boundary
+
+Commercialization is deliberately separated from the technical Pilot.
+
+The architecture prepares for commercialization but does not assume commercial success.
+
+Market validation, pricing, manufacturing, sales, partnerships and investment shall be addressed separately.
+
+## 980. Future Grant and Venture Architecture
+
+The technical architecture provides a foundation for a future Grant and Venture Development Plan.
+
+That plan may connect:
+
+~~~text
+Technology
+   ↓
+Demonstration
+   ↓
+Evidence
+   ↓
+Domain Impact
+   ↓
+Grant Opportunity
+   ↓
+Strategic Partner
+   ↓
+Pilot Deployment
+   ↓
+Product
+   ↓
+Market
+   ↓
+Revenue
+   ↓
+Scale
+~~~
+
+## 981. Multi-Client Readiness
+
+Post-Pilot architecture shall be capable of supporting different client configurations without compromising isolation, governance or resource controls.
+
+Multi-client support remains a future capability and is not required for the initial Pilot.
+
+## 982. Multi-Cloud Readiness
+
+The architecture should permit future integration with multiple cloud environments.
+
+Cloud providers remain implementation choices.
+
+The logical service and execution model shall not be coupled to a single provider.
+
+## 983. Multi-Objective Readiness
+
+Future QAI services may support problems involving multiple objectives and competing constraints.
+
+The architecture should preserve:
+
+- objective definitions;
+- priorities;
+- constraints;
+- trade-offs;
+- tolerance;
+- resource limits;
+- result comparison.
+
+## 984. Multi-Tenant Readiness
+
+Future shared QAI Data Center and SaaS deployments may require multi-tenancy.
+
+Tenant isolation, resource allocation, identity, data sovereignty and governance shall be addressed before production multi-tenant deployment.
+
+Multi-tenancy is a Post-Pilot capability.
+
+## 985. Standalone Operation
+
+Every deployment profile should have an explicitly defined standalone capability appropriate to its intended purpose.
+
+Standalone operation reduces dependence on external infrastructure and improves field applicability.
+
+## 986. Connected Operation
+
+Connected operation shall add capabilities rather than replace the core station architecture.
+
+Connectivity may provide:
+
+- remote monitoring;
+- cloud computation;
+- centralized management;
+- remote QAI Lab access;
+- model synchronization;
+- support;
+- federation.
+
+## 987. Modular Expansion
+
+The QAI Modular Station should support incremental expansion.
+
+A client should be able to begin with a basic configuration and progressively add:
+
+- compute;
+- storage;
+- networking;
+- sensors;
+- QAI resources;
+- domain models;
+- cloud services;
+- additional field devices.
+
+## 988. Cost-Conscious Product Strategy
+
+The Mini QAI Station should target a configuration that is sufficiently capable for demonstration and basic field services while remaining suitable for eventual cost-sensitive deployment.
+
+Higher-cost capabilities should be optional modules rather than mandatory components.
+
+## 989. Mass-Market Potential
+
+The architecture intentionally permits a lower-cost QAI Mini Station that can be manufactured and configured at scale.
+
+Its potential value is not only technical demonstration but also creation of an accessible entry point into the broader QAI ecosystem.
+
+## 990. Enterprise Expansion
+
+The same customer may progress through multiple deployment levels.
+
+For example:
+
+~~~text
+SaaS Trial
+   ↓
+Portable Field Station
+   ↓
+Edge Deployment
+   ↓
+Mid-Size QAI Data Center
+   ↓
+Dedicated Enterprise QAI Data Center
+~~~
+
+This provides a natural customer expansion path without requiring replacement of the conceptual platform.
+
+## 991. Domain Service Expansion
+
+The domain fabric model allows additional services to be introduced incrementally.
+
+For agriculture this may include:
+
+- irrigation;
+- crop planning;
+- water optimization;
+- energy optimization;
+- machinery;
+- workforce;
+- logistics;
+- environmental monitoring.
+
+The same pattern can later be reused by other domains.
+
+## 992. Architecture as a Product Asset
+
+The architecture itself is considered a reusable product asset.
+
+Its value derives from the ability to compose:
+
+- infrastructure;
+- QAI execution;
+- domain intelligence;
+- Digital Twin;
+- CPS;
+- QAI Lab;
+- field deployment;
+- cloud services.
+
+This composition capability should be protected and continuously refined.
+
+## 993. Research-to-Product Continuity
+
+Research results should have a controlled path toward productization.
+
+~~~text
+Research Result
+      ↓
+Experimental Function
+      ↓
+Benchmark
+      ↓
+Validation
+      ↓
+Reusable QAI Function
+      ↓
+Domain Service
+      ↓
+Product Capability
+~~~
+
+This prevents research and product development from becoming disconnected activities.
+
+## 994. Client Adoption Principle
+
+The product should reduce the barrier for organizations that want to explore QAI without first building the entire infrastructure themselves.
+
+The desired client experience is:
+
+~~~text
+Client Problem
+     ↓
+Client Data
+     ↓
+Client Constraints
+     ↓
+QAI Platform
+     ↓
+Automated / Assisted Method Selection
+     ↓
+Benchmark
+     ↓
+Validated Result
+     ↓
+Deployable Service
+~~~
+
+## 995. QAI Data Center as Infrastructure Product
+
+The QAI Data Center should ultimately be treated as a reusable infrastructure product family rather than as an internal-only engineering project.
+
+Its deployment configurations may range from portable stations to dedicated enterprise infrastructure.
+
+## 996. Domain Fabric as Product Layer
+
+Domain Fabrics should ultimately become reusable product layers that package domain knowledge, models, workflows, interfaces and QAI capabilities.
+
+This allows one common infrastructure platform to support multiple commercial offerings.
+
+## 997. Digital Farm as First Proving Ground
+
+Digital Farm remains the first domain proving ground for the architecture.
+
+The objective is to demonstrate that the common platform can deliver measurable value in a real domain before broadening to additional domains.
+
+## 998. Post-Pilot Expansion Principle
+
+Expansion shall follow:
+
+> **Proven capability first; scale second; productization third; broad commercialization thereafter.**
+
+Future capability shall not be added solely because it is technologically interesting.
+
+It should have a clear technical, customer, research or economic purpose.
+
+## 999. Final Post-Pilot Requirements Decision
+
+The Post-Pilot requirements baseline is:
+
+**APPROVED — ARCHITECTURALLY FROZEN FOR FUTURE DEVELOPMENT**
+
+The architecture now provides a controlled path from the Phase 2 Pilot to:
+
+- portable QAI stations;
+- field QAI Labs;
+- edge QAI servers;
+- mid-size QAI Data Centers;
+- dedicated QAI Data Centers;
+- QAI Cloud/SaaS;
+- Domain Fabrics;
+- multi-domain expansion;
+- enterprise deployment;
+- grant development;
+- venture development;
+- mass production.
+
+## 1000. Phase 2 Final Closure
+
+Phase 2 establishes the architectural foundation for simulation, CPS workflows, QAI experimentation, resilience, productization and future deployment.
+
+The minimum Pilot remains intentionally bounded.
+
+The Post-Pilot architecture is now explicitly prepared for modular physical realization, scalable QAI infrastructure, domain-specific offerings and commercial service delivery.
+
+Final principle:
+
+> **Build the minimum. Prove it. Measure it. Learn from it. Preserve the architecture. Then scale, modularize, productize and commercialize what has been proven.**
+
+**FINAL STATUS: COMPLETE — PHASE 2 ARCHITECTURE AND POST-PILOT REQUIREMENTS BASELINE FROZEN**
+---
+
