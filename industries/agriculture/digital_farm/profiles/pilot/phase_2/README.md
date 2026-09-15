@@ -14208,3 +14208,822 @@ Final principle:
 **FINAL STATUS: COMPLETE — PHASE 2 ARCHITECTURE AND POST-PILOT REQUIREMENTS BASELINE FROZEN**
 ---
 
+# Phase 2 — Simulation & CPS Workflows
+## September 2026 Architecture Update
+## Sections 1001–1012
+
+---
+
+## 1001. September 2026 Architecture Update
+
+This section formally records the September 2026 architecture update to the Phase 2 Simulation & CPS Workflows baseline.
+
+The existing Phase 2 architecture remains authoritative.
+
+This update does not replace the existing Phase 2 architecture, subsystem definitions, testing principles, implementation boundaries, or Post-Pilot architecture.
+
+Instead, it integrates the staged demonstration and realization model established across the Agriculture Digital Farm Pilot architecture.
+
+The updated realization progression is:
+
+~~~text
+Phase 0
+Define
+  │
+  ▼
+Phase 1
+Virtualize
+  │
+  ▼
+Phase 2
+Emulate → Simulate → Experiment
+  │
+  ▼
+Phase 3
+Validate → Promote
+  │
+  ▼
+Phase 4+
+Digital Twin → Physical CPS → QAI Lab → Fabrics → Scale
+~~~
+
+Phase 2 therefore remains the principal experimental bridge between virtualized system representation and validated system behaviour.
+
+The governing principle remains:
+
+> **Define the managed problem first; realize the technical solution second.**
+
+Phase 2 implements this principle by ensuring that simulation, emulation, CPS workflows, computational alternatives, resource dependencies, faults, resilience and evidence remain traceable to the requirements established upstream.
+
+---
+
+## 1002. Staged Demonstration and Realisation Model
+
+The Phase 2 architecture shall support multiple levels of technical realization without requiring a different architecture for each level.
+
+The staged demonstration model is:
+
+~~~text
+Stage 1
+Laptop Simulation
+        │
+        ▼
+Stage 2
+Synthetic CPS
+        │
+        ▼
+Stage 3
+Real Data + Emulation
+        │
+        ▼
+Stage 4
+Physical MVP
+        │
+        ▼
+Stage 5
+Physical CPS
+~~~
+
+### Stage 1 — Laptop Simulation
+
+The first demonstration level may operate entirely on a laptop or equivalent local computing environment.
+
+It may use:
+
+- synthetic data;
+- virtual assets;
+- simulated behaviour;
+- emulated interfaces;
+- classical computation;
+- AI computation;
+- QAI/QAI-inspired computation;
+- experiment configuration; and
+- measurable result comparison.
+
+No physical field deployment is required.
+
+The purpose is to establish an executable and reproducible technical concept.
+
+### Stage 2 — Synthetic CPS
+
+The second level introduces explicit CPS behaviour using synthetic sensing, state transitions, events, decisions, feedback and emulated actuation.
+
+The environment may remain entirely software-based.
+
+The objective is to demonstrate that the system behaves as a CPS rather than merely as a collection of independent analytical models.
+
+### Stage 3 — Real Data + Emulation
+
+The third level introduces historical, representative or otherwise appropriately controlled real-world data while retaining emulated devices and processes.
+
+This separates:
+
+- data realism;
+- device realism;
+- model realism; and
+- operational realism.
+
+The objective is to test whether the architecture and models remain useful when exposed to representative real-world conditions.
+
+### Stage 4 — Physical MVP
+
+The fourth level introduces selected physical sensing, edge computing, networking and other minimum physical assets.
+
+The initial physical system should normally remain open-loop or appropriately supervised.
+
+Physical actuation should not be introduced merely because physical sensing exists.
+
+### Stage 5 — Physical CPS
+
+The fifth level introduces live physical data and progressively supervised closed-loop interaction with physical assets.
+
+The level of automation shall depend on:
+
+- technical validation;
+- safety;
+- security;
+- reliability;
+- resilience;
+- regulatory requirements;
+- operational risk;
+- human oversight; and
+- demonstrated confidence.
+
+The architecture therefore supports:
+
+> **One Architecture → Multiple Realisation Levels**
+
+rather than independent architectures for demonstration, Pilot and production.
+
+---
+
+## 1003. Data Realism and Device Realism
+
+Data realism and device realism shall be treated as separate dimensions.
+
+### Data Realism
+
+The principal progression is:
+
+~~~text
+Synthetic
+   ↓
+Historical / Representative Real
+   ↓
+Live Real
+~~~
+
+### Device Realism
+
+The principal progression is:
+
+~~~text
+Virtual
+   ↓
+Emulated
+   ↓
+Physical
+~~~
+
+These dimensions are independent.
+
+The resulting realization matrix is:
+
+| Data Realism | Virtual Device | Emulated Device | Physical Device |
+|---|---|---|---|
+| Synthetic | Valid | Valid | Valid |
+| Historical / Representative Real | Valid | Valid | Valid |
+| Live Real | Possible with controlled interfaces | Possible | Operationally representative |
+
+The key architectural principle is:
+
+> **Real data does not require physical devices, and physical devices do not automatically imply live operational deployment.**
+
+This distinction allows the engineering team to increase realism progressively while controlling cost, risk and complexity.
+
+Phase 2 shall therefore explicitly record, for each experiment:
+
+- required data realism;
+- required device realism;
+- model fidelity;
+- execution environment;
+- computational path;
+- control mode;
+- safety boundary; and
+- evidence required.
+
+---
+
+## 1004. Phase 2 Technical and Value Execution Flow
+
+The Phase 2 architecture shall preserve the complete technical and value-oriented execution chain.
+
+The updated conceptual flow is:
+
+~~~text
+Physical / Synthetic State
+          │
+          ▼
+   Digital Farm Twin
+          │
+          ▼
+   AI / QAI Intelligence
+          │
+          ▼
+ Optimisation / Model Library
+          │
+          ▼
+       Decision
+          │
+          ▼
+   Authorised Action
+          │
+          ▼
+      Changed State
+          │
+          ▼
+       Feedback
+          │
+          ▼
+Technical / Operational /
+Economic Measurement
+          │
+          ▼
+       Evidence
+          │
+          ▼
+      Evaluation
+~~~
+
+The architecture shall preserve the distinction between:
+
+- physical state;
+- virtual state;
+- emulated state;
+- simulated state;
+- intelligence;
+- optimisation;
+- decision;
+- authorised action;
+- feedback;
+- measurement;
+- evidence; and
+- economic/value outcomes.
+
+The technical execution path shall not automatically imply physical execution.
+
+An analytical recommendation may terminate at:
+
+- result;
+- recommendation;
+- human review;
+- simulated action;
+- emulated action; or
+- authorised physical action,
+
+depending on the experiment configuration and approved operational boundary.
+
+---
+
+## 1005. Phase 2 Relationship to Physical MVP and Physical CPS
+
+Phase 2 is primarily a software-based experimentation and validation environment.
+
+It does not require complete physical deployment.
+
+The relationship between Phase 2 and later physical realization is:
+
+~~~text
+Phase 2
+Emulator + Simulator + CPS + QAI
+             │
+             ▼
+      Controlled Evidence
+             │
+             ▼
+       Phase 3 Validation
+             │
+             ▼
+       Physical MVP
+             │
+             ▼
+      Physical CPS Pilot
+~~~
+
+Phase 2 may therefore establish evidence before physical assets are introduced.
+
+Where physical assets are later introduced, Phase 2 provides the experimental baseline against which physical behaviour may be compared.
+
+Potential comparison dimensions include:
+
+- sensor observations;
+- state transitions;
+- timing;
+- control response;
+- model predictions;
+- resource consumption;
+- fault behaviour;
+- recovery;
+- operational outcomes; and
+- economic/value outcomes.
+
+The physical implementation shall not silently redefine the Phase 2 experiment.
+
+If physical limitations require a change to:
+
+- requirements;
+- interfaces;
+- models;
+- workflows;
+- scenarios;
+- acceptance criteria; or
+- operating boundaries,
+
+the change shall be explicitly recorded and governed.
+
+---
+
+## 1006. Phase 2 → Phase 3 Handoff Update
+
+Phase 2 shall hand over controlled experimental evidence to Phase 3.
+
+The handoff relationship is:
+
+~~~text
+Phase 2
+Construct
+   │
+   ▼
+Emulate
+   │
+   ▼
+Simulate
+   │
+   ▼
+Experiment
+   │
+   ▼
+Measure
+   │
+   ▼
+Evidence
+   │
+   ▼
+Phase 3
+Validate
+   │
+   ▼
+Promote
+~~~
+
+Phase 2 shall provide sufficient information for Phase 3 to determine:
+
+- what was tested;
+- which configuration was used;
+- which models were involved;
+- which data were used;
+- which scenarios were executed;
+- which computational method was used;
+- which resources were available;
+- which faults were introduced;
+- which results were observed;
+- which thresholds applied;
+- which limitations were identified; and
+- whether the model or capability is suitable for promotion.
+
+The handoff shall preserve provenance and reproducibility.
+
+### Phase 2 → Phase 3 Handoff Matrix
+
+| Phase 2 Output | Phase 3 Use |
+|---|---|
+| Emulator configuration | Fidelity assessment |
+| Simulator configuration | Simulation validity assessment |
+| CPS workflow | Behaviour validation |
+| Scenario | Boundary and robustness validation |
+| Model | Model validation |
+| Dataset | Reproducibility and data validation |
+| Computational path | Comparative validation |
+| Resource context | Performance interpretation |
+| Fault results | Resilience assessment |
+| KPI results | Acceptance assessment |
+| Value results | Economic/value assessment |
+| Evidence package | Promotion decision |
+
+The Phase 3 decision shall be based on evidence rather than on successful execution alone.
+
+---
+
+## 1007. Minimum Executable Phase 2 Vertical Slice
+
+Phase 2 shall support a minimum executable vertical slice before broader expansion.
+
+The preferred minimum pattern is:
+
+~~~text
+Input State / Scenario
+        │
+        ▼
+   Virtual Asset
+        │
+        ▼
+      Emulator
+        │
+        ▼
+Observation / State
+        │
+        ▼
+Classical / AI / QAI
+        │
+        ▼
+Decision / Recommendation
+        │
+        ▼
+   Simulator / CPS
+        │
+        ▼
+Resulting State
+        │
+        ▼
+Measurement
+        │
+        ▼
+Evidence
+~~~
+
+The vertical slice should demonstrate the complete chain without requiring every future subsystem.
+
+The minimum slice should preferably contain:
+
+- one bounded use case;
+- a small number of virtual assets;
+- defined state;
+- defined interfaces;
+- at least one executable workflow;
+- at least one scenario;
+- a classical baseline;
+- one computational alternative where justified;
+- measurable KPIs;
+- value measurement where applicable;
+- reproducible execution; and
+- an evidence record.
+
+The objective is not feature completeness.
+
+The objective is:
+
+> **A complete, measurable and reproducible end-to-end experiment.**
+
+---
+
+## 1008. Phase 2 Pilot Implementation Boundary
+
+The Phase 2 Pilot implementation boundary remains intentionally bounded.
+
+The Pilot may use:
+
+- laptop/local compute;
+- virtual assets;
+- emulated devices;
+- synthetic data;
+- controlled historical or representative data;
+- software-based CPS;
+- simulation;
+- classical optimization;
+- AI;
+- QAI/QAI-inspired methods;
+- controlled external AI;
+- controlled external HPC;
+- optional remote quantum backend experiments;
+- experiment logging;
+- evidence generation.
+
+The Pilot does not require:
+
+- a physical QPU;
+- dedicated quantum hardware;
+- a dedicated HPC cluster;
+- a full QAI Data Center;
+- a complete autonomous farm;
+- a production Digital Twin;
+- large-scale field deployment;
+- autonomous physical actuation;
+- multi-tenant SaaS;
+- multi-cloud production;
+- federated infrastructure;
+- mass-produced QAI stations.
+
+These remain Post-Pilot capabilities unless a specific approved experiment requires otherwise.
+
+The implementation boundary therefore remains:
+
+> **Minimum capability required to establish credible experimental evidence.**
+
+---
+
+## 1009. Phase 2 Post-Pilot Boundary
+
+The Phase 2 architecture continues to anticipate expansion beyond the Pilot.
+
+Post-Pilot capabilities may include:
+
+- physical field sensing;
+- Physical CPS;
+- production Digital Twin;
+- supervised closed-loop operation;
+- Hardware-in-the-Loop;
+- external compute-in-the-loop;
+- advanced AI;
+- QAI optimisation;
+- remote QPU integration;
+- QAI Lab;
+- QAI Modular Station;
+- edge QAI;
+- QAI Data Center;
+- Domain Fabric;
+- SaaS;
+- multi-client deployment;
+- multi-cloud deployment;
+- federated operation;
+- additional agricultural services;
+- additional domains.
+
+The relationship remains:
+
+~~~text
+Pilot Evidence
+      │
+      ▼
+Validated Capability
+      │
+      ▼
+Post-Pilot Development
+      │
+      ├── Physical CPS
+      ├── Digital Twin
+      ├── QAI Lab
+      ├── QAI Station
+      ├── Domain Fabric
+      ├── QAI Data Center
+      └── SaaS / Services
+~~~
+
+Post-Pilot capabilities shall be implemented through controlled gates.
+
+Architectural anticipation shall not be interpreted as implementation commitment.
+
+---
+
+## 1010. Updated Phase 2 Gate
+
+The Phase 2 completion and handoff gate shall evaluate whether the experimental environment is sufficiently prepared for Phase 3.
+
+The conceptual gate is:
+
+~~~text
+Architecture Defined
+        │
+        ▼
+Subsystems Executable
+        │
+        ▼
+Interfaces Tested
+        │
+        ▼
+Workflow Executable
+        │
+        ▼
+Scenario Executable
+        │
+        ▼
+Baseline Established
+        │
+        ▼
+Results Measured
+        │
+        ▼
+Fault / Resilience Tested
+        │
+        ▼
+Evidence Recorded
+        │
+        ▼
+Phase 3 READY
+~~~
+
+A Phase 2 gate decision should consider:
+
+| Gate Dimension | Question |
+|---|---|
+| Architecture | Is the intended experiment structurally defined? |
+| Emulator | Can target behaviour be reproduced within the defined boundary? |
+| Simulator | Can controlled scenarios be executed? |
+| CPS | Are state, transitions, decisions and feedback represented? |
+| Integration | Do subsystem contracts operate correctly? |
+| Computation | Is the computational path explicitly identified? |
+| Baseline | Is a suitable classical/reference baseline available? |
+| Fault | Have relevant abnormal conditions been tested? |
+| Resilience | Is the response to relevant disruption understood? |
+| Measurement | Are KPIs observable and reproducible? |
+| Evidence | Can results be independently interpreted? |
+| Scope | Has the Pilot remained within its approved boundary? |
+
+The gate decision may be:
+
+- **READY**
+- **READY WITH CONTROLLED LIMITATIONS**
+- **REVISE**
+- **BLOCKED**
+
+A limitation shall not automatically constitute failure if it is known, bounded, documented and acceptable for the intended experiment.
+
+---
+
+## 1011. Evidence and Experiment Readiness
+
+Phase 2 shall treat experiment readiness as a distinct engineering condition.
+
+An experiment is ready when:
+
+1. the problem is defined;
+2. the system boundary is defined;
+3. participating assets are identified;
+4. state variables are defined;
+5. interfaces are defined;
+6. models are identified;
+7. scenarios are defined;
+8. computational methods are identified;
+9. resource requirements are known;
+10. acceptance criteria are defined;
+11. safety and control boundaries are defined;
+12. execution can be reproduced; and
+13. evidence can be captured.
+
+The minimum evidence chain is:
+
+~~~text
+Problem
+   ↓
+Model
+   ↓
+Experiment
+   ↓
+Execution
+   ↓
+Observation
+   ↓
+Result
+   ↓
+Measurement
+   ↓
+Evidence
+   ↓
+Evaluation
+   ↓
+Decision
+~~~
+
+Where economic or value analysis is included:
+
+~~~text
+Technical Result
+      ↓
+Operational Outcome
+      ↓
+Resource Outcome
+      ↓
+Economic / Value Outcome
+      ↓
+Evidence
+~~~
+
+Where QAI is evaluated:
+
+~~~text
+Problem
+   ↓
+Classical Baseline
+   ↓
+Classical / AI / QAI Alternatives
+   ↓
+Common Evaluation
+   ↓
+Comparative Evidence
+   ↓
+Advantage Gate
+   ↓
+Selected Approach
+~~~
+
+No quantum advantage shall be assumed.
+
+Possible outcomes remain:
+
+- QAI Advantage Demonstrated;
+- Potential QAI Advantage;
+- No Demonstrated Advantage;
+- Classical Solution Preferred;
+- Further Research Required.
+
+The result shall be recorded according to the evidence actually produced.
+
+---
+
+## 1012. Final Phase 2 Update Principle
+
+The September 2026 update confirms that Phase 2 is the controlled experimentation bridge between virtualized architecture and validated system capability.
+
+The complete realization principle is:
+
+~~~text
+DEFINE
+  ↓
+VIRTUALIZE
+  ↓
+EMULATE
+  ↓
+SIMULATE
+  ↓
+EXPERIMENT
+  ↓
+VALIDATE
+  ↓
+PROMOTE
+  ↓
+SCALE
+~~~
+
+The corresponding engineering principle is:
+
+~~~text
+Build the Minimum
+       ↓
+Prove It
+       ↓
+Measure It
+       ↓
+Stress It
+       ↓
+Learn
+       ↓
+Validate
+       ↓
+Promote
+       ↓
+Expand
+       ↓
+Productize
+~~~
+
+Phase 2 therefore remains:
+
+- experimentally bounded;
+- structurally explicit;
+- independently testable;
+- reproducible;
+- evidence-oriented;
+- computationally neutral;
+- QAI-ready;
+- resilient;
+- safety-aware;
+- value-aware; and
+- architecturally scalable.
+
+The Pilot does not need to implement the entire future architecture.
+
+It needs to establish credible evidence that the architecture works for the selected problem within defined boundaries.
+
+The governing principle is:
+
+> **Prove the minimum credible system first. Preserve the architecture for the next level of realism. Promote only what is validated. Scale only from evidence.**
+
+### Phase 2 Final Update Status
+
+**Status:** COMPLETE — SEPTEMBER 2026 ARCHITECTURE UPDATE
+
+**Pilot Boundary:** PRESERVED
+
+**Existing Sections 1–1000:** AUTHORITATIVE
+
+**New Sections 1001–1012:** INTEGRATION / REALISATION UPDATE
+
+**Phase 3 Handoff:** DEFINED
+
+**Physical MVP:** POST-PHASE-2 REALISATION PATH
+
+**Physical CPS:** POST-PHASE-2 REALISATION PATH
+
+**Post-Pilot Architecture:** PRESERVED
+
+**Master Realisation Principle:**
+
+> **Define → Virtualize → Emulate → Simulate → Experiment → Validate → Promote → Scale**
+
+---
+
+# END OF PHASE 2 SEPTEMBER 2026 ARCHITECTURE UPDATE
+
+**Sections 1001–1012: COMPLETE**
+
+**Phase 2 Status: PILOT BASELINE PRESERVED — STAGED REALISATION AND PHASE 3 HANDOFF FORMALLY INTEGRATED**
+---

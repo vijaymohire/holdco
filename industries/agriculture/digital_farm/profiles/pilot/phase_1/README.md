@@ -4441,3 +4441,714 @@ or:
 **Status: COMPLETE — PHASE 1 ASSET VIRTUALIZATION BASELINE**
 ---
 
+# Phase 1 — Asset Virtualization
+## September 2026 Architecture Update
+## Sections 211–222
+
+---
+
+## 211. September 2026 Architecture Update
+
+The existing Phase 1 — Asset Virtualization architecture remains authoritative.
+
+This update does not replace:
+
+- Phase 1 purpose
+- Phase 1 scope
+- virtual asset definitions
+- DTP / DTI / DTA definitions
+- identity model
+- relationship model
+- cardinality model
+- lifecycle model
+- state model
+- mapping model
+- interface model
+- workflow model
+- scenario model
+- validation model
+- Phase 2 handoff conditions
+
+The September 2026 update integrates Phase 1 with the staged technical-realisation strategy established across the Digital Farm Pilot.
+
+The updated architectural progression is:
+
+~~~text
+Phase 0
+Define
+Implementation Readiness
+      |
+      v
+Phase 1
+Virtualize
+Asset Virtualization
+      |
+      +--> Virtual Assets
+      +--> DTP / DTI / DTA
+      +--> Identity
+      +--> State
+      +--> Relationships
+      +--> Mappings
+      +--> Interfaces
+      +--> Workflows
+      +--> Scenarios
+      |
+      v
+Phase 2
+Emulate / Simulate / Experiment
+      |
+      v
+Phase 3
+Validate / Promote
+      |
+      v
+Phase 4+
+Digital Twin
+      |
+      v
+Physical CPS
+      |
+      +--> QAI Lab
+      +--> QAI Fabrics
+      +--> QAI Station
+      +--> QAI Data Center
+      +--> Domain Fabric
+      +--> SaaS / Scale
+~~~
+
+The governing principle remains:
+
+> Define the managed problem first; realize the technical solution second.
+
+Phase 1 therefore provides the stable virtual-world boundary through which increasing levels of technical realism can be introduced.
+
+---
+
+## 212. Staged Demonstration and Realisation Model
+
+Phase 1 shall support multiple realisation levels without requiring the virtual asset architecture to be redesigned.
+
+The staged demonstration model is:
+
+~~~text
+Stage 1
+Laptop Simulation
+      |
+      v
+Stage 2
+Synthetic CPS
+      |
+      v
+Stage 3
+Real Data + Emulation
+      |
+      v
+Stage 4
+Physical MVP
+      |
+      v
+Stage 5
+Physical CPS
+~~~
+
+The relationship to Phase 1 is:
+
+~~~text
+Phase 1 Virtual World
+      |
+      +--> Stage 1 Virtual / Simulated
+      |
+      +--> Stage 2 Virtual / Emulated CPS
+      |
+      +--> Stage 3 Real Data / Emulated Devices
+      |
+      +--> Stage 4 Physical Asset Association
+      |
+      +--> Stage 5 Digital Twin / Physical CPS
+~~~
+
+The same logical asset identity, relationship semantics, state model, and interface contracts should remain reusable across these stages.
+
+The implementation level may change.
+
+The architectural identity should not.
+
+---
+
+## 213. Data Realism and Device Realism
+
+Phase 1 shall support independent progression of data realism and device realism.
+
+Data realism may progress through:
+
+~~~text
+Synthetic
+   |
+   v
+Historical / Representative Real
+   |
+   v
+Live Real
+~~~
+
+Device realism may progress through:
+
+~~~text
+Virtual
+   |
+   v
+Emulated
+   |
+   v
+Physical
+~~~
+
+These dimensions are independent.
+
+~~~text
+                         DEVICE REALISM
+                 Virtual     Emulated     Physical
+              +-----------+-----------+-----------+
+Synthetic     |     Yes   |    Yes    |    Yes    |
+              +-----------+-----------+-----------+
+Historical /  |           |           |           |
+Representative|     Yes   |    Yes    |    Yes    |
+Real          +-----------+-----------+-----------+
+Live Real     |     Yes   |    Yes    |    Yes    |
+              +-----------+-----------+-----------+
+                 DATA REALISM
+~~~
+
+Therefore:
+
+> Real data does not require physical devices, and physical devices do not automatically imply live operational deployment.
+
+Phase 1 shall preserve this distinction so that later experiments can increase realism incrementally.
+
+---
+
+## 214. Phase 1 as the Stable Virtual Boundary
+
+Phase 1 shall remain the stable boundary between logical architecture and technical realization.
+
+~~~text
+Phase 0
+Logical Requirements
+      |
+      v
++-----------------------------+
+| Phase 1 Virtual World       |
+|                             |
+| Identity                    |
+| Assets                      |
+| DTP / DTI / DTA             |
+| Relationships               |
+| Mappings                    |
+| State                       |
+| Interfaces                 |
+| Workflows                  |
+| Scenarios                  |
+| Lifecycle                  |
++-----------------------------+
+      |
+      +----------+----------+
+      |          |          |
+      v          v          v
+ Simulation   Emulation   Physical
+      |          |          |
+      +----------+----------+
+                 |
+                 v
+            Digital Twin
+                 |
+                 v
+              CPS / QAI
+~~~
+
+Technical platforms may change.
+
+Execution environments may change.
+
+Data sources may change.
+
+Physical devices may change.
+
+The logical virtual-world contract should remain stable unless a formally governed architectural change is approved.
+
+---
+
+## 215. Updated Phase 1 Technical and Value Flow
+
+The Phase 1 virtual-world representation shall support the wider Digital Farm technical and value flow.
+
+~~~text
+Physical / Synthetic State
+          |
+          v
+Virtual Asset Representation
+          |
+          v
+Digital Farm Twin Context
+          |
+          v
+AI / QAI Intelligence
+          |
+          v
+Optimisation / Model Library
+          |
+          v
+Decision / Recommendation
+          |
+          v
+Authorised Action
+          |
+          v
+Changed State
+          |
+          v
+Feedback
+          |
+          v
+Technical / Operational Measurement
+          |
+          v
+Economic / Value Measurement
+          |
+          v
+Evidence
+~~~
+
+Phase 1 does not implement all downstream capabilities.
+
+It establishes the virtual representations required for those capabilities to consume and produce meaningful information.
+
+The following distinctions shall remain explicit:
+
+- asset representation
+- asset state
+- behaviour
+- relationship
+- simulation
+- emulation
+- intelligence
+- optimisation
+- decision
+- authorised action
+- feedback
+- measurement
+- evidence
+- economic/value outcome
+
+---
+
+## 216. Classical and QAI Compatibility
+
+The Phase 1 virtual world shall remain computationally neutral.
+
+The same logical asset and state representations should support:
+
+~~~text
+Virtual Farm State
+       |
+       +-------------------+
+       |                   |
+       v                   v
+Classical Path          QAI Path
+       |                   |
+       v                   v
+Classical Result       QAI / Hybrid Result
+       |                   |
+       +---------+---------+
+                 |
+                 v
+          Common Evaluation
+                 |
+                 v
+          Comparative Evidence
+                 |
+                 v
+           Advantage Gate
+~~~
+
+No quantum advantage shall be assumed.
+
+The Phase 1 architecture shall support:
+
+- classical computation
+- classical optimisation
+- AI
+- QAI-inspired methods
+- hybrid QAI
+- optional quantum execution
+- external HPC
+- classical fallback
+
+The virtual asset representation shall therefore remain independent of the selected computational path.
+
+---
+
+## 217. Physical Association Readiness
+
+Phase 1 shall remain capable of supporting physical association when physical assets become available.
+
+The progression is:
+
+~~~text
+Logical Asset
+      |
+      v
+Virtual Representation
+      |
+      v
+DTI
+      |
+      +------------------+
+      |                  |
+      v                  v
+No Physical Asset    Physical Asset
+                           |
+                           v
+                     Association
+                           |
+                           v
+                     Synchronization
+                           |
+                           v
+                       Digital Twin
+~~~
+
+Physical association is an additional realization relationship.
+
+It does not replace the virtual representation.
+
+A DTI may therefore:
+
+- exist without a physical asset
+- later become associated with a physical asset
+- become temporarily disassociated
+- be reassociated with a replacement physical asset
+- remain available after physical retirement
+- support historical or simulation analysis independently
+
+This preserves the virtual-first architecture.
+
+---
+
+## 218. Phase 1 → Phase 2 Handoff Update
+
+The Phase 1 → Phase 2 handoff shall explicitly preserve the virtualization contracts required for emulation and simulation.
+
+~~~text
+Phase 1
+Asset Virtualization
+      |
+      +--> Virtual Assets
+      +--> DTP / DTI / DTA
+      +--> Identity
+      +--> Relationships
+      +--> Mappings
+      +--> State
+      +--> Interfaces
+      +--> Workflows
+      +--> Scenarios
+      +--> Lifecycle
+      +--> Provenance
+      |
+      v
+Phase 2
+Emulation / Simulation
+      |
+      +--> Behaviour
+      +--> State Transitions
+      +--> Scenario Execution
+      +--> CPS Workflow
+      +--> Classical Baseline
+      +--> QAI Evaluation
+      +--> Measurement
+      +--> Evidence
+~~~
+
+The Phase 2 implementation shall not silently redefine the Phase 1 virtual asset model.
+
+Any implementation limitation shall be classified as one of:
+
+- implementation constraint
+- technical limitation
+- compatibility issue
+- model gap
+- validation gap
+- requirement clarification
+- formally approved architectural change
+
+---
+
+## 219. Minimum Executable Virtual World
+
+The minimum Phase 1 implementation shall establish a callable virtual world sufficient for downstream experimentation.
+
+At minimum, the virtual world shall support:
+
+- creation of required virtual assets
+- stable identity
+- DTP where applicable
+- DTI where applicable
+- DTA where applicable
+- relationships
+- relationship cardinality
+- state initialization
+- state updates
+- lifecycle
+- mappings
+- interfaces
+- scenario representation
+- workflow representation
+- provenance
+- validation
+- Phase 2 handoff
+
+The objective is not to create a complete Digital Farm platform.
+
+The objective is:
+
+> Establish the minimum credible virtual-world representation required to execute and validate the next realization stage.
+
+The minimum virtual world shall therefore be:
+
+- bounded
+- reproducible
+- traceable
+- extensible
+- technology-neutral
+- computationally neutral
+- ready for emulation
+- ready for simulation
+- ready for physical association
+- ready for Digital Twin progression
+
+---
+
+## 220. Phase 1 Evidence and Validation Readiness
+
+Phase 1 completion shall be supported by evidence rather than by the existence of software objects alone.
+
+The evidence chain is:
+
+~~~text
+Phase 0 Requirement
+       |
+       v
+Virtual Asset Definition
+       |
+       v
+Virtual Instance
+       |
+       v
+Relationship / Mapping
+       |
+       v
+State / Lifecycle
+       |
+       v
+Interface / Workflow
+       |
+       v
+Scenario
+       |
+       v
+Validation
+       |
+       v
+Evidence
+       |
+       v
+Phase 2 Handoff
+~~~
+
+Evidence may include:
+
+- asset registry records
+- DTP definitions
+- DTI definitions
+- DTA definitions
+- relationship records
+- cardinality checks
+- mapping records
+- state records
+- lifecycle demonstrations
+- interface tests
+- workflow tests
+- scenario execution
+- provenance records
+- validation results
+- formal review findings
+
+Evidence shall remain traceable to the corresponding architectural artifact.
+
+---
+
+## 221. Updated Phase 1 Gate
+
+The Phase 1 gate shall be evaluated against architectural integrity and downstream readiness.
+
+~~~text
+Phase 0 Requirements Covered
+          |
+          v
+Virtual Assets Defined
+          |
+          v
+DTP / DTI / DTA Validated
+          |
+          v
+Relationships Validated
+          |
+          v
+Mappings Validated
+          |
+          v
+State / Lifecycle Validated
+          |
+          v
+Interfaces / Workflows Validated
+          |
+          v
+Scenarios Ready
+          |
+          v
+Evidence Recorded
+          |
+          v
+Phase 2 Handoff Ready
+~~~
+
+The gate decision may be:
+
+**READY — PHASE 1 ASSET VIRTUALIZATION BASELINE**
+
+or:
+
+**READY WITH CONTROLLED LIMITATIONS**
+
+or:
+
+**REVISE — PHASE 1 ASSET VIRTUALIZATION**
+
+or:
+
+**DEFER — PHASE 1 ASSET VIRTUALIZATION**
+
+A bounded, documented implementation limitation shall not automatically invalidate the architecture where the logical contract remains intact.
+
+The critical requirement is that limitations are visible, documented, and controlled.
+
+---
+
+## 222. Final Phase 1 September 2026 Update Principle
+
+Phase 1 remains the virtual-world foundation of the Digital Farm Pilot.
+
+Its role is not to implement every future Digital Farm capability.
+
+Its role is to establish a stable, reusable, traceable and technology-neutral virtual representation from which increasingly realistic technical realizations can be developed.
+
+The overall realization principle is:
+
+~~~text
+Define
+   |
+   v
+Virtualize
+   |
+   v
+Emulate
+   |
+   v
+Simulate
+   |
+   v
+Experiment
+   |
+   v
+Validate
+   |
+   v
+Promote
+   |
+   v
+Scale
+~~~
+
+The staged demonstration principle is:
+
+~~~text
+One Architecture
+      |
+      +--> Laptop Simulation
+      |
+      +--> Synthetic CPS
+      |
+      +--> Real Data + Emulation
+      |
+      +--> Physical MVP
+      |
+      +--> Physical CPS
+      |
+      +--> Digital Twin
+      |
+      +--> QAI Lab / Fabrics
+      |
+      +--> Product / Service / Scale
+~~~
+
+The Phase 1 architectural principles therefore remain:
+
+- Virtualize before physical dependence.
+- Preserve identity across realization levels.
+- Treat relationships as first-class architecture.
+- Preserve cardinality explicitly.
+- Separate state from behaviour.
+- Separate virtualization from simulation.
+- Separate virtualization from emulation.
+- Separate virtual representation from Digital Twin synchronization.
+- Keep physical and virtual lifecycles distinct.
+- Preserve provenance and uncertainty.
+- Maintain human participation as a first-class concern.
+- Preserve classical and QAI computational neutrality.
+- Use evidence to determine readiness.
+- Do not introduce unnecessary implementation complexity.
+- Do not allow technology choices to redefine the logical architecture.
+- Promote only validated capability.
+- Expand only from a proven baseline.
+
+The governing realization principle is:
+
+> **Prove the minimum credible virtual world first. Preserve the architecture for increasing levels of realism. Associate physical assets progressively. Promote only what is validated. Scale only from evidence.**
+
+### Phase 1 September 2026 Status
+
+**Status: COMPLETE — PHASE 1 ASSET VIRTUALIZATION BASELINE**
+
+**September 2026 Update: INTEGRATED**
+
+**Pilot Boundary: PRESERVED**
+
+**Sections 1–210: AUTHORITATIVE**
+
+**Sections 211–222: STAGED REALISATION AND ARCHITECTURAL HANDOFF UPDATE**
+
+**Phase 2 Handoff: DEFINED**
+
+**Physical MVP / Physical CPS: POST-PHASE-1 REALISATION PATH**
+
+**Digital Twin: PROGRESSIVE REALISATION PATH**
+
+**QAI: COMPUTATIONALLY NEUTRAL AND FUTURE-READY**
+
+**Master Realisation Principle: DEFINE → VIRTUALIZE → EMULATE → SIMULATE → EXPERIMENT → VALIDATE → PROMOTE → SCALE**
+
+---
+
+## Sections 211–222: COMPLETE
+
+**Phase 1 Status: PILOT BASELINE PRESERVED — STAGED REALISATION AND PHASE 2 HANDOFF FORMALLY INTEGRATED**
+---

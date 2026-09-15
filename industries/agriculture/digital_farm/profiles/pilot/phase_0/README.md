@@ -1371,3 +1371,400 @@ It ensures that the first implementation is:
 > **Define the managed problem first; realize the technical solution second.**
 
 ---
+---
+
+## 62. September 2026 Architecture Update
+
+Phase 0 remains the authoritative **implementation-readiness and scope-baseline layer** for the Digital Farm Pilot.
+
+The September 2026 update extends the Phase 0 baseline to explicitly support the staged Digital Farm realization strategy developed after the original Phase 0 definition.
+
+This update does not replace the existing Phase 0 architecture, deliverables, boundaries, or G0 gate.
+
+It clarifies how the Phase 0 definition feeds increasingly realistic technical realization stages while preserving the principle:
+
+> **Define the managed problem first; realize the technical solution second.**
+
+The updated realization strategy is:
+
+~~~text
+Phase 0
+Implementation Readiness
+        │
+        ▼
+Phase 1
+Asset Virtualization
+        │
+        ▼
+Phase 2
+Simulation & CPS Workflows
+        │
+        ▼
+Phase 3
+Validation & Model Promotion
+        │
+        ▼
+Phase 4+
+Digital Twin / Production CPS
+        │
+        ▼
+QAI Lab / Fabrics / Scale
+~~~
+
+Phase 0 therefore remains the point at which the managed problem, use case, assets, functions, interfaces, workflows, scenarios, baselines, measurements, value criteria, and acceptance conditions are established before technical realization proceeds.
+
+---
+
+## 63. Staged Demonstration and Realisation Model
+
+The Digital Farm Pilot should support progressively increasing levels of implementation realism.
+
+The staged demonstration model is:
+
+~~~text
+Stage 1 — Laptop Simulation
+        │
+        ▼
+Stage 2 — Synthetic CPS
+        │
+        ▼
+Stage 3 — Real Data + Emulation
+        │
+        ▼
+Stage 4 — Physical MVP
+        │
+        ▼
+Stage 5 — Physical CPS
+~~~
+
+### Stage 1 — Laptop Simulation
+
+The first demonstration may operate completely within a laptop environment using:
+
+- synthetic data,
+- virtual assets,
+- simulated state,
+- emulated data sources,
+- classical computation,
+- AI/QAI software,
+- simulation,
+- optimisation,
+- visualisation,
+- measurement.
+
+The objective is to establish a callable and reproducible end-to-end workflow before physical deployment.
+
+### Stage 2 — Synthetic CPS
+
+The architecture is extended to represent CPS behaviour using synthetic sensing, state transitions, events, decision logic, feedback, and emulated actuation.
+
+The purpose is to demonstrate the CPS architecture without requiring physical field deployment.
+
+### Stage 3 — Real Data + Emulation
+
+Historical or externally supplied real data may be introduced while physical devices remain emulated.
+
+This allows model and interface behaviour to be evaluated against representative conditions without prematurely requiring a complete physical deployment.
+
+### Stage 4 — Physical MVP
+
+Selected physical sensing, edge, networking, or other infrastructure may be introduced.
+
+The physical implementation should remain deliberately small and should be introduced only where it provides validation value.
+
+### Stage 5 — Physical CPS
+
+The system may progress toward live physical sensing, edge/cloud execution, supervised closed-loop operation, and controlled physical interaction.
+
+Physical CPS deployment remains subject to separate technical, operational, safety, security, regulatory, and acceptance requirements.
+
+The staged model therefore provides a controlled path from laptop demonstration to physical realization without requiring the entire future architecture to be implemented at the beginning.
+
+---
+
+## 64. Data Realism and Device Realism
+
+The staged realization model should distinguish **data realism** from **device realism**.
+
+These are independent dimensions.
+
+### Data Realism
+
+~~~text
+Synthetic Data
+      │
+      ▼
+Historical / Representative Real Data
+      │
+      ▼
+Live Real Data
+~~~
+
+### Device Realism
+
+~~~text
+Virtual Devices
+      │
+      ▼
+Emulated Devices
+      │
+      ▼
+Physical Devices
+~~~
+
+The two dimensions may progress independently.
+
+For example:
+
+~~~text
+                    DEVICE REALISM
+
+                 Virtual     Emulated     Physical
+                    │            │            │
+Synthetic Data     ●            ●            ●
+                    │            │            │
+Historical Data    ●            ●            ●
+                    │            │            │
+Live Data          ●            ●            ●
+~~~
+
+Therefore:
+
+> **Real data does not require physical devices, and physical devices do not automatically imply live operational deployment.**
+
+This distinction allows the pilot to increase evidence quality progressively while controlling cost, complexity, operational risk, and implementation dependency.
+
+Phase 0 should therefore specify the required **data realism level** and **device realism level** for each pilot requirement rather than assuming that the highest level is required from the beginning.
+
+---
+
+## 65. Updated Digital Farm Technical and Value Flow
+
+The Phase 0 minimum architecture is extended to explicitly represent the relationship between physical/CPS state, Digital Twin state, intelligence, optimisation, decisions, actions, feedback, and value measurement.
+
+The conceptual flow is:
+
+~~~text
+Physical / CPS State
+        │
+        ▼
+Digital Farm Twin
+        │
+        ▼
+AI / QAI Intelligence
+        │
+        ▼
+Optimisation / Model Library
+        │
+        ▼
+Decision
+        │
+        ▼
+Authorised Action
+        │
+        ▼
+Changed State
+        │
+        ▼
+Feedback
+        │
+        ▼
+Technical / Operational / Economic Measurement
+        │
+        ▼
+Evidence and Evaluation
+~~~
+
+The corresponding pilot realization may initially be entirely virtual, simulated, or emulated.
+
+The architecture must preserve the distinction between:
+
+- physical state,
+- virtual state,
+- Digital Twin state,
+- simulated state,
+- intelligence,
+- optimisation,
+- decision,
+- authorised action,
+- feedback,
+- measurement,
+- evidence,
+- economic/value outcomes.
+
+### Classical and QAI Execution
+
+QAI remains an optional computational capability within the broader execution architecture.
+
+The evaluation flow is:
+
+~~~text
+                 Pilot Problem
+                       │
+                       ▼
+               Classical Baseline
+                       │
+              ┌────────┴────────┐
+              │                 │
+              ▼                 ▼
+        Classical / AI       QAI / Hybrid
+          Execution           Execution
+              │                 │
+              └────────┬────────┘
+                       ▼
+                   Comparison
+                       │
+                       ▼
+                Advantage Gate
+                       │
+          ┌────────────┴────────────┐
+          ▼                         ▼
+      Use QAI                 Classical / HPC
+     if justified             fallback where
+                              appropriate
+~~~
+
+No quantum advantage is assumed.
+
+The result of an experiment may indicate:
+
+- QAI Advantage,
+- Potential QAI Advantage,
+- No Demonstrated Advantage,
+- Classical Solution Preferred,
+- Further Research Required.
+
+The existing `advantage_gate/` architecture remains authoritative for the technical Advantage Gate process.
+
+Phase 0 defines the **pilot-specific evaluation requirement** and the evidence required to support the eventual decision.
+
+### Economic and Value Measurement
+
+Technical performance alone is not sufficient to establish pilot value.
+
+Where relevant, the pilot should connect technical and operational outcomes to economic and resource outcomes:
+
+~~~text
+Technical State
+      │
+      ▼
+Operational Outcome
+      │
+      ▼
+Resource Outcome
+      │
+      ▼
+Economic / Value Outcome
+      │
+      ▼
+Evidence
+~~~
+
+Candidate value dimensions include:
+
+- operational value,
+- economic value,
+- resource value,
+- sustainability value,
+- productivity value,
+- decision value,
+- resilience value,
+- learning value.
+
+Only value dimensions relevant to the selected use case should be measured.
+
+---
+
+## 66. Phase 0 → Phase 1 Architectural Handoff Update
+
+The Phase 0 → Phase 1 handoff is extended to explicitly distinguish **requirements definition** from **technical realization**.
+
+Phase 0 defines what the pilot requires.
+
+Phase 1 realizes the required assets and state representations within the virtual environment.
+
+The relationship is:
+
+| Phase 0 Definition | Phase 1 Realisation |
+|---|---|
+| Managed assets | Virtual assets |
+| Required asset state | Asset state model |
+| Required functions | Virtualized functional representation |
+| Required interfaces | Virtual interfaces and mappings |
+| Workflow inputs and outputs | Executable virtual representations |
+| Scenario definitions | Scenario-ready virtual environment |
+| Data requirements | Data structures and input representations |
+| QAI evaluation requirements | QAI-ready problem representation |
+| KPI definitions | Measurement and observation hooks |
+| Value criteria | Value measurement hooks |
+| Acceptance criteria | Evidence and validation hooks |
+| Implementation boundary | Phase 1 realization boundary |
+
+The handoff must preserve the following principle:
+
+> **A downstream technical implementation must not silently redefine an upstream Phase 0 managerial decision.**
+
+If a technical limitation is discovered during Phase 1, it must be recorded as:
+
+- a constraint,
+- a design issue,
+- an implementation gap,
+- a requirement clarification,
+- or a formally approved Phase 0 change,
+
+as appropriate.
+
+It must not silently change the approved pilot objective or scope.
+
+### Updated Phase Handoff
+
+~~~text
+                 PHASE 0
+       Implementation Readiness
+                 │
+                 │
+                 ├── Use Case
+                 ├── Scope
+                 ├── Assets
+                 ├── Functions
+                 ├── Interfaces
+                 ├── Workflows
+                 ├── Scenarios
+                 ├── Baseline
+                 ├── QAI Evaluation
+                 ├── KPIs
+                 ├── Value
+                 └── Acceptance
+                       │
+                       ▼
+                 G0 Gate
+                       │
+                  ┌────┴────┐
+                  │         │
+                READY     REVISE
+                  │
+                  ▼
+                 PHASE 1
+          Asset Virtualization
+                  │
+                  ▼
+             Virtual Assets
+                  │
+                  ▼
+             Virtual State
+                  │
+                  ▼
+          Phase 2 Simulation
+~~~
+
+Phase 1 should therefore begin with an approved Phase 0 baseline rather than reopening the entire managerial definition.
+
+The overall realization principle becomes:
+
+> **Define → Virtualize → Emulate → Simulate → Experiment → Validate → Promote → Scale**
+
+The first pilot remains intentionally bounded.
+
+The purpose of the September 2026 update is to ensure that the Phase 0 definition can support this progression without requiring architectural redesign when the Digital Farm moves from a laptop demonstrator toward real data, physical assets, Digital Twin operation, CPS deployment, QAI experimentation, and eventual commercial realization.
+
+---
