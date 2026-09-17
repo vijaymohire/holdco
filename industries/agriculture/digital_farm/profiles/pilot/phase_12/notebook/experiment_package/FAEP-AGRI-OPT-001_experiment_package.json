@@ -1,0 +1,1589 @@
+{
+  "package_metadata": {
+    "package_id": "FAEP-AGRI-PACKAGE-001",
+    "experiment_id": "FAEP-AGRI-OPT-001",
+    "workflow_id": "FAEP-AGRI-WF-001",
+    "domain": "agriculture",
+    "title": "QAI Agriculture Optimization",
+    "template": {
+      "name": "QAI Agriculture Optimization Phase 3-12 Pilot / Client Delivery Template",
+      "type": "reference_experiment_template",
+      "phase_start": 3,
+      "phase_end": 12
+    },
+    "execution_environment": {
+      "mode": "notebook_controlled",
+      "data_mode": "synthetic_controlled",
+      "device_mode": "virtual",
+      "actuation_mode": "recommendation_only"
+    },
+    "boundaries": {
+      "physical_actuation": false,
+      "quantum_hardware": false,
+      "production_deployment": false,
+      "client_transfer": false
+    },
+    "reproducibility": {
+      "random_seed": 42,
+      "configuration_captured": true,
+      "workflow_captured": true,
+      "provenance_required": true
+    },
+    "created_timestamp_utc": "2026-09-17T11:41:05.364869+00:00",
+    "status": "INITIALIZED"
+  },
+  "workflow": {
+    "definition": {
+      "workflow_id": "FAEP-AGRI-WF-001",
+      "workflow_name": "QAI Agriculture Optimization Workflow",
+      "phase": 3,
+      "domain": "agriculture",
+      "objective": "Represent a bounded Digital Farm optimisation problem as a controlled CPS workflow using virtual assets and reproducible Classical / AI / QAI-compatible computational paths.",
+      "execution_boundary": "controlled_pilot",
+      "data_mode": "synthetic_controlled",
+      "asset_mode": "virtual",
+      "actuation_mode": "recommendation_only",
+      "human_approval_required": true,
+      "physical_actuation": false,
+      "quantum_hardware_execution": false,
+      "status": "defined",
+      "nodes": [
+        {
+          "node_id": "N01",
+          "name": "Input / Sensing",
+          "type": "input",
+          "purpose": "Receive controlled sensor, environmental and operational inputs."
+        },
+        {
+          "node_id": "N02",
+          "name": "Input Validation",
+          "type": "validation",
+          "purpose": "Validate required inputs, ranges and dependencies."
+        },
+        {
+          "node_id": "N03",
+          "name": "Digital Farm Twin Context",
+          "type": "state",
+          "purpose": "Construct the minimum virtual system state for the experiment."
+        },
+        {
+          "node_id": "N04",
+          "name": "Classical Baseline",
+          "type": "computation",
+          "purpose": "Establish the transparent Classical reference path."
+        },
+        {
+          "node_id": "N05",
+          "name": "AI / QAI-Compatible Evaluation",
+          "type": "computation",
+          "purpose": "Evaluate the alternative computational path under the same problem definition."
+        },
+        {
+          "node_id": "N06",
+          "name": "Optimisation",
+          "type": "optimization",
+          "purpose": "Compare candidate actions or solutions under configured constraints."
+        },
+        {
+          "node_id": "N07",
+          "name": "Recommendation",
+          "type": "decision_support",
+          "purpose": "Produce a controlled recommendation for human review."
+        },
+        {
+          "node_id": "N08",
+          "name": "KPI / Value Measurement",
+          "type": "measurement",
+          "purpose": "Measure technical and value-oriented experimental outputs."
+        },
+        {
+          "node_id": "N09",
+          "name": "Evidence / Experiment Record",
+          "type": "evidence",
+          "purpose": "Capture configuration, results, limitations and provenance."
+        }
+      ],
+      "connections": [
+        {
+          "source": "N01",
+          "target": "N02",
+          "flow": "data"
+        },
+        {
+          "source": "N02",
+          "target": "N03",
+          "flow": "validated_data"
+        },
+        {
+          "source": "N03",
+          "target": "N04",
+          "flow": "twin_state"
+        },
+        {
+          "source": "N03",
+          "target": "N05",
+          "flow": "twin_state"
+        },
+        {
+          "source": "N04",
+          "target": "N06",
+          "flow": "baseline_result"
+        },
+        {
+          "source": "N05",
+          "target": "N06",
+          "flow": "alternative_result"
+        },
+        {
+          "source": "N06",
+          "target": "N07",
+          "flow": "candidate_solution"
+        },
+        {
+          "source": "N07",
+          "target": "N08",
+          "flow": "recommendation"
+        },
+        {
+          "source": "N08",
+          "target": "N09",
+          "flow": "kpi_results"
+        },
+        {
+          "source": "N09",
+          "target": "N07",
+          "flow": "evidence_feedback"
+        }
+      ],
+      "controls": {
+        "approval_boundary": "human_review_required",
+        "physical_actuation": false,
+        "virtual_assets_only": true,
+        "synthetic_or_controlled_data": true,
+        "quantum_hardware_execution": false,
+        "production_deployment": false
+      }
+    },
+    "nodes": [
+      {
+        "node_id": "N01",
+        "name": "Input / Sensing",
+        "type": "input",
+        "purpose": "Receive controlled sensor, environmental and operational inputs."
+      },
+      {
+        "node_id": "N02",
+        "name": "Input Validation",
+        "type": "validation",
+        "purpose": "Validate required inputs, ranges and dependencies."
+      },
+      {
+        "node_id": "N03",
+        "name": "Digital Farm Twin Context",
+        "type": "state",
+        "purpose": "Construct the minimum virtual system state for the experiment."
+      },
+      {
+        "node_id": "N04",
+        "name": "Classical Baseline",
+        "type": "computation",
+        "purpose": "Establish the transparent Classical reference path."
+      },
+      {
+        "node_id": "N05",
+        "name": "AI / QAI-Compatible Evaluation",
+        "type": "computation",
+        "purpose": "Evaluate the alternative computational path under the same problem definition."
+      },
+      {
+        "node_id": "N06",
+        "name": "Optimisation",
+        "type": "optimization",
+        "purpose": "Compare candidate actions or solutions under configured constraints."
+      },
+      {
+        "node_id": "N07",
+        "name": "Recommendation",
+        "type": "decision_support",
+        "purpose": "Produce a controlled recommendation for human review."
+      },
+      {
+        "node_id": "N08",
+        "name": "KPI / Value Measurement",
+        "type": "measurement",
+        "purpose": "Measure technical and value-oriented experimental outputs."
+      },
+      {
+        "node_id": "N09",
+        "name": "Evidence / Experiment Record",
+        "type": "evidence",
+        "purpose": "Capture configuration, results, limitations and provenance."
+      }
+    ],
+    "tasks": {
+      "N01": {
+        "node_id": "N01",
+        "task_id": "TASK-01",
+        "name": "Input / Sensing",
+        "task_type": "sensing",
+        "purpose": "Collect the controlled experiment inputs required by the workflow.",
+        "required_assets": [
+          "sensor-soil-moisture-001",
+          "sensor-weather-001",
+          "sensor-resource-001"
+        ],
+        "inputs": [
+          "field_state",
+          "environment_state",
+          "resource_state"
+        ],
+        "outputs": [
+          "sensor_input",
+          "environment"
+        ],
+        "execution_path": "virtual_sensor",
+        "data_mode": "synthetic_controlled",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N02": {
+        "node_id": "N02",
+        "task_id": "TASK-02",
+        "name": "Input Validation",
+        "task_type": "validation",
+        "purpose": "Validate completeness, ranges and basic consistency before execution.",
+        "required_assets": [],
+        "inputs": [
+          "sensor_input",
+          "environment"
+        ],
+        "outputs": [
+          "input_validation"
+        ],
+        "execution_path": "deterministic",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N03": {
+        "node_id": "N03",
+        "task_id": "TASK-03",
+        "name": "Digital Farm Twin Context",
+        "task_type": "state_context",
+        "purpose": "Construct the minimum virtual farm state required by the experiment.",
+        "required_assets": [
+          "farm-demo-001",
+          "field-demo-001"
+        ],
+        "inputs": [
+          "sensor_input",
+          "environment",
+          "experiment_parameters"
+        ],
+        "outputs": [
+          "twin_context"
+        ],
+        "execution_path": "digital_twin_context",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N04": {
+        "node_id": "N04",
+        "task_id": "TASK-04",
+        "name": "Classical Baseline",
+        "task_type": "computation",
+        "purpose": "Produce a transparent Classical reference result.",
+        "required_assets": [
+          "compute-cpu-001"
+        ],
+        "inputs": [
+          "sensor_input",
+          "environment",
+          "twin_context"
+        ],
+        "outputs": [
+          "baseline_result"
+        ],
+        "execution_path": "classical",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N05": {
+        "node_id": "N05",
+        "task_id": "TASK-05",
+        "name": "AI / QAI-Compatible Evaluation",
+        "task_type": "alternative_computation",
+        "purpose": "Evaluate an alternative computational formulation using the same problem definition and constraints.",
+        "required_assets": [
+          "compute-qai-001"
+        ],
+        "inputs": [
+          "sensor_input",
+          "environment",
+          "twin_context",
+          "experiment_parameters"
+        ],
+        "outputs": [
+          "alternative_result",
+          "scored_candidates"
+        ],
+        "execution_path": "qai_compatible_simulation",
+        "quantum_hardware": false,
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N06": {
+        "node_id": "N06",
+        "task_id": "TASK-06",
+        "name": "Optimisation",
+        "task_type": "optimization",
+        "purpose": "Evaluate candidate actions against configured objectives and constraints.",
+        "required_assets": [
+          "compute-cpu-001",
+          "compute-qai-001"
+        ],
+        "inputs": [
+          "baseline_result",
+          "alternative_result",
+          "experiment_parameters"
+        ],
+        "outputs": [
+          "candidate_solution",
+          "comparison"
+        ],
+        "execution_path": "comparative",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N07": {
+        "node_id": "N07",
+        "task_id": "TASK-07",
+        "name": "Recommendation",
+        "task_type": "decision_support",
+        "purpose": "Produce a bounded recommendation for human review.",
+        "required_assets": [],
+        "inputs": [
+          "candidate_solution",
+          "comparison"
+        ],
+        "outputs": [
+          "recommendation"
+        ],
+        "execution_path": "controlled_recommendation",
+        "human_approval": true,
+        "physical_actuation": false
+      },
+      "N08": {
+        "node_id": "N08",
+        "task_id": "TASK-08",
+        "name": "KPI / Value Measurement",
+        "task_type": "measurement",
+        "purpose": "Measure technical and experimental value indicators.",
+        "required_assets": [
+          "compute-cpu-001"
+        ],
+        "inputs": [
+          "comparison",
+          "recommendation"
+        ],
+        "outputs": [
+          "kpis"
+        ],
+        "execution_path": "deterministic_measurement",
+        "human_approval": false,
+        "physical_actuation": false
+      },
+      "N09": {
+        "node_id": "N09",
+        "task_id": "TASK-09",
+        "name": "Evidence / Experiment Record",
+        "task_type": "evidence",
+        "purpose": "Create a reproducible record of configuration, execution, results and limitations.",
+        "required_assets": [],
+        "inputs": [
+          "experiment_parameters",
+          "comparison",
+          "recommendation",
+          "kpis"
+        ],
+        "outputs": [
+          "evidence_record"
+        ],
+        "execution_path": "evidence_capture",
+        "human_approval": false,
+        "physical_actuation": false
+      }
+    },
+    "connections": [
+      {
+        "connection_id": "CON-01",
+        "source": "N01",
+        "target": "N02",
+        "flow": "data",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-02",
+        "source": "N02",
+        "target": "N03",
+        "flow": "validated_data",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-03",
+        "source": "N03",
+        "target": "N04",
+        "flow": "twin_state",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-04",
+        "source": "N03",
+        "target": "N05",
+        "flow": "twin_state",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-05",
+        "source": "N04",
+        "target": "N06",
+        "flow": "baseline_result",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-06",
+        "source": "N05",
+        "target": "N06",
+        "flow": "alternative_result",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-07",
+        "source": "N06",
+        "target": "N07",
+        "flow": "candidate_solution",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-08",
+        "source": "N07",
+        "target": "N08",
+        "flow": "recommendation",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-09",
+        "source": "N08",
+        "target": "N09",
+        "flow": "kpi_results",
+        "flow_type": "data",
+        "enabled": true,
+        "validated": true
+      },
+      {
+        "connection_id": "CON-10",
+        "source": "N09",
+        "target": "N07",
+        "flow": "evidence_feedback",
+        "flow_type": "control",
+        "enabled": true,
+        "validated": true
+      }
+    ],
+    "adjacency": {
+      "N01": {
+        "data_to": [
+          "N02"
+        ],
+        "control_to": []
+      },
+      "N06": {
+        "data_to": [
+          "N07"
+        ],
+        "control_to": []
+      },
+      "N08": {
+        "data_to": [
+          "N09"
+        ],
+        "control_to": []
+      },
+      "N03": {
+        "data_to": [
+          "N04",
+          "N05"
+        ],
+        "control_to": []
+      },
+      "N02": {
+        "data_to": [
+          "N03"
+        ],
+        "control_to": []
+      },
+      "N05": {
+        "data_to": [
+          "N06"
+        ],
+        "control_to": []
+      },
+      "N04": {
+        "data_to": [
+          "N06"
+        ],
+        "control_to": []
+      },
+      "N07": {
+        "data_to": [
+          "N08"
+        ],
+        "control_to": []
+      },
+      "N09": {
+        "data_to": [],
+        "control_to": [
+          "N07"
+        ]
+      }
+    },
+    "execution_order": [
+      "N01",
+      "N02",
+      "N03",
+      "N04",
+      "N05",
+      "N06",
+      "N07",
+      "N08",
+      "N09"
+    ]
+  },
+  "assets": {
+    "registry": {
+      "farm-demo-001": {
+        "asset_id": "farm-demo-001",
+        "asset_type": "farm",
+        "name": "Digital Farm Reference Environment",
+        "representation": "digital_farm_twin",
+        "physical_association": "reference_asset",
+        "live_connection": false,
+        "status": "virtual"
+      },
+      "field-demo-001": {
+        "asset_id": "field-demo-001",
+        "asset_type": "field",
+        "name": "Reference Agricultural Field",
+        "parent_asset": "farm-demo-001",
+        "area_ha": 10.0,
+        "representation": "virtual_field",
+        "physical_association": "reference_asset",
+        "live_connection": false,
+        "status": "virtual"
+      },
+      "sensor-soil-moisture-001": {
+        "asset_id": "sensor-soil-moisture-001",
+        "asset_type": "sensor",
+        "sensor_type": "soil_moisture",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "unit": "percent",
+        "status": "registered"
+      },
+      "sensor-weather-001": {
+        "asset_id": "sensor-weather-001",
+        "asset_type": "sensor",
+        "sensor_type": "environmental",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "measurements": [
+          "air_temperature_c",
+          "relative_humidity_pct",
+          "precipitation_mm"
+        ],
+        "status": "registered"
+      },
+      "sensor-resource-001": {
+        "asset_id": "sensor-resource-001",
+        "asset_type": "sensor",
+        "sensor_type": "resource_state",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "measurements": [
+          "water_available_l",
+          "equipment_availability_pct",
+          "inventory_units",
+          "demand_units",
+          "transport_capacity_units"
+        ],
+        "status": "registered"
+      },
+      "emulator-001": {
+        "asset_id": "emulator-001",
+        "asset_type": "emulator",
+        "name": "Digital Farm Behaviour Emulator",
+        "purpose": "Reproduce selected farm asset and CPS behaviour for controlled experiments.",
+        "fidelity_level": "controlled",
+        "execution_mode": "notebook",
+        "input_mode": "virtual",
+        "status": "registered"
+      },
+      "simulator-001": {
+        "asset_id": "simulator-001",
+        "asset_type": "simulator",
+        "name": "Digital Farm Scenario Simulator",
+        "purpose": "Explore system behaviour under controlled scenarios and parameter variations.",
+        "execution_mode": "notebook",
+        "scenario_mode": "controlled_what_if",
+        "status": "registered"
+      },
+      "compute-cpu-001": {
+        "asset_id": "compute-cpu-001",
+        "asset_type": "computational_resource",
+        "resource_class": "CPU",
+        "purpose": "Deterministic processing, orchestration and Classical computation.",
+        "execution_mode": "local_notebook",
+        "status": "available"
+      },
+      "compute-qai-001": {
+        "asset_id": "compute-qai-001",
+        "asset_type": "computational_resource",
+        "resource_class": "QAI-compatible",
+        "purpose": "Controlled QAI / quantum-inspired experimentation.",
+        "execution_mode": "simulation",
+        "physical_qpu": false,
+        "status": "available"
+      }
+    },
+    "virtual_sensors": {
+      "sensor-soil-moisture-001": {
+        "asset_id": "sensor-soil-moisture-001",
+        "asset_type": "sensor",
+        "sensor_type": "soil_moisture",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "unit": "percent",
+        "status": "registered"
+      },
+      "sensor-weather-001": {
+        "asset_id": "sensor-weather-001",
+        "asset_type": "sensor",
+        "sensor_type": "environmental",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "measurements": [
+          "air_temperature_c",
+          "relative_humidity_pct",
+          "precipitation_mm"
+        ],
+        "status": "registered"
+      },
+      "sensor-resource-001": {
+        "asset_id": "sensor-resource-001",
+        "asset_type": "sensor",
+        "sensor_type": "resource_state",
+        "representation": "virtual_sensor",
+        "data_source": "synthetic_controlled",
+        "measurements": [
+          "water_available_l",
+          "equipment_availability_pct",
+          "inventory_units",
+          "demand_units",
+          "transport_capacity_units"
+        ],
+        "status": "registered"
+      }
+    },
+    "computational_resources": {
+      "classical": [
+        {
+          "resource_id": "compute-cpu-001",
+          "class": "CPU",
+          "role": "baseline_computation"
+        }
+      ],
+      "qai": [
+        {
+          "resource_id": "compute-qai-001",
+          "class": "QAI-compatible",
+          "role": "qai_experimentation",
+          "execution": "simulation"
+        }
+      ]
+    }
+  },
+  "configuration": {
+    "experiment_parameters": {
+      "experiment_id": "FAEP-AGRI-OPT-001",
+      "experiment_name": "QAI Agriculture Optimization",
+      "domain": "agriculture",
+      "crop": {
+        "type": "vegetable",
+        "crop_state": "normal",
+        "crop_stress_index": 0.35,
+        "target_quantity": 100.0,
+        "demand_units": 1100.0
+      },
+      "field": {
+        "field_id": "FIELD-001",
+        "area_ha": 10.0,
+        "representation": "virtual",
+        "physical_actuation": false
+      },
+      "weather": {
+        "scenario": "cold_weather_water_constraint",
+        "air_temperature_c": -3.0,
+        "relative_humidity_pct": 82.0,
+        "precipitation_mm": 2.0,
+        "frost_risk": 0.72,
+        "forecast_cold_hours": 8.0
+      },
+      "water": {
+        "available_l": 18000.0,
+        "minimum_soil_moisture_pct": 30.0,
+        "current_soil_moisture_pct": 24.0,
+        "allocation_enabled": true,
+        "physical_pumping": false
+      },
+      "resources": {
+        "energy_available": 66.0,
+        "equipment_availability_pct": 90.0,
+        "labour_available": 60.0,
+        "inventory_units": 1200.0,
+        "storage_capacity_units": 110.0,
+        "transport_capacity_units": 1150.0
+      },
+      "optimization": {
+        "objective": "Maximize service / production response while controlling cost and resource use.",
+        "maximize": [
+          "service_level",
+          "resource_effectiveness",
+          "recommendation_quality"
+        ],
+        "minimize": [
+          "water_use",
+          "energy_use",
+          "operational_cost",
+          "resource_waste"
+        ],
+        "constraints": {
+          "water_use_l": [
+            0.0,
+            18000.0
+          ],
+          "energy_use": [
+            0.0,
+            66.0
+          ],
+          "transport_use": [
+            0.0,
+            1150.0
+          ],
+          "production_quantity": [
+            0.0,
+            120.0
+          ]
+        }
+      },
+      "execution": {
+        "data_realism": "synthetic_controlled",
+        "device_realism": "virtual",
+        "execution_mode": "notebook_controlled",
+        "actuation_mode": "recommendation_only",
+        "human_approval_required": true,
+        "physical_actuation": false,
+        "quantum_hardware_execution": false,
+        "random_seed": 42
+      },
+      "evidence": {
+        "record_inputs": true,
+        "record_configuration": true,
+        "record_outputs": true,
+        "record_provenance": true,
+        "record_limitations": true
+      }
+    },
+    "execution_context": {
+      "experiment_id": "FAEP-AGRI-OPT-001",
+      "workflow_id": "FAEP-AGRI-WF-001",
+      "workflow_name": "QAI Agriculture Optimization Workflow",
+      "configuration": {
+        "crop": {
+          "type": "vegetable",
+          "crop_state": "normal",
+          "crop_stress_index": 0.35,
+          "target_quantity": 100.0,
+          "demand_units": 1100.0
+        },
+        "field": {
+          "field_id": "FIELD-001",
+          "area_ha": 10.0,
+          "representation": "virtual",
+          "physical_actuation": false
+        },
+        "weather": {
+          "scenario": "cold_weather_water_constraint",
+          "air_temperature_c": -3.0,
+          "relative_humidity_pct": 82.0,
+          "precipitation_mm": 2.0,
+          "frost_risk": 0.72,
+          "forecast_cold_hours": 8.0
+        },
+        "water": {
+          "available_l": 18000.0,
+          "minimum_soil_moisture_pct": 30.0,
+          "current_soil_moisture_pct": 24.0,
+          "allocation_enabled": true,
+          "physical_pumping": false
+        },
+        "resources": {
+          "energy_available": 66.0,
+          "equipment_availability_pct": 90.0,
+          "labour_available": 60.0,
+          "inventory_units": 1200.0,
+          "storage_capacity_units": 110.0,
+          "transport_capacity_units": 1150.0
+        },
+        "optimization": {
+          "objective": "Maximize service / production response while controlling cost and resource use.",
+          "maximize": [
+            "service_level",
+            "resource_effectiveness",
+            "recommendation_quality"
+          ],
+          "minimize": [
+            "water_use",
+            "energy_use",
+            "operational_cost",
+            "resource_waste"
+          ],
+          "constraints": {
+            "water_use_l": [
+              0.0,
+              18000.0
+            ],
+            "energy_use": [
+              0.0,
+              66.0
+            ],
+            "transport_use": [
+              0.0,
+              1150.0
+            ],
+            "production_quantity": [
+              0.0,
+              120.0
+            ]
+          }
+        }
+      },
+      "execution_boundary": {
+        "data_mode": "synthetic_controlled",
+        "device_mode": "virtual",
+        "execution_mode": "notebook_controlled",
+        "actuation_mode": "recommendation_only",
+        "physical_actuation": false,
+        "quantum_hardware_execution": false,
+        "human_approval_required": true
+      }
+    },
+    "execution_paths": {
+      "emulator": {
+        "path_id": "PATH-EMULATOR",
+        "name": "Virtual / Emulated Farm Path",
+        "asset_id": "emulator-001",
+        "purpose": "Provide controlled sensor and CPS behaviour.",
+        "execution_mode": "notebook_controlled",
+        "status": "READY"
+      },
+      "simulator": {
+        "path_id": "PATH-SIMULATOR",
+        "name": "Scenario Simulation Path",
+        "asset_id": "simulator-001",
+        "purpose": "Explore controlled operating conditions.",
+        "execution_mode": "notebook_controlled",
+        "status": "READY"
+      },
+      "classical": {
+        "path_id": "PATH-CLASSICAL",
+        "name": "Classical Baseline Path",
+        "resource_id": "compute-cpu-001",
+        "purpose": "Establish the transparent Classical reference.",
+        "execution_mode": "local_notebook",
+        "status": "READY"
+      },
+      "ai": {
+        "path_id": "PATH-AI",
+        "name": "AI / Alternative Decision Path",
+        "resource_id": "compute-cpu-001",
+        "purpose": "Evaluate an alternative computational approach.",
+        "execution_mode": "local_notebook",
+        "status": "DELEGATED_TO_EXPERIMENT"
+      },
+      "qai": {
+        "path_id": "PATH-QAI",
+        "name": "QAI-Compatible / Quantum-Inspired Path",
+        "resource_id": "compute-qai-001",
+        "purpose": "Evaluate a QAI-compatible formulation under controlled conditions.",
+        "execution_mode": "simulation",
+        "quantum_hardware": false,
+        "status": "DELEGATED_TO_EXPERIMENT"
+      }
+    }
+  },
+  "governance": {
+    "pre_validation": {
+      "validation_id": "FAEP-AGRI-PREVAL-001",
+      "workflow_id": "FAEP-AGRI-WF-001",
+      "experiment_id": "FAEP-AGRI-OPT-001",
+      "status": "PASSED",
+      "checks_total": 10,
+      "checks_passed": 10,
+      "errors": [],
+      "warnings": [],
+      "execution_allowed": true,
+      "physical_actuation_allowed": false,
+      "quantum_hardware_allowed": false,
+      "human_review_required": true
+    },
+    "human_approval": {
+      "approval_id": "FAEP-AGRI-APPROVAL-001",
+      "status": "APPROVED",
+      "approver": "Notebook User",
+      "execution_authorized": true,
+      "physical_actuation_authorized": false,
+      "quantum_hardware_authorized": false,
+      "production_deployment_authorized": false
+    }
+  },
+  "execution": {
+    "record": {
+      "run_id": "FAEP-AGRI-RUN-001",
+      "experiment_id": "FAEP-AGRI-OPT-001",
+      "workflow_id": "FAEP-AGRI-WF-001",
+      "status": "EXECUTION_INITIALIZED",
+      "gates": {
+        "pre_validation": "PASSED",
+        "human_approval": "APPROVED",
+        "execution_authorized": true
+      },
+      "execution_assets": {
+        "farm": "farm-demo-001",
+        "field": "field-demo-001",
+        "emulator": "emulator-001",
+        "simulator": "simulator-001",
+        "classical_compute": "compute-cpu-001",
+        "qai_compute": "compute-qai-001"
+      },
+      "execution_paths": {
+        "emulator": {
+          "path_id": "PATH-EMULATOR",
+          "name": "Virtual / Emulated Farm Path",
+          "asset_id": "emulator-001",
+          "purpose": "Provide controlled sensor and CPS behaviour.",
+          "execution_mode": "notebook_controlled",
+          "status": "READY"
+        },
+        "simulator": {
+          "path_id": "PATH-SIMULATOR",
+          "name": "Scenario Simulation Path",
+          "asset_id": "simulator-001",
+          "purpose": "Explore controlled operating conditions.",
+          "execution_mode": "notebook_controlled",
+          "status": "READY"
+        },
+        "classical": {
+          "path_id": "PATH-CLASSICAL",
+          "name": "Classical Baseline Path",
+          "resource_id": "compute-cpu-001",
+          "purpose": "Establish the transparent Classical reference.",
+          "execution_mode": "local_notebook",
+          "status": "READY"
+        },
+        "ai": {
+          "path_id": "PATH-AI",
+          "name": "AI / Alternative Decision Path",
+          "resource_id": "compute-cpu-001",
+          "purpose": "Evaluate an alternative computational approach.",
+          "execution_mode": "local_notebook",
+          "status": "DELEGATED_TO_EXPERIMENT"
+        },
+        "qai": {
+          "path_id": "PATH-QAI",
+          "name": "QAI-Compatible / Quantum-Inspired Path",
+          "resource_id": "compute-qai-001",
+          "purpose": "Evaluate a QAI-compatible formulation under controlled conditions.",
+          "execution_mode": "simulation",
+          "quantum_hardware": false,
+          "status": "DELEGATED_TO_EXPERIMENT"
+        }
+      },
+      "execution_steps": [
+        {
+          "sequence": 1,
+          "node_id": "N01",
+          "task_id": "TASK-01",
+          "task_name": "Input / Sensing",
+          "execution_path": "virtual_sensor",
+          "required_assets": [
+            "sensor-soil-moisture-001",
+            "sensor-weather-001",
+            "sensor-resource-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 2,
+          "node_id": "N02",
+          "task_id": "TASK-02",
+          "task_name": "Input Validation",
+          "execution_path": "deterministic",
+          "required_assets": [],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 3,
+          "node_id": "N03",
+          "task_id": "TASK-03",
+          "task_name": "Digital Farm Twin Context",
+          "execution_path": "digital_twin_context",
+          "required_assets": [
+            "farm-demo-001",
+            "field-demo-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 4,
+          "node_id": "N04",
+          "task_id": "TASK-04",
+          "task_name": "Classical Baseline",
+          "execution_path": "classical",
+          "required_assets": [
+            "compute-cpu-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 5,
+          "node_id": "N05",
+          "task_id": "TASK-05",
+          "task_name": "AI / QAI-Compatible Evaluation",
+          "execution_path": "qai_compatible_simulation",
+          "required_assets": [
+            "compute-qai-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 6,
+          "node_id": "N06",
+          "task_id": "TASK-06",
+          "task_name": "Optimisation",
+          "execution_path": "comparative",
+          "required_assets": [
+            "compute-cpu-001",
+            "compute-qai-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 7,
+          "node_id": "N07",
+          "task_id": "TASK-07",
+          "task_name": "Recommendation",
+          "execution_path": "controlled_recommendation",
+          "required_assets": [],
+          "human_approval": true,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 8,
+          "node_id": "N08",
+          "task_id": "TASK-08",
+          "task_name": "KPI / Value Measurement",
+          "execution_path": "deterministic_measurement",
+          "required_assets": [
+            "compute-cpu-001"
+          ],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        },
+        {
+          "sequence": 9,
+          "node_id": "N09",
+          "task_id": "TASK-09",
+          "task_name": "Evidence / Experiment Record",
+          "execution_path": "evidence_capture",
+          "required_assets": [],
+          "human_approval": false,
+          "physical_actuation": false,
+          "status": "READY"
+        }
+      ],
+      "result_boundary": {
+        "recommendation_only": true,
+        "physical_actuation": false,
+        "quantum_hardware_execution": false,
+        "production_deployment": false
+      },
+      "next_phase": "Phase 4 Open-Loop Simulation"
+    },
+    "logs": [
+      {
+        "timestamp_utc": "2026-09-17T11:41:05.364781+00:00",
+        "phase": 3,
+        "severity": "INFO",
+        "event": "EXPERIMENT_PACKAGE_INITIALIZED",
+        "message": "Phase 3 experiment package initialized."
+      },
+      {
+        "timestamp_utc": "2026-09-17T11:41:05.365562+00:00",
+        "phase": 3,
+        "severity": "INFO",
+        "event": "EXPERIMENT_PACKAGE_ASSEMBLED",
+        "message": "Workflow, configuration, governance, execution, results and evidence structures assembled."
+      }
+    ]
+  },
+  "results": {
+    "experiment_results": {
+      "result_id": "FAEP-AGRI-RESULT-001",
+      "run_id": "FAEP-AGRI-RUN-001",
+      "experiment_id": "FAEP-AGRI-OPT-001",
+      "workflow_id": "FAEP-AGRI-WF-001",
+      "status": "INITIALIZED",
+      "execution": {
+        "execution_mode": "notebook_controlled",
+        "data_mode": "synthetic_controlled",
+        "device_mode": "virtual",
+        "actuation_mode": "recommendation_only"
+      },
+      "paths": {
+        "emulator": {
+          "status": "NOT_RUN",
+          "outputs": {}
+        },
+        "simulator": {
+          "status": "NOT_RUN",
+          "outputs": {}
+        },
+        "classical": {
+          "status": "NOT_RUN",
+          "outputs": {}
+        },
+        "ai": {
+          "status": "NOT_RUN",
+          "outputs": {}
+        },
+        "qai": {
+          "status": "NOT_RUN",
+          "outputs": {}
+        }
+      },
+      "outputs": {
+        "recommendation": null,
+        "candidate_solution": null,
+        "state_change": null,
+        "comparison": null
+      },
+      "kpis": {
+        "technical": {},
+        "operational": {},
+        "resource": {},
+        "economic": {},
+        "quality": {},
+        "scalability": {}
+      },
+      "evidence": {
+        "configuration_captured": true,
+        "input_state_captured": false,
+        "execution_log_captured": false,
+        "results_captured": false,
+        "provenance_captured": false,
+        "limitations_recorded": false
+      },
+      "claims": {
+        "quantum_advantage_demonstrated": false,
+        "physical_farm_outcome_demonstrated": false,
+        "production_deployment_demonstrated": false,
+        "physical_actuation_performed": false
+      }
+    },
+    "comparison": {
+      "comparison_contract": {
+        "comparison_id": "FAEP-AGRI-COMP-001",
+        "experiment_id": "FAEP-AGRI-OPT-001",
+        "scenario": "cold_weather_water_constraint",
+        "comparison_basis": {
+          "same_problem_definition": true,
+          "same_experiment_parameters": true,
+          "same_constraints": true,
+          "same_target_quantity": 100.0,
+          "same_input_context": true,
+          "controlled_execution_environment": true
+        },
+        "dimensions": {
+          "problem_complexity": {
+            "description": "Size and structural complexity of the executable problem.",
+            "unit": null
+          },
+          "scope_reduction": {
+            "description": "Reduction, decomposition or filtering of the original problem into the executable computational scope.",
+            "unit": null
+          },
+          "runtime": {
+            "description": "Measured computational execution time.",
+            "unit": "seconds"
+          },
+          "memory": {
+            "description": "Measured peak or configured memory consumption.",
+            "unit": "MB"
+          },
+          "scalability": {
+            "description": "Observed behaviour as problem size or workload grows.",
+            "unit": null
+          },
+          "solution_quality": {
+            "description": "Quality of the resulting solution against defined criteria.",
+            "unit": null
+          },
+          "operational_fit": {
+            "description": "Compatibility with the defined operating constraints and workflow.",
+            "unit": null
+          },
+          "economic_resource_effects": {
+            "description": "Measured resource or economic implications where evidence exists.",
+            "unit": null
+          }
+        },
+        "methods": {
+          "classical": {
+            "status": "AWAITING_RESULTS",
+            "result_reference": null
+          },
+          "ai": {
+            "status": "AWAITING_RESULTS",
+            "result_reference": null
+          },
+          "qai": {
+            "status": "AWAITING_RESULTS",
+            "result_reference": null
+          }
+        },
+        "analysis_status": "INITIALIZED",
+        "interpretation_boundary": "Comparison only; no universal method ranking or advantage claim."
+      },
+      "comparison_table": {
+        "classical": {
+          "status": "NOT_RUN",
+          "problem_complexity": null,
+          "scope_reduction": null,
+          "runtime_seconds": null,
+          "memory_mb": null,
+          "scalability": null,
+          "solution_quality": null,
+          "operational_fit": null,
+          "economic_resource_effects": null,
+          "raw_outputs": {}
+        },
+        "ai": {
+          "status": "NOT_RUN",
+          "problem_complexity": null,
+          "scope_reduction": null,
+          "runtime_seconds": null,
+          "memory_mb": null,
+          "scalability": null,
+          "solution_quality": null,
+          "operational_fit": null,
+          "economic_resource_effects": null,
+          "raw_outputs": {}
+        },
+        "qai": {
+          "status": "NOT_RUN",
+          "problem_complexity": null,
+          "scope_reduction": null,
+          "runtime_seconds": null,
+          "memory_mb": null,
+          "scalability": null,
+          "solution_quality": null,
+          "operational_fit": null,
+          "economic_resource_effects": null,
+          "raw_outputs": {}
+        }
+      },
+      "common_measures": [],
+      "status": "READY_FOR_RESULTS",
+      "interpretation": "Results will be compared only when measured evidence is available under the common experiment definition."
+    }
+  },
+  "evidence": {
+    "evidence_id": "FAEP-AGRI-EVIDENCE-001",
+    "configuration": {
+      "workflow_definition": true,
+      "experiment_parameters": true,
+      "asset_registry": true,
+      "task_registry": true,
+      "connection_registry": true,
+      "execution_context": true
+    },
+    "execution": {
+      "pre_validation": {
+        "validation_id": "FAEP-AGRI-PREVAL-001",
+        "workflow_id": "FAEP-AGRI-WF-001",
+        "experiment_id": "FAEP-AGRI-OPT-001",
+        "status": "PASSED",
+        "checks_total": 10,
+        "checks_passed": 10,
+        "errors": [],
+        "warnings": [],
+        "execution_allowed": true,
+        "physical_actuation_allowed": false,
+        "quantum_hardware_allowed": false,
+        "human_review_required": true
+      },
+      "human_approval": {
+        "approval_id": "FAEP-AGRI-APPROVAL-001",
+        "status": "APPROVED",
+        "approver": "Notebook User",
+        "execution_authorized": true,
+        "physical_actuation_authorized": false,
+        "quantum_hardware_authorized": false,
+        "production_deployment_authorized": false
+      },
+      "workflow_execution": {
+        "run_id": "FAEP-AGRI-RUN-001",
+        "experiment_id": "FAEP-AGRI-OPT-001",
+        "workflow_id": "FAEP-AGRI-WF-001",
+        "status": "EXECUTION_INITIALIZED",
+        "gates": {
+          "pre_validation": "PASSED",
+          "human_approval": "APPROVED",
+          "execution_authorized": true
+        },
+        "execution_assets": {
+          "farm": "farm-demo-001",
+          "field": "field-demo-001",
+          "emulator": "emulator-001",
+          "simulator": "simulator-001",
+          "classical_compute": "compute-cpu-001",
+          "qai_compute": "compute-qai-001"
+        },
+        "execution_paths": {
+          "emulator": {
+            "path_id": "PATH-EMULATOR",
+            "name": "Virtual / Emulated Farm Path",
+            "asset_id": "emulator-001",
+            "purpose": "Provide controlled sensor and CPS behaviour.",
+            "execution_mode": "notebook_controlled",
+            "status": "READY"
+          },
+          "simulator": {
+            "path_id": "PATH-SIMULATOR",
+            "name": "Scenario Simulation Path",
+            "asset_id": "simulator-001",
+            "purpose": "Explore controlled operating conditions.",
+            "execution_mode": "notebook_controlled",
+            "status": "READY"
+          },
+          "classical": {
+            "path_id": "PATH-CLASSICAL",
+            "name": "Classical Baseline Path",
+            "resource_id": "compute-cpu-001",
+            "purpose": "Establish the transparent Classical reference.",
+            "execution_mode": "local_notebook",
+            "status": "READY"
+          },
+          "ai": {
+            "path_id": "PATH-AI",
+            "name": "AI / Alternative Decision Path",
+            "resource_id": "compute-cpu-001",
+            "purpose": "Evaluate an alternative computational approach.",
+            "execution_mode": "local_notebook",
+            "status": "DELEGATED_TO_EXPERIMENT"
+          },
+          "qai": {
+            "path_id": "PATH-QAI",
+            "name": "QAI-Compatible / Quantum-Inspired Path",
+            "resource_id": "compute-qai-001",
+            "purpose": "Evaluate a QAI-compatible formulation under controlled conditions.",
+            "execution_mode": "simulation",
+            "quantum_hardware": false,
+            "status": "DELEGATED_TO_EXPERIMENT"
+          }
+        },
+        "execution_steps": [
+          {
+            "sequence": 1,
+            "node_id": "N01",
+            "task_id": "TASK-01",
+            "task_name": "Input / Sensing",
+            "execution_path": "virtual_sensor",
+            "required_assets": [
+              "sensor-soil-moisture-001",
+              "sensor-weather-001",
+              "sensor-resource-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 2,
+            "node_id": "N02",
+            "task_id": "TASK-02",
+            "task_name": "Input Validation",
+            "execution_path": "deterministic",
+            "required_assets": [],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 3,
+            "node_id": "N03",
+            "task_id": "TASK-03",
+            "task_name": "Digital Farm Twin Context",
+            "execution_path": "digital_twin_context",
+            "required_assets": [
+              "farm-demo-001",
+              "field-demo-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 4,
+            "node_id": "N04",
+            "task_id": "TASK-04",
+            "task_name": "Classical Baseline",
+            "execution_path": "classical",
+            "required_assets": [
+              "compute-cpu-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 5,
+            "node_id": "N05",
+            "task_id": "TASK-05",
+            "task_name": "AI / QAI-Compatible Evaluation",
+            "execution_path": "qai_compatible_simulation",
+            "required_assets": [
+              "compute-qai-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 6,
+            "node_id": "N06",
+            "task_id": "TASK-06",
+            "task_name": "Optimisation",
+            "execution_path": "comparative",
+            "required_assets": [
+              "compute-cpu-001",
+              "compute-qai-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 7,
+            "node_id": "N07",
+            "task_id": "TASK-07",
+            "task_name": "Recommendation",
+            "execution_path": "controlled_recommendation",
+            "required_assets": [],
+            "human_approval": true,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 8,
+            "node_id": "N08",
+            "task_id": "TASK-08",
+            "task_name": "KPI / Value Measurement",
+            "execution_path": "deterministic_measurement",
+            "required_assets": [
+              "compute-cpu-001"
+            ],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          },
+          {
+            "sequence": 9,
+            "node_id": "N09",
+            "task_id": "TASK-09",
+            "task_name": "Evidence / Experiment Record",
+            "execution_path": "evidence_capture",
+            "required_assets": [],
+            "human_approval": false,
+            "physical_actuation": false,
+            "status": "READY"
+          }
+        ],
+        "result_boundary": {
+          "recommendation_only": true,
+          "physical_actuation": false,
+          "quantum_hardware_execution": false,
+          "production_deployment": false
+        },
+        "next_phase": "Phase 4 Open-Loop Simulation"
+      }
+    },
+    "measurements": {
+      "results_captured": false,
+      "kpis_captured": false,
+      "comparison_captured": false
+    },
+    "provenance": {
+      "source_workflow_id": "FAEP-AGRI-WF-001",
+      "source_experiment_id": "FAEP-AGRI-OPT-001",
+      "scenario": "cold_weather_water_constraint",
+      "random_seed": 42
+    },
+    "limitations": [
+      "Synthetic / controlled data are used.",
+      "Virtual assets are used.",
+      "Physical actuation is disabled.",
+      "Quantum hardware execution is disabled.",
+      "Results must not be interpreted as real agricultural field performance."
+    ]
+  }
+}
