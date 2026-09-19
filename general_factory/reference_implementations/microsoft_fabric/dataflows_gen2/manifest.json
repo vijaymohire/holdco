@@ -1,18 +1,55 @@
 {
   "implementation_id": "REF-MSFABRIC-DATAFLOWS-GEN2-001",
   "name": "Microsoft Fabric Dataflows Gen2 Reference",
-  "category": "reference_implementation",
-  "technology": "Microsoft Fabric",
   "capability": "FABRIC_DATAFLOW_EXECUTION",
-  "scope": "Data ingestion, transformation and pipeline execution example",
+  "role": "integration_candidate",
   "status": "REFERENCE",
-  "source_type": "existing_user_working_sample",
-  "factory_role": "integration_candidate",
-  "architecture_role": "implementation_reference",
-  "copy_policy": "reference_only",
-  "notes": [
-    "Do not redefine General Fabric architecture from this sample.",
-    "Use it to test connector, adapter and evidence patterns.",
-    "Source working package remains outside this new architecture unless explicitly linked."
-  ]
+  "technology": "Microsoft Fabric",
+  "implementation_type": "reference_implementation",
+  "purpose": "Working Microsoft Fabric Dataflows Gen2 implementation used to validate General Framework to General Factory integration.",
+  "reference_artifact": {
+    "filename": "Fabric_Dataflows_Gen2_Tutorial_Backup_2026-09-16_with_data.zip",
+    "type": "working_reference_package"
+  },
+  "demonstrated_pattern": [
+    "Source",
+    "Dataflow Gen2",
+    "Transformation",
+    "Lakehouse",
+    "Pipeline",
+    "Execution",
+    "Verification"
+  ],
+  "factory_integration": {
+    "pattern": "connector -> adapter -> implementation",
+    "integration_sequence": [
+      "registry",
+      "resolver",
+      "binding",
+      "connector",
+      "adapter",
+      "execution",
+      "result",
+      "evidence"
+    ]
+  },
+  "architectural_boundary": {
+    "is_framework_definition": false,
+    "is_factory_runtime": false,
+    "is_reference_implementation": true,
+    "framework_responsibility": [
+      "Fabric architecture",
+      "metadata",
+      "viewpoints",
+      "governance",
+      "authorization",
+      "approval",
+      "logical contracts"
+    ]
+  },
+  "source": {
+    "type": "working_user_reference",
+    "date": "2026-09-16"
+  },
+  "documentation": "README.md"
 }

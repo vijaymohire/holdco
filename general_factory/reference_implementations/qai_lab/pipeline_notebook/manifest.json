@@ -9,19 +9,51 @@
   "source_type": "existing_user_working_sample",
   "factory_role": "integration_candidate",
   "architecture_role": "implementation_reference",
+  "reference_artifact": {
+    "filename": "QAI_Agriculture_Optimization_Phase3-12_Pilot_ClientDelivery_Template_v1.0.ipynb",
+    "type": "jupyter_notebook",
+    "role": "working_experiment_execution_reference"
+  },
   "execution_path": [
+    "General Framework",
     "General Factory",
+    "Implementation Registry",
+    "Factory Resolver",
+    "QAI Lab implementation binding",
     "GitLab connector",
     "GitLab Runner",
     "QAI pipeline",
     "GitHub-hosted notebook",
+    "Experiment execution",
     "Experiment result",
     "Evidence / provenance"
   ],
+  "integration_pattern": {
+    "model": "registry -> resolver -> binding -> connector -> adapter -> implementation -> execution -> result -> evidence",
+    "interface_required": true,
+    "dry_run_before_execution": true
+  },
+  "lifecycle_scope": {
+    "reference_use": true,
+    "pilot_candidate": true,
+    "production_implementation": false
+  },
   "copy_policy": "reference_only",
+  "boundary": {
+    "is_framework_definition": false,
+    "is_factory_runtime": false,
+    "is_reference_implementation": true
+  },
+  "provenance": {
+    "implementation_owner": "Existing QAI Lab project",
+    "artifact_source": "existing_user_working_sample"
+  },
   "notes": [
-    "Notebook remains a pilot candidate.",
-    "Do not copy the notebook source into the General Factory unless required.",
-    "Factory should invoke the existing implementation through an interface."
+    "Notebook remains a pilot execution reference.",
+    "The notebook is retained as an existing implementation artifact.",
+    "Do not duplicate notebook source into the General Factory unless required for execution or integration.",
+    "Factory should invoke the existing implementation through a defined interface and implementation binding.",
+    "Notebook execution should produce traceable experiment results and evidence.",
+    "The reference implementation does not define the General Framework architecture."
   ]
 }
