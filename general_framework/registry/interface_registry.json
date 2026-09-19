@@ -1,0 +1,6 @@
+{
+  "registry": "interface_registry",
+  "version": "0.1.0",
+  "purpose": "Logical interface contracts.",
+  "interfaces": []
+}

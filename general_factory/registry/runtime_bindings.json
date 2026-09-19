@@ -1,0 +1,6 @@
+{
+  "registry": "factory_runtime_bindings",
+  "version": "0.1.0",
+  "purpose": "Maps Framework capabilities to executable implementations.",
+  "bindings": []
+}

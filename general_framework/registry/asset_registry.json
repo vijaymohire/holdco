@@ -1,0 +1,6 @@
+{
+  "registry": "asset_registry",
+  "version": "0.1.0",
+  "purpose": "Canonical logical asset definitions.",
+  "assets": []
+}

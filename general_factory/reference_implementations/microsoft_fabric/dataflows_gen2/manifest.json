@@ -1,0 +1,18 @@
+{
+  "implementation_id": "REF-MSFABRIC-DATAFLOWS-GEN2-001",
+  "name": "Microsoft Fabric Dataflows Gen2 Reference",
+  "category": "reference_implementation",
+  "technology": "Microsoft Fabric",
+  "capability": "FABRIC_DATAFLOW_EXECUTION",
+  "scope": "Data ingestion, transformation and pipeline execution example",
+  "status": "REFERENCE",
+  "source_type": "existing_user_working_sample",
+  "factory_role": "integration_candidate",
+  "architecture_role": "implementation_reference",
+  "copy_policy": "reference_only",
+  "notes": [
+    "Do not redefine General Fabric architecture from this sample.",
+    "Use it to test connector, adapter and evidence patterns.",
+    "Source working package remains outside this new architecture unless explicitly linked."
+  ]
+}

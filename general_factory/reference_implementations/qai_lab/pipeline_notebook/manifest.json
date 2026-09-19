@@ -1,0 +1,27 @@
+{
+  "implementation_id": "REF-QAILAB-GITLAB-GITHUB-NOTEBOOK-001",
+  "name": "QAI Lab Pipeline and Notebook Reference",
+  "category": "reference_implementation",
+  "technology": "GitLab Runner + GitHub Notebook",
+  "capability": "QAI_EXPERIMENT_EXECUTION",
+  "scope": "QAI Lab pipeline execution and notebook-based experiment",
+  "status": "REFERENCE",
+  "source_type": "existing_user_working_sample",
+  "factory_role": "integration_candidate",
+  "architecture_role": "implementation_reference",
+  "execution_path": [
+    "General Factory",
+    "GitLab connector",
+    "GitLab Runner",
+    "QAI pipeline",
+    "GitHub-hosted notebook",
+    "Experiment result",
+    "Evidence / provenance"
+  ],
+  "copy_policy": "reference_only",
+  "notes": [
+    "Notebook remains a pilot candidate.",
+    "Do not copy the notebook source into the General Factory unless required.",
+    "Factory should invoke the existing implementation through an interface."
+  ]
+}

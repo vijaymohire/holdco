@@ -1,0 +1,6 @@
+{
+  "registry": "implementation_registry",
+  "version": "0.1.0",
+  "purpose": "References to implementations provided by the Factory or existing projects.",
+  "implementations": []
+}
