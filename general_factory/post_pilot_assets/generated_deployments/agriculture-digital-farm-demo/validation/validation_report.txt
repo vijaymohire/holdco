@@ -1,0 +1,22 @@
+General Factory Bootstrapper - Validation Report
+
+Deployment:
+agriculture-digital-farm-demo
+
+Deployment ID:
+DEP-AGRI-DIGITAL-FARM-DEMO-001
+
+Profile:
+virtual-development
+
+Industry:
+agriculture
+
+Problem:
+digital-farm-optimization
+
+Results:
+[PASS] deployment.yaml
+[PASS] profile.yaml
+[PASS] modules\core.txt
+[PASS] modules\addons.txt

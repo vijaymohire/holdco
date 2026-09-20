@@ -1,0 +1,12 @@
+package:
+  id: "software_engineering"
+  name: "Software Engineering"
+  version: "0.1.0"
+
+type: "addon"
+
+capabilities:
+  - "software_architecture"
+  - "custom_code"
+  - "testing"
+  - "deployment"

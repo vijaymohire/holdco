@@ -1,0 +1,12 @@
+package:
+  id: "systems_engineering"
+  name: "Systems Engineering"
+  version: "0.1.0"
+
+type: "addon"
+
+capabilities:
+  - "system_architecture"
+  - "interface_engineering"
+  - "integration"
+  - "verification_validation"

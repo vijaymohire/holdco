@@ -1,0 +1,32 @@
+profile:
+  id: "virtual-development"
+  name: "Virtual Development Profile"
+  description: "Initial virtual-first development profile"
+
+realization:
+  primary: "virtual"
+
+compute:
+  cpu: true
+  gpu: false
+  hpc: false
+  qpu: false
+
+execution:
+  simulation: true
+  emulation: true
+  physical: false
+
+network:
+  mode: "logical"
+
+storage:
+  persistent: true
+
+development:
+  notebooks: true
+  source_code: true
+  workflows: true
+
+validation:
+  enabled: true

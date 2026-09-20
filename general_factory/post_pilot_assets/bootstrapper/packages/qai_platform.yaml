@@ -1,0 +1,18 @@
+package:
+  id: "qai_platform"
+  name: "QAI Platform"
+  version: "0.1.0"
+
+type: "core"
+
+capabilities:
+  - "qai_experimentation"
+  - "virtual_cps"
+  - "simulation"
+  - "workflow_execution"
+
+realization:
+  supported:
+    - "virtual"
+    - "simulation"
+    - "emulation"

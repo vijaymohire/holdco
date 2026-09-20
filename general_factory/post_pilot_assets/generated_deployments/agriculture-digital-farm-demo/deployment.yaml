@@ -1,0 +1,24 @@
+deployment:
+  id: "DEP-AGRI-DIGITAL-FARM-DEMO-001"
+  name: "agriculture-digital-farm-demo"
+
+industry:
+  id: "agriculture"
+
+problem:
+  id: "digital-farm-optimization"
+
+profile:
+  id: "virtual-development"
+
+modules:
+  core:
+    - "qai_platform"
+
+  addons:
+    - "software_engineering"
+    - "systems_engineering"
+
+bootstrapper:
+  implementation: "general_factory_bootstrapper"
+  version: "0.1.0"

@@ -1,0 +1,40 @@
+deployment:
+  id: "DEP-AGRI-DIGITAL-FARM-DEMO-001"
+  name: "agriculture-digital-farm-demo"
+  description: "Initial General Factory Bootstrapper demonstration deployment"
+
+industry:
+  id: "agriculture"
+  name: "Agriculture"
+
+client:
+  id: "demo-client"
+  type: "demonstration"
+
+problem:
+  id: "digital-farm-optimization"
+  name: "Digital Farm Optimization"
+
+deployment_mode:
+  type: "greenfield"
+
+profile:
+  id: "virtual-development"
+  realization: "virtual"
+
+modules:
+  core:
+    - "qai_platform"
+
+  addons:
+    - "software_engineering"
+    - "systems_engineering"
+
+resources:
+  cpu: true
+  gpu: false
+  hpc: false
+  qpu: false
+
+validation:
+  enabled: true
