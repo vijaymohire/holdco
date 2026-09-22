@@ -1773,3 +1773,1672 @@ The Framework defines the reusable architecture.
 
 The Factory turns that architecture into executable systems.
 ---
+# Post-Pilot Factory Architecture
+
+The General Factory now provides the implementation foundation for progressing validated pilot capabilities toward reusable engineering, productization and deployment.
+
+The post-pilot Factory does not replace the existing runtime architecture.
+
+It extends the Factory with controlled structures for:
+
+- engineering
+- deployment
+- client specialization
+- industry specialization
+- problem-specific implementation
+- reusable packages
+- deployment profiles
+- resource integration
+- Web Access Layer implementation
+- SaaS / PaaS / IaaS realization
+- Factory Bootstrapper
+- generated deployments
+
+The overall progression is:
+
+    Study / Reference
+            |
+            v
+    Framework Definition
+            |
+            v
+    Factory Implementation
+            |
+            v
+    Pilot
+            |
+            v
+    Evidence / Validation
+            |
+            v
+    Post-Pilot Engineering
+            |
+            v
+    Product / Service / Platform
+            |
+            v
+    Industry / Client Deployment
+
+~~~
+
+# Pilot and Post-Pilot Factory Assets
+
+The Factory maintains two complementary asset categories:
+
+    General Factory
+    |
+    +-- Pilot Assets
+    |     |
+    |     +-- Experiment
+    |     +-- Prototype
+    |     +-- Validation
+    |     +-- Evidence
+    |
+    +-- Post-Pilot Assets
+          |
+          +-- Engineering
+          +-- Productization
+          +-- Operationalization
+          +-- Deployment
+          +-- Reuse
+          +-- Evolution
+
+Pilot assets remain useful as references and evidence.
+
+Post-pilot assets are engineered for repeatability and controlled deployment.
+
+A post-pilot implementation may reuse a validated pilot implementation, but should establish its own lifecycle, configuration, interfaces and deployment controls where required.
+
+~~~
+
+# Post-Pilot Engineering Modules
+
+The Factory provides implementation structures for reusable engineering add-on modules.
+
+Initial modules include:
+
+- QAI Engineering
+- Software Engineering
+- Systems Engineering
+- Resource Fabric
+- Simulation
+- Web Access
+- Industry Solution Modules
+
+These are add-on modules rather than mandatory Factory layers.
+
+A deployment may select the modules required by its problem and maturity.
+
+Conceptually:
+
+    General Factory
+          |
+          +-- Core Factory Runtime
+          |
+          +-- Optional Engineering Modules
+                |
+                +-- QAI Engineering
+                +-- Software Engineering
+                +-- Systems Engineering
+                +-- Resource Fabric
+                +-- Simulation
+                +-- Web Access
+                +-- Industry Solution Modules
+
+The Framework defines the logical module contracts.
+
+The Factory provides their implementation.
+
+~~~
+
+# General Factory Bootstrapper
+
+The General Factory Bootstrapper provides the implementation mechanism for converting deployment definitions into prepared Factory deployment structures.
+
+Its architectural position is:
+
+    Enterprise / Ecosystem Bootstrapper
+                    |
+                    v
+          General Factory Bootstrapper
+                    |
+                    v
+              General Factory
+                    |
+                    v
+           Deployment Package
+                    |
+                    v
+             Client Deployment
+
+The Bootstrapper should remain distinct from the higher-level Enterprise Bootstrapper.
+
+The Enterprise Bootstrapper operates at the enterprise and ecosystem level.
+
+The General Factory Bootstrapper operates at the engineering and Factory deployment level.
+
+~~~
+
+# Bootstrapper Responsibilities
+
+The General Factory Bootstrapper may perform:
+
+- configuration loading
+- deployment profile resolution
+- Framework registry resolution
+- Factory registry resolution
+- package resolution
+- module selection
+- template selection
+- implementation binding
+- deployment structure generation
+- configuration generation
+- validation
+- deployment preparation
+
+The Bootstrapper should not redefine Framework semantics.
+
+Its role is to resolve and instantiate the required Factory structures.
+
+~~~
+
+# Bootstrapper Flow
+
+The target registry-driven Bootstrapper flow is:
+
+    Deployment Request
+            |
+            v
+    Bootstrap Configuration
+            |
+            v
+    Framework Registry
+            |
+            v
+    Factory Registry
+            |
+            v
+    Profile Resolver
+            |
+            v
+    Package Resolver
+            |
+            v
+    Implementation Binding
+            |
+            v
+    Deployment Generator
+            |
+            v
+    Configuration
+            |
+            v
+    Validation
+            |
+            v
+    Ready for Deployment
+
+The current Bootstrapper MVP provides an initial working reference for this concept.
+
+The MVP uses simple configuration and resolution mechanisms.
+
+The next implementation stage is to progressively replace hard-coded resolution with registry-driven resolution.
+
+~~~
+
+# Bootstrapper Design Principle
+
+The Bootstrapper should evolve incrementally.
+
+The existing MVP is retained as a known-good reference.
+
+The intended progression is:
+
+    Bootstrapper MVP
+          |
+          v
+    Registry-Driven Resolution
+          |
+          v
+    Package Resolution
+          |
+          v
+    Implementation Binding
+          |
+          v
+    Deployment Generation
+          |
+          v
+    Validation
+          |
+          v
+    Repeatable Deployment
+
+The MVP should not be discarded until the registry-driven implementation has demonstrated equivalent or improved behaviour.
+
+~~~
+
+# Post-Pilot Deployment Model
+
+The Factory supports deployment specialization according to:
+
+- industry
+- client
+- problem domain
+- deployment type
+- engineering modules
+- deployment profile
+- resource requirements
+- security requirements
+- governance requirements
+- realization requirements
+
+The deployment model is:
+
+    Post-Pilot Framework Definition
+                |
+                v
+        Deployment Definition
+                |
+        +-------+-------+-------+
+        |       |       |       |
+        v       v       v       v
+     Industry Client Problem Greenfield /
+                              Brownfield
+                |
+                v
+        Deployment Profile
+                |
+                v
+        Selected Modules
+                |
+                v
+        Required Resources
+                |
+                v
+        Factory Package
+                |
+                v
+        Generated Deployment
+
+~~~
+
+# Industry Deployment
+
+Industry deployment provides the reusable Factory structure required to specialize a general solution for an industry.
+
+Examples may include:
+
+- agriculture
+- manufacturing
+- energy
+- infrastructure
+- mobility
+- telecommunications
+- healthcare
+- financial services
+- public services
+- smart communities
+
+The industry layer should provide domain-specific implementation assets without redefining the General Framework.
+
+~~~
+
+# Client Deployment
+
+Client deployment provides controlled specialization for a particular organization or customer environment.
+
+A client deployment may contain:
+
+- client configuration
+- client interfaces
+- client resources
+- client data references
+- client workflows
+- client policies
+- client deployment profile
+- client-specific integrations
+- client-specific implementation bindings
+
+Client-specific assets should remain separated from reusable common assets where appropriate.
+
+~~~
+
+# Problem-Specific Deployment
+
+A deployment may be created for a specific business, engineering or operational problem.
+
+The relationship is:
+
+    Industry
+       |
+       v
+    Client
+       |
+       v
+    Problem Definition
+       |
+       v
+    Solution Architecture
+       |
+       v
+    Factory Package
+       |
+       v
+    Deployment
+
+The problem-specific layer allows the same industry and client architecture to support multiple independent solutions.
+
+~~~
+
+# Greenfield and Brownfield Deployment
+
+The Factory supports both greenfield and brownfield deployment contexts.
+
+## Greenfield
+
+A greenfield deployment may establish:
+
+- new architecture
+- new services
+- new interfaces
+- new workflows
+- new runtime configuration
+- new resources
+
+## Brownfield
+
+A brownfield deployment may integrate:
+
+- existing applications
+- existing infrastructure
+- existing repositories
+- legacy systems
+- existing databases
+- existing APIs
+- existing operational processes
+- existing identity systems
+
+The Factory should prefer controlled integration over unnecessary replacement.
+
+~~~
+
+# Deployment Profiles
+
+Deployment profiles provide reusable configuration patterns.
+
+A profile may define:
+
+- execution environment
+- engineering modules
+- resource classes
+- security requirements
+- deployment mode
+- realization level
+- storage requirements
+- network requirements
+- supported runtimes
+- supported backends
+- operational constraints
+
+Examples include:
+
+- virtual development
+- local development
+- cloud development
+- hybrid development
+- simulation
+- emulation
+- HIL
+- testbed
+- production candidate
+
+The Framework defines the profile semantics.
+
+The Factory implements profile resolution and execution.
+
+~~~
+
+# Factory Packages
+
+Factory packages provide reusable implementation bundles for deployment.
+
+A package may contain references to:
+
+- Framework definitions
+- Factory implementations
+- modules
+- configuration
+- templates
+- connectors
+- adapters
+- workflows
+- resource requirements
+- validation rules
+- deployment instructions
+- evidence requirements
+
+A package should reference existing implementations where practical rather than copying their complete source trees.
+
+~~~
+
+# Deployment Generation
+
+The Factory may generate deployment structures from resolved packages.
+
+Conceptually:
+
+    Deployment Request
+           |
+           v
+    Profile Resolution
+           |
+           v
+    Package Resolution
+           |
+           v
+    Template Resolution
+           |
+           v
+    Configuration Generation
+           |
+           v
+    Deployment Structure
+           |
+           v
+    Validation
+
+Generated deployment structures should retain references to the Framework and Factory definitions from which they were created.
+
+~~~
+
+# Generated Deployments
+
+Generated deployments are implementation artifacts created by the Factory Bootstrapper.
+
+They may include:
+
+- deployment configuration
+- selected profile
+- selected modules
+- implementation bindings
+- generated project structure
+- validation records
+- deployment metadata
+- provenance references
+
+Generated deployments are not themselves Framework definitions.
+
+They are Factory-generated realization artifacts.
+
+~~~
+
+# Web Access Layer
+
+The Factory provides the implementation side of the common Web Access Layer.
+
+The Web Access Layer provides controlled access to Factory and platform capabilities.
+
+The architecture is:
+
+    HoldCo
+      |
+      v
+    Common Web Access Layer
+      |
+      +-- SaaS
+      |
+      +-- PaaS
+      |
+      +-- IaaS
+      |
+      v
+    General Factory
+      |
+      v
+    Resources / Products / Services
+
+The Web Access Layer should remain independent of any single industry solution.
+
+~~~
+
+# SaaS Implementation
+
+The Factory provides the implementation foundation for SaaS applications built from reusable capabilities.
+
+A SaaS application may provide:
+
+- controlled inputs
+- guided workflows
+- standard configuration
+- execution
+- result presentation
+- evidence
+- reporting
+- client access
+
+The SaaS layer should expose only the configuration and capabilities appropriate to the user's authorization and service model.
+
+~~~
+
+# PaaS Implementation
+
+The Factory provides the engineering implementation behind the PaaS workspace.
+
+A PaaS workspace may provide:
+
+- project workspace
+- online development environment
+- VS Code integration
+- Eclipse integration
+- notebooks
+- workflow development
+- virtual asset development
+- interface development
+- simulation
+- emulation
+- testing
+- execution
+- resource configuration
+- backend integration
+- deployment preparation
+
+The developer workspace is the engineering surface.
+
+The Factory remains the authority for controlled access to resources and execution capabilities.
+
+~~~
+
+# IaaS Implementation
+
+The Factory provides implementation mechanisms for infrastructure resources used by workloads.
+
+Potential resources include:
+
+- CPU
+- GPU
+- TPU
+- NPU
+- FPGA
+- HPC
+- memory
+- storage
+- networks
+- simulation resources
+- emulation resources
+- virtual QPU
+- external QPU
+- AI models
+- partner services
+
+The Factory resolves logical resource requirements against available infrastructure.
+
+~~~
+
+# PaaS Project Workspace
+
+The PaaS workspace may follow the pattern:
+
+    QAI PaaS
+      |
+      +-- PaaS Control Layer
+      |     |
+      |     +-- API
+      |     +-- Authentication
+      |     +-- Project Management
+      |     +-- Resource Management
+      |     +-- Workspace Management
+      |
+      +-- PaaS Project Workspace
+            |
+            +-- Online Development IDE
+                  |
+                  +-- VS Code
+                  +-- Eclipse
+                        |
+                        v
+                  Project Runtime
+                        |
+                        v
+                  Windows / Linux / Containers
+                        |
+                        v
+                  CPU / GPU / HPC /
+                  Quantum Simulator / QPU
+
+The exact implementation may evolve independently of this logical architecture.
+
+~~~
+
+# Controlled Library and SDK Access
+
+The PaaS environment may provide controlled access to partner and vendor libraries or SDKs.
+
+Potential categories include:
+
+- AI/ML libraries
+- NVIDIA/CUDA
+- HPC libraries
+- quantum SDKs
+- cloud SDKs
+- client libraries
+- domain-specific libraries
+
+The Factory should expose these capabilities through controlled interfaces and bindings.
+
+Vendor-specific libraries should not become the definition of the PaaS architecture.
+
+The principle is:
+
+> **The IDE is the developer's workspace; the Factory controls what the workspace can access and execute.**
+
+~~~
+
+# Micro-Frontend Architecture
+
+The Web Access Layer may use micro-frontends to present the same underlying capabilities differently to different roles.
+
+Potential viewpoints include:
+
+- Executive
+- Business Analyst
+- Domain Expert
+- Data Scientist
+- QAI Developer
+- Systems Engineer
+- Administrator
+
+The presentation may expose different levels of detail.
+
+For example:
+
+    Executive
+       |
+       +-- KPIs
+       +-- Results
+       +-- Status
+
+    Business Analyst
+       |
+       +-- Parameters
+       +-- Assumptions
+       +-- Results
+
+    Data Scientist
+       |
+       +-- Data
+       +-- Models
+       +-- Experiments
+
+    QAI Developer
+       |
+       +-- Code
+       +-- Workflow
+       +-- Runtime
+
+    Systems Engineer
+       |
+       +-- Interfaces
+       +-- Resources
+       +-- Execution Configuration
+
+    Administrator
+       |
+       +-- Security
+       +-- Configuration
+       +-- Operations
+
+Presentation-level differences must not be treated as the security boundary.
+
+Actual authorization and execution controls remain server-side.
+
+~~~
+
+# PaaS to SaaS Productization
+
+A validated PaaS engineering capability may become a reusable SaaS product.
+
+The progression is:
+
+    PaaS
+      |
+      v
+    Developer Builds
+      |
+      v
+    Test / Validate / V&V
+      |
+      v
+    Standardize
+      |
+      v
+    Package
+      |
+      v
+    SaaS Catalogue
+      |
+      v
+    Ready-to-Use Solution
+      |
+      v
+    Client
+
+This provides a controlled path from engineering capability to repeatable service.
+
+~~~
+
+# Resource Fabric Implementation
+
+The Factory implements the Resource Fabric required to resolve computational and infrastructure resources.
+
+A resource record may include:
+
+- identity
+- type
+- capabilities
+- capacity
+- location
+- availability
+- access method
+- software / SDK
+- performance
+- cost
+- quota
+- security classification
+- provider
+- ownership
+
+The Resource Fabric therefore separates logical resource requirements from physical or virtual resource availability.
+
+~~~
+
+# Resource Resolution
+
+The Factory may resolve:
+
+    Logical Resource Requirement
+             |
+             v
+    Resource Capability Profile
+             |
+             v
+    Resource Registry
+             |
+             v
+    Available Resource
+             |
+             v
+    Access Binding
+             |
+             v
+    Execution
+
+A resource may be local, remote, cloud-based, partner-provided or externally managed.
+
+~~~
+
+# QAI Lab Runtime
+
+The Factory may provide a local QAI Lab execution environment for experimentation and development.
+
+A conceptual runtime is:
+
+    Experiment / Notebook
+            |
+            v
+    QAI Runtime
+            |
+            v
+    Controlled Execution Environment
+            |
+            v
+    In-Memory Data / Memory Layer
+            |
+            v
+    Virtual QPU
+            |
+            v
+    Quantum Simulation / Emulation
+            |
+            v
+    Results
+
+The same runtime architecture may later connect to external QPU or hybrid computational resources.
+
+~~~
+
+# Hybrid Computational Environment
+
+The Factory supports a common execution environment containing:
+
+    Classical Resources
+    AI / QAI Resources
+    Quantum Resources
+             |
+             v
+        Hybrid Runtime
+             |
+             v
+       Workload / Workflow
+             |
+             v
+          Experiment
+
+This allows computational tasks to be distributed across different resource types according to the execution plan.
+
+~~~
+
+# In-Memory Data Space
+
+The Factory may implement a general In-Memory Data Model or In-Memory Data Space.
+
+The initial implementation should not prematurely constrain the architecture to a particular database category.
+
+Possible structures include:
+
+- table
+- key/value
+- document
+- array
+- tensor
+- graph
+- event stream
+- state object
+- sparse structure
+- quantum-specific representation
+
+Supported operations may include:
+
+- create
+- read
+- update
+- delete
+- filter
+- transform
+- map
+- reduce
+- join
+- aggregate
+- stream
+- snapshot
+- version
+- subscribe
+
+The architecture can progressively evolve toward quantum-memory behavioural models and future QRAM/QROM abstractions without claiming that physical quantum memory is already available.
+
+~~~
+
+# Workflow Execution Pipeline
+
+The Factory workflow execution pipeline is:
+
+    Design Workflow
+          |
+          v
+        VERIFY
+          |
+          v
+       VALIDATE
+          |
+          v
+        COMPILE
+          |
+          v
+        RESOLVE
+          |
+          v
+       SCHEDULE
+          |
+          v
+    ASYNC EXECUTION
+          |
+          v
+    Results / Events
+          |
+          v
+        VERIFY
+          |
+          v
+       ASSEMBLE
+          |
+          v
+      Final Output
+
+VERIFY checks structural correctness, inputs, interfaces and dependencies.
+
+VALIDATE checks resources, backend compatibility, memory, timing, policies, quotas and security.
+
+COMPILE transforms the logical workflow into an executable plan.
+
+RESOLVE identifies concrete implementations and resources.
+
+SCHEDULE determines execution ordering and resource allocation.
+
+ASYNC EXECUTION allows independent tasks to execute concurrently where appropriate.
+
+~~~
+
+# Problem-to-Execution Pipeline
+
+The Factory supports the following execution chain:
+
+    Real-World Problem
+           |
+           v
+    Problem Definition
+           |
+           v
+    Problem Classification
+           |
+           v
+    Mathematical Model
+           |
+           v
+    Representation
+           |
+           v
+    Solver Selection
+           |
+           v
+    Preprocessing
+           |
+           v
+    Workflow Compiler
+           |
+           v
+    Execution Planner
+           |
+           v
+    Resource Fabric
+           |
+           v
+    Async Runtime
+           |
+           v
+    CPU / GPU / HPC / Virtual QPU /
+    External Backend
+           |
+           v
+    Result Manager
+           |
+           v
+    Verification
+           |
+           v
+    Assembly
+           |
+           v
+    Evidence
+
+This creates a reusable computational execution path independent of any single solver or hardware technology.
+
+~~~
+
+# Preprocessing and Reusable Execution
+
+The Factory may separate preprocessing from repeated execution.
+
+Preprocessing may establish:
+
+- mathematical structures
+- data encoding
+- ansatz
+- circuit templates
+- parameterized representations
+- Hamiltonian mappings
+- observables
+- solver configuration
+- execution plans
+
+Repeated executions may then bind updated parameters rather than rebuilding the entire computational structure.
+
+The guiding principle is:
+
+> **Prepare once where practical; parameterize and reuse many times.**
+
+Preprocessing and compilation remain distinct concerns.
+
+~~~
+
+# Asynchronous Execution
+
+The Factory supports asynchronous execution of independent workloads.
+
+Potential concurrent activities include:
+
+- CPU preprocessing
+- GPU model execution
+- quantum simulation
+- QPU execution
+- HPC computation
+- data retrieval
+- external AI/GenAI service invocation
+- validation
+- telemetry collection
+
+Each execution should maintain:
+
+- task ID
+- execution ID
+- resource
+- backend
+- input
+- output
+- status
+- validation
+- provenance
+
+This allows complex hybrid workloads to be coordinated without forcing every task into a single synchronous execution model.
+
+~~~
+
+# Time and Consistency
+
+Factory workloads may specify different time and consistency requirements.
+
+Time categories may include:
+
+- real-time
+- near-real-time
+- batch
+- scheduled
+- asynchronous
+- long-term
+
+Consistency requirements may include:
+
+- latest-value
+- eventual consistency
+- ordered events
+- hybrid-loop state consistency
+- transactional job state
+- immutable evidence
+- durable project data
+
+Time requirements and consistency requirements should remain separate architectural properties.
+
+~~~
+
+# Evidence-Driven Promotion
+
+Factory assets should progress through lifecycle states according to evidence.
+
+A possible implementation lifecycle is:
+
+    Reference
+       |
+       v
+    Registered
+       |
+       v
+    Bound
+       |
+       v
+    Validated
+       |
+       v
+    Executable
+       |
+       v
+    Qualified
+       |
+       v
+    Production Candidate
+       |
+       v
+    Production
+
+Promotion should consider:
+
+- technical evidence
+- validation evidence
+- security
+- reliability
+- resource requirements
+- operational requirements
+- governance
+- value
+- deployment requirements
+
+The Factory manages implementation state.
+
+The Framework defines the corresponding lifecycle semantics.
+
+~~~
+
+# Model and Hardware Maturity
+
+Software/model maturity and hardware/execution maturity are independent dimensions.
+
+For example:
+
+    Model Maturity
+        |
+        +-- Classical
+        +-- QAI / Quantum-Inspired
+        +-- Hybrid QAI
+        +-- Advanced QAI Research
+
+can evolve independently from:
+
+    Execution Maturity
+        |
+        +-- Software
+        +-- Classical Simulation
+        +-- Emulation
+        +-- NISQ QPU
+        +-- Advanced QPU
+        +-- Future FTQC
+
+The Factory therefore supports virtual-first development without requiring physical hardware maturity to match software maturity.
+
+~~~
+
+# Virtual-First Factory Engineering
+
+The Factory can create executable virtual infrastructure before physical infrastructure exists.
+
+The progression may be:
+
+    Logical Infrastructure
+            |
+            v
+    Virtual Infrastructure
+            |
+            v
+    Simulation / Emulation
+            |
+            v
+    HIL / Testbed
+            |
+            v
+    Physical Infrastructure
+
+Virtual infrastructure may remain useful after physical deployment for:
+
+- testing
+- validation
+- optimization
+- training
+- forecasting
+- what-if analysis
+- maintenance
+- Digital Twin operation
+
+~~~
+
+# Industry Solution Modules
+
+Industry Solution Modules provide reusable implementation structures for domain-specific solutions.
+
+A module may contain:
+
+- domain implementation
+- domain workflows
+- domain interfaces
+- domain data structures
+- domain models
+- domain configuration
+- domain resource requirements
+- domain validation
+- domain deployment package
+
+The module should remain bounded to the domain while reusing common Framework and Factory capabilities.
+
+~~~
+
+# Client Solution Modules
+
+Client-specific implementation may be added on top of reusable industry and common Factory capabilities.
+
+A client solution may combine:
+
+    Common Factory Capability
+             +
+    Industry Module
+             +
+    Client Configuration
+             +
+    Client Integration
+             +
+    Client Data / Resources
+             =
+    Client Deployment
+
+This allows reusable platform capabilities to coexist with controlled client-specific customization.
+
+~~~
+
+# Brownfield Integration
+
+Brownfield implementations may connect existing client systems through:
+
+- connectors
+- adapters
+- APIs
+- data interfaces
+- identity integration
+- workflow integration
+- event integration
+- resource integration
+
+Existing client systems remain independent systems of record unless explicitly migrated or replaced.
+
+The Factory provides the integration boundary.
+
+~~~
+
+# Production Ecosystem Boundary
+
+The Factory supports the engineering and deployment preparation lifecycle.
+
+It does not automatically become the complete production operating environment.
+
+The boundary is:
+
+    Factory
+      |
+      +-- Design
+      +-- Simulation
+      +-- Experimentation
+      +-- Validation
+      +-- Engineering
+      +-- Integration
+      +-- Deployment Preparation
+            |
+            v
+    Production Environment
+      |
+      +-- Operations
+      +-- Monitoring
+      +-- Scaling
+      +-- Service Management
+      +-- Production Governance
+
+Integration between Factory and production environments should occur through defined interfaces and lifecycle transitions.
+
+~~~
+
+# Relationship to QAI Foundry
+
+`qai_foundry` remains a distinct project.
+
+It may contain activities associated with:
+
+- transition
+- maturity
+- IP development
+- productization
+- advanced QAI engineering
+- technology development
+
+The General Factory may invoke or integrate Foundry capabilities through controlled implementation bindings where appropriate.
+
+The Factory does not replace or absorb the Foundry repository.
+
+~~~
+
+# Reference Implementation Principle
+
+Reference implementations are retained as working examples.
+
+They may include:
+
+- technology tutorials
+- study samples
+- notebooks
+- pilot implementations
+- Fabric examples
+- AI examples
+- QAI examples
+- backend integration examples
+- deployment examples
+
+The Factory uses them to validate patterns and implementation mechanisms.
+
+A reference implementation should not automatically become a core Factory feature.
+
+The progression is:
+
+    Study / Reference Sample
+            |
+            v
+    Pattern Extraction
+            |
+            v
+    Framework Concept
+            |
+            v
+    Factory Implementation
+            |
+            v
+    Validated Capability
+            |
+            v
+    Product / Deployment
+
+~~~
+
+# Common Asset Synchronization
+
+Framework and Factory assets should maintain synchronized identities where they represent the same logical capability or asset.
+
+Synchronization may include:
+
+- identity
+- capability
+- interface
+- configuration
+- lifecycle
+- resource model
+- execution contract
+- security policy
+- provenance
+
+The Framework remains authoritative for logical definitions.
+
+The Factory remains authoritative for implementation and runtime realization.
+
+This synchronization is an important part of the broader QAI Platform Development Method.
+
+~~~
+
+# Post-Pilot Productization Flow
+
+The Factory supports the transition from validated engineering capability to reusable product.
+
+The flow is:
+
+    Pilot Capability
+          |
+          v
+    Evidence
+          |
+          v
+    Engineering Refinement
+          |
+          v
+    Standardization
+          |
+          v
+    Factory Package
+          |
+          v
+    PaaS Capability
+          |
+          v
+    Validated Product
+          |
+          v
+    SaaS Catalogue
+          |
+          v
+    Client Deployment
+
+The same underlying Framework and Factory capabilities may therefore support multiple service models.
+
+~~~
+
+# Factory Design Principles — Post-Pilot
+
+The post-pilot Factory follows these additional principles:
+
+### 1. Preserve the working baseline
+
+Existing validated implementations should remain available as references while new implementations are introduced.
+
+### 2. Promote through evidence
+
+Pilot capabilities should become post-pilot assets through explicit validation rather than assumption.
+
+### 3. Reuse before rebuilding
+
+Existing implementations, libraries, platforms and services should be reused through controlled integration where practical.
+
+### 4. Package reusable capabilities
+
+Validated capabilities should be progressively converted into reusable Factory packages.
+
+### 5. Separate common from client-specific assets
+
+Common capabilities should remain reusable while client-specific configuration and integration remain bounded.
+
+### 6. Support greenfield and brownfield deployment
+
+The Factory should support both new systems and integration with existing systems.
+
+### 7. Keep resource binding flexible
+
+Logical resource requirements should be resolved against available infrastructure rather than permanently binding architecture to one provider.
+
+### 8. Maintain evidence and provenance
+
+Every significant execution and promotion should remain traceable.
+
+### 9. Keep the Framework/Factory boundary stable
+
+Post-pilot implementation growth must not cause the Factory to become the authority for architectural semantics.
+
+### 10. Grow incrementally
+
+New runtime capabilities should be introduced through validated implementation slices.
+
+~~~
+
+# Current Post-Pilot Factory Structure
+
+The General Factory now contains the original runtime architecture together with the post-pilot engineering foundation.
+
+The broad structure is:
+
+    general_factory/
+    |
+    +-- factory_core/
+    +-- framework_runtime/
+    +-- asset_runtime/
+    +-- connectors/
+    +-- adapters/
+    +-- interfaces/
+    +-- experimentation/
+    +-- fabric_runtime/
+    +-- reference_implementations/
+    +-- evidence/
+    +-- registry/
+    |
+    +-- pilot_assets/
+    |
+    +-- post_pilot_assets/
+    |   |
+    |   +-- bootstrapper/
+    |   +-- client/
+    |   +-- deployment/
+    |   +-- deployment_profiles/
+    |   +-- industry/
+    |   +-- modules/
+    |   +-- packages/
+    |   +-- problem_domains/
+    |   +-- generated_deployments/
+    |
+    +-- web_platform/
+    |   |
+    |   +-- saas/
+    |   +-- paas/
+    |   +-- iaas/
+    |
+    +-- README.md
+
+The exact contents of each area will evolve as implementation requirements become clearer.
+
+~~~
+
+# Current Status
+
+The General Factory has progressed from an initial execution architecture toward a post-pilot engineering and deployment foundation.
+
+The current Factory includes conceptual and structural support for:
+
+- Framework-driven implementation
+- registries
+- resolvers
+- implementation bindings
+- connectors
+- adapters
+- virtual asset instantiation
+- simulation
+- emulation
+- design-space exploration
+- experimentation
+- resource management
+- Fabric runtime
+- evidence
+- provenance
+- QAI runtime integration
+- pilot and post-pilot asset separation
+- engineering add-on modules
+- General Factory Bootstrapper
+- deployment profiles
+- deployment packages
+- generated deployments
+- client and industry deployment
+- Web Access Layer
+- SaaS
+- PaaS
+- IaaS
+- resource abstraction
+- hybrid computational execution
+
+The current state is intentionally a foundation rather than a completed production Factory.
+
+~~~
+
+# Next Controlled Implementation Steps
+
+The next Factory implementation sequence should remain incremental.
+
+The immediate path is:
+
+    Existing Bootstrapper MVP
+            |
+            v
+    Registry-Driven Bootstrapper
+            |
+            v
+    Framework Registry Resolution
+            |
+            v
+    Factory Registry Resolution
+            |
+            v
+    Package Resolver
+            |
+            v
+    Implementation Binding
+            |
+            v
+    Deployment Generator
+            |
+            v
+    Validation
+
+In parallel, the first registry-driven runtime integration should proceed through:
+
+    Framework Definition
+            |
+            v
+    Implementation Registry
+            |
+            v
+    Factory Resolver
+            |
+            v
+    QAI Lab Binding
+            |
+            v
+    Connector / Adapter
+            |
+            v
+    Existing QAI Lab Asset
+            |
+            v
+    Execution
+            |
+            v
+    Result / Evidence
+
+Once the first integration path is stable, the same mechanism can be applied to the Microsoft Fabric reference implementation.
+
+~~~
+
+# Factory Evolution Principle
+
+The General Factory should grow from validated integration slices toward a broader engineering and execution platform.
+
+The intended progression is:
+
+    Integration
+        ->
+    Execution
+        ->
+    Experimentation
+        ->
+    Simulation / Emulation
+        ->
+    Design-Space Exploration
+        ->
+    QAI / Quantum Execution
+        ->
+    HIL / Testbed
+        ->
+    Product Engineering
+        ->
+    Deployment Integration
+        ->
+    Repeatable Client Deployment
+
+Each stage should preserve the fundamental relationship:
+
+    General Framework
+           |
+           v
+    General Factory
+           |
+           v
+    Existing / New Implementation
+           |
+           v
+    Evidence
+
+The Framework defines the reusable architecture.
+
+The Factory turns that architecture into executable and deployable systems.
+
+~~~
+
+# Guiding Statement
+
+The General Factory is the implementation and execution authority for the General Digital / QAI Framework.
+
+Its purpose is not to become another collection of disconnected technologies.
+
+Its purpose is to provide a common mechanism through which:
+
+- Framework definitions
+- existing implementations
+- new implementations
+- computational resources
+- simulation and emulation
+- experiments
+- products
+- services
+- industry solutions
+- client deployments
+
+can be connected through explicit contracts, controlled bindings, reusable packages and traceable execution.
+
+The fundamental principle remains:
+
+> **The Framework defines WHAT; the Factory implements HOW.**
+
+The Factory should therefore continue to evolve incrementally from validated implementation slices toward a reusable, technology-neutral engineering and deployment platform.
+
+---
