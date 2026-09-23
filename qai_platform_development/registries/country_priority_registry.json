@@ -1,5 +1,33 @@
 {
   "version": "0.1.0",
-  "countries": ["Canada", "India", "Australia"],
-  "priorities": []
+  "registry_type": "country_priority_registry",
+  "description": "Machine-readable registry linking countries to documented national priorities used for QAI Platform Development analysis.",
+  "countries": [
+    "Canada",
+    "India",
+    "Australia"
+  ],
+  "priorities": [],
+  "priority_schema": {
+    "priority_id": "Unique priority identifier",
+    "country": "Country associated with the priority",
+    "priority_name": "Name of the documented national priority",
+    "priority_area": "Common priority taxonomy category where applicable",
+    "description": "Short description of the priority",
+    "source": {
+      "organization": "Source organization",
+      "document": "Source document or strategy",
+      "publication_date": "Publication date where available",
+      "url": "Source URL where available",
+      "reference": "Relevant section, page or reference"
+    },
+    "evidence_classification": "explicit | sector_application | inferred | opportunity | requires_validation",
+    "sectors": [],
+    "problem_domains": [],
+    "related_capabilities": [],
+    "related_products": [],
+    "common_or_country_specific": "common | country_specific | both",
+    "status": "draft | source_verified | active | superseded",
+    "notes": ""
+  }
 }

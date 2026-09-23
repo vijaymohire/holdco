@@ -1,6 +1,28 @@
 {
   "registry": "factory_runtime_bindings",
   "version": "0.1.0",
-  "purpose": "Maps Framework capabilities to executable implementations.",
-  "bindings": []
+  "purpose": "Maps Framework capabilities to executable Factory implementations.",
+  "bindings": [],
+  "binding_schema": {
+    "binding_id": "Unique runtime binding identifier",
+    "framework_capability_id": "Framework-defined capability identifier",
+    "framework_interface_ids": [],
+    "factory_implementation_id": "Factory implementation identifier",
+    "implementation_type": "module | package | workflow | runtime | backend | connector | adapter | other",
+    "implementation_version": "Implementation version",
+    "provider_id": "Provider identifier where applicable",
+    "technology": "Technology or implementation technology where applicable",
+    "runtime_id": "Factory runtime identifier where applicable",
+    "backend_id": "Execution backend identifier where applicable",
+    "resource_requirements": [],
+    "configuration_reference": "Reference to applicable Factory configuration",
+    "environment": "Environment in which the binding is valid",
+    "execution_mode": "virtual | simulation | emulation | hybrid | hil | physical | other",
+    "status": "draft | registered | validated | active | deprecated | retired",
+    "compatibility": [],
+    "dependencies": [],
+    "evidence_references": [],
+    "provenance": [],
+    "notes": ""
+  }
 }

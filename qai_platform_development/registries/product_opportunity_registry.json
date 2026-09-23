@@ -1,5 +1,34 @@
 {
   "version": "0.1.0",
   "status": "initial_baseline",
-  "product_opportunities": []
+  "registry_type": "product_opportunity_registry",
+  "description": "Machine-readable registry of QAI product opportunities identified through priority, problem, capability and gap analysis.",
+  "product_opportunities": [],
+  "opportunity_schema": {
+    "product_id": "Unique product opportunity identifier",
+    "product_name": "Proposed product name",
+    "product_family": "Product family",
+    "country": "Country or countries associated with the opportunity",
+    "sector": "Target sector or sectors",
+    "priority_id": "Related country priority identifier",
+    "priority_source": "Source or reference supporting the priority",
+    "problem": "Problem or need being addressed",
+    "required_capabilities": [],
+    "target_client_user": [],
+    "existing_assets": [],
+    "gap_ids": [],
+    "common_or_country_specific": "common | country_specific | both",
+    "paas_relationship": "",
+    "iaas_relationship": "",
+    "saas_relationship": "",
+    "pilot_candidate": "",
+    "evidence_status": "",
+    "product_maturity": "",
+    "ip_opportunity": "",
+    "dependencies": [],
+    "external_partners": [],
+    "status": "opportunity | under_analysis | concept | pilot_candidate | validated | productization | productized | deferred | retired",
+    "source_references": [],
+    "notes": ""
+  }
 }
