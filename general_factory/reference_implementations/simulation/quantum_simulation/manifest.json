@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-SIM-QUANTUM-001",
+  "name": "Quantum Simulation",
+  "description": "Reference implementation for quantum simulation backends.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

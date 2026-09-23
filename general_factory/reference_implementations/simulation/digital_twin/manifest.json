@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-SIM-DIGITAL-TWIN-001",
+  "name": "Digital Twin",
+  "description": "Reference implementation for digital-twin-oriented virtual system representation and feedback.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

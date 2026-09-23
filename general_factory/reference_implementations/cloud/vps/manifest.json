@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-CLOUD-VPS-001",
+  "name": "Virtual Private Server",
+  "description": "Reference implementation for VPS-based deployment.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

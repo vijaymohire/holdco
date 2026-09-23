@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-WORKFLOW-DESIGN-REACTFLOW-001",
+  "name": "React Flow",
+  "description": "Reference implementation for node-based visual workflow and graph editing.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

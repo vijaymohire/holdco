@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-AIML-LOCAL-INFERENCE-001",
+  "name": "Local AI Inference",
+  "description": "Reference implementation for local AI model inference and service execution.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-NOTEBOOK-EXPERIMENT-001",
+  "name": "Experiment Notebooks",
+  "description": "Reference collection for executable experiment notebooks and reproducible workflows.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

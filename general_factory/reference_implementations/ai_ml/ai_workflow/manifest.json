@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-AIML-WORKFLOW-001",
+  "name": "AI Workflow",
+  "description": "Reference implementation for AI model, inference, agent and service workflow integration.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

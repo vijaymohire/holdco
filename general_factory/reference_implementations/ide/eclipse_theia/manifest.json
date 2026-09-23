@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-IDE-THEIA-001",
+  "name": "Eclipse Theia",
+  "description": "Reference implementation for extensible browser-based IDE and development workspace integration.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

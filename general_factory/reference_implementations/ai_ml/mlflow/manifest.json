@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-AIML-MLFLOW-001",
+  "name": "MLflow",
+  "description": "Reference implementation for AI/ML experiment tracking, model lifecycle and serving integration.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

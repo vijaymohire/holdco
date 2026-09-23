@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-WORKFLOW-DESIGN-BPMN-001",
+  "name": "BPMN Workflow Designer",
+  "description": "Reference implementation for business process and workflow visualization.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

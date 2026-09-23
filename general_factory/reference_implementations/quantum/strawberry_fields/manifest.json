@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-QUANTUM-STRAWBERRYFIELDS-001",
+  "name": "Strawberry Fields",
+  "description": "Reference implementation for photonic quantum computing workflows.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

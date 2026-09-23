@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-EMU-QUANTUM-001",
+  "name": "Quantum Emulation",
+  "description": "Reference implementation for device-like quantum emulation without physical QPU dependency.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

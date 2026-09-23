@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-UI-RESOURCE-VIEWS-001",
+  "name": "Resource Views",
+  "description": "Reference implementation for resource, backend and execution environment views.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

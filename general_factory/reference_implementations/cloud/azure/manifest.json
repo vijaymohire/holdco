@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-CLOUD-AZURE-001",
+  "name": "Microsoft Azure",
+  "description": "Reference implementation for Azure deployment, compute and resource integration.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

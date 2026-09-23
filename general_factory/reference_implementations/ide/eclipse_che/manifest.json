@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-IDE-ECLIPSECHE-001",
+  "name": "Eclipse Che",
+  "description": "Reference implementation for cloud development workspaces and IDE-based PaaS engineering.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}

@@ -1,0 +1,23 @@
+{
+  "reference_id": "REF-EMU-VIRTUAL-DEVICES-001",
+  "name": "Virtual Devices",
+  "description": "Reference implementation for virtual sensors, actuators and other executable virtual devices.",
+  "status": "candidate",
+  "implementation_type": "reference_implementation",
+  "framework_capabilities": [],
+  "factory_capabilities": [],
+  "connectors": [],
+  "adapters": [],
+  "runtime": [],
+  "backends": [],
+  "resources": [],
+  "execution_modes": [],
+  "configuration": [],
+  "workflows": [],
+  "deployment": [],
+  "results": [],
+  "evidence": [],
+  "source_references": [],
+  "provenance": [],
+  "notes": ""
+}
