@@ -17,3 +17,1539 @@ Generated content should be traceable to:
 Generated deployments should not be treated as the source
 of architectural truth. The Framework and Factory remain
 authoritative.
+---
+# Generated Deployments
+
+## Overview
+
+The **Generated Deployments** area contains deployment structures produced by the **General Factory Bootstrapper** from authoritative framework, factory, configuration, packaging, template and deployment-profile inputs.
+
+Generated deployments are **outputs of the factory generation process**.
+
+They are not the source of architectural truth.
+
+The authoritative relationship is:
+
+    General Framework
+          │
+          ▼
+    Framework Definitions
+          │
+          ▼
+    Bootstrap Configuration
+          │
+          ▼
+    Deployment Profile
+          │
+          ▼
+    Factory Bindings
+          │
+          ▼
+    Package Definitions
+          │
+          ▼
+    Templates
+          │
+          ▼
+    General Factory Bootstrapper
+          │
+          ▼
+    Generated Deployment
+          │
+          ├── Client
+          ├── Configuration
+          ├── Industry
+          ├── Modules
+          ├── Problem
+          ├── Validation
+          ├── deployment.yaml
+          ├── profile.yaml
+          └── Generation Metadata
+
+The generated structure is therefore a **materialized deployment result** of the General Factory.
+
+---
+
+# Purpose
+
+This directory provides a controlled output area for deployment structures generated from reusable General Factory definitions.
+
+Its purposes are to:
+
+- materialize deployment structures;
+- assemble selected framework capabilities;
+- bind logical capabilities to implementation profiles;
+- apply deployment profiles;
+- assemble required packages;
+- instantiate templates;
+- generate configuration;
+- generate client and module structures;
+- generate industry/problem-specific deployment components;
+- generate validation structures;
+- preserve generation metadata;
+- support deployment inspection;
+- support validation before deployment;
+- provide reproducible deployment artifacts.
+
+The generated output should remain traceable back to the inputs that produced it.
+
+---
+
+# Architectural Position
+
+Generated Deployments sit downstream of the General Framework and General Factory.
+
+They should be understood as **generated materializations**, not as another architectural layer.
+
+    General Framework
+          │
+          │  Semantic / architectural authority
+          ▼
+    General Factory
+          │
+          │  Resolution / binding authority
+          ▼
+    Bootstrapper
+          │
+          │  Generation
+          ▼
+    Generated Deployments
+          │
+          ├── Configuration
+          ├── Packages
+          ├── Modules
+          ├── Client
+          ├── Industry
+          ├── Problem
+          └── Validation
+          │
+          ▼
+    Deployment / Runtime Environment
+
+The Framework remains authoritative for meaning.
+
+The Factory remains authoritative for implementation resolution.
+
+The Generated Deployment is the resulting implementation structure.
+
+---
+
+# Source of Truth
+
+The fundamental rule is:
+
+> **Generated Deployments are outputs, not architectural sources of truth.**
+
+The authoritative sources remain:
+
+1. General Framework definitions;
+2. Factory definitions and bindings;
+3. Bootstrap configuration;
+4. deployment profiles;
+5. package definitions;
+6. approved templates;
+7. applicable validation rules.
+
+A generated file should therefore not silently redefine:
+
+- framework semantics;
+- factory architecture;
+- resource architecture;
+- service ownership;
+- deployment principles;
+- platform capabilities.
+
+If generated output conflicts with an authoritative source, the generation inputs and generator should be investigated rather than treating the generated output as the new architecture.
+
+---
+
+# Generation Traceability
+
+Every generated deployment should be traceable to the inputs used to produce it.
+
+At minimum, traceability should cover:
+
+- bootstrap configuration;
+- deployment profile;
+- framework definitions;
+- factory bindings;
+- package definitions;
+- templates;
+- generation version;
+- validation results.
+
+A conceptual traceability chain is:
+
+    Generated Deployment
+          │
+          ├── Generation ID
+          ├── Generation Version
+          ├── Bootstrap Configuration
+          ├── Framework Version
+          ├── Factory Binding Version
+          ├── Deployment Profile
+          ├── Package Set
+          ├── Template Set
+          └── Validation Result
+
+This allows a generated deployment to be reconstructed or investigated.
+
+---
+
+# Generated Deployment Identity
+
+A generated deployment should have a stable identity within its applicable generation context.
+
+A conceptual identity model is:
+
+    Generated Deployment
+    ├── deployment_id
+    ├── generation_id
+    ├── generation_version
+    ├── profile
+    ├── framework_version
+    ├── factory_version
+    ├── generated_at
+    └── status
+
+The exact identifier format remains an implementation decision.
+
+---
+
+# Generation Inputs
+
+The Bootstrapper may consume several categories of input.
+
+## Bootstrap Configuration
+
+Defines the requested generation operation.
+
+Potential information includes:
+
+- target deployment;
+- selected framework;
+- selected modules;
+- selected industry;
+- selected problem;
+- selected profile;
+- requested packages;
+- environment;
+- generation options.
+
+## Framework Definitions
+
+Provide the authoritative logical and architectural definitions from which deployment structures are derived.
+
+## Factory Bindings
+
+Provide implementation mappings for logical capabilities.
+
+## Deployment Profile
+
+Defines the target deployment characteristics.
+
+## Package Definitions
+
+Define packages or implementation bundles required by the generated deployment.
+
+## Templates
+
+Provide reusable structures from which generated files and directories can be instantiated.
+
+---
+
+# Deployment Profile
+
+The `profile.yaml` file represents the selected deployment profile or its generated materialization.
+
+A deployment profile may determine characteristics such as:
+
+- deployment target;
+- environment;
+- runtime model;
+- infrastructure model;
+- enabled capabilities;
+- resource expectations;
+- package selection;
+- configuration strategy.
+
+The profile is an input to generation or a generated representation of that input, depending on the Bootstrapper workflow.
+
+It should not be treated as an independent architectural authority.
+
+---
+
+# Deployment Manifest
+
+The `deployment.yaml` file represents the generated deployment structure and/or deployment metadata.
+
+It may identify:
+
+- deployment identity;
+- selected profile;
+- generated components;
+- package references;
+- configuration;
+- modules;
+- dependencies;
+- deployment targets;
+- validation state;
+- generation metadata.
+
+The exact schema should be defined by the Bootstrapper implementation.
+
+---
+
+# Client
+
+The `client/` area contains generated client-facing deployment structures where the selected deployment requires them.
+
+Potential contents may include:
+
+- client configuration;
+- application entry points;
+- generated views;
+- client module references;
+- endpoint configuration;
+- deployment-specific UI configuration.
+
+Client output should remain consistent with the Web Platform and applicable micro-frontend architecture.
+
+Generated client code should not redefine backend service semantics.
+
+---
+
+# Configuration
+
+The `configuration/` area contains generated configuration structures required by the deployment.
+
+Potential configuration categories include:
+
+- environment configuration;
+- service configuration;
+- runtime configuration;
+- deployment configuration;
+- resource configuration;
+- endpoint configuration;
+- feature configuration;
+- module configuration.
+
+Configuration should be distinguishable from secrets.
+
+Sensitive credentials should not be generated into source-controlled deployment output unless the deployment architecture explicitly requires a secure mechanism.
+
+Where possible:
+
+    Generated Configuration
+          │
+          ├── Non-secret configuration
+          └── Secret References
+                    │
+                    ▼
+              Secret Manager
+
+---
+
+# Industry
+
+The `industry/` area contains generated deployment structures associated with the selected industry or domain configuration.
+
+For example, a generated deployment may be derived for an industry such as:
+
+- agriculture;
+- manufacturing;
+- healthcare;
+- logistics;
+- energy;
+- another supported domain.
+
+Industry output should represent the selected application/domain composition.
+
+It should not redefine the General Framework itself.
+
+The industry layer should consume reusable platform capabilities rather than embedding the entire General Factory architecture into an industry-specific deployment.
+
+---
+
+# Problem
+
+The `problem/` area contains generated structures associated with the selected problem/use-case configuration.
+
+A problem definition may determine:
+
+- selected capabilities;
+- required workflows;
+- required assets;
+- required services;
+- required resources;
+- required validation;
+- required deployment components.
+
+A conceptual generation path is:
+
+    Industry
+       │
+       ▼
+    Problem Definition
+       │
+       ▼
+    Required Capabilities
+       │
+       ▼
+    Factory Resolution
+       │
+       ▼
+    Generated Deployment
+
+This allows the same General Factory to generate different deployments for different problems.
+
+---
+
+# Modules
+
+The `modules/` area contains generated implementation modules selected for the deployment.
+
+Modules may correspond to:
+
+- platform capabilities;
+- services;
+- workflows;
+- runtime components;
+- domain components;
+- client components;
+- resource integrations.
+
+A module should have a clear relationship to the factory binding or package definition from which it was generated.
+
+Conceptually:
+
+    Logical Capability
+          │
+          ▼
+    Factory Binding
+          │
+          ▼
+    Package / Module
+          │
+          ▼
+    Generated Module
+
+Generated modules should not silently introduce undocumented dependencies.
+
+---
+
+# Validation
+
+The `validation/` area contains generated validation structures and/or validation results associated with the deployment.
+
+Potential validation categories include:
+
+- configuration validation;
+- schema validation;
+- dependency validation;
+- package validation;
+- binding validation;
+- deployment-profile validation;
+- security validation;
+- resource validation;
+- structural validation;
+- framework conformance;
+- factory conformance;
+- generated artifact validation.
+
+A conceptual process is:
+
+    Generate
+       │
+       ▼
+    Structural Validation
+       │
+       ▼
+    Configuration Validation
+       │
+       ▼
+    Binding Validation
+       │
+       ▼
+    Deployment Validation
+       │
+       ▼
+    Generation Result
+
+---
+
+# Validation Status
+
+A generated deployment should expose an understandable validation state.
+
+Potential states include:
+
+- Not Validated;
+- Validation Pending;
+- Valid;
+- Valid with Warnings;
+- Invalid;
+- Validation Failed.
+
+Validation status should not be confused with production readiness.
+
+A structurally valid generated deployment may still require:
+
+- security review;
+- operational testing;
+- performance testing;
+- domain acceptance;
+- infrastructure validation;
+- human approval.
+
+---
+
+# Generation Version
+
+Generated output should record the version of the generator or Bootstrapper used.
+
+For example:
+
+    generation_version: <version>
+
+The exact versioning scheme is an implementation decision.
+
+Recording the generation version supports:
+
+- reproducibility;
+- debugging;
+- comparison;
+- regeneration;
+- compatibility analysis.
+
+---
+
+# Template Version
+
+Where templates contribute to generation, their versions should be traceable.
+
+A conceptual record is:
+
+    Templates
+    ├── Template A → version
+    ├── Template B → version
+    └── Template C → version
+
+The generated deployment can then be related to the exact template set used.
+
+---
+
+# Package Version
+
+Generated modules should retain package provenance where applicable.
+
+For example:
+
+    Package
+    ├── package_id
+    ├── version
+    ├── source
+    └── binding
+
+This allows a generated deployment to be inspected without treating the generated artifact as the authoritative package definition.
+
+---
+
+# Factory Binding Traceability
+
+A generated implementation should be traceable to the logical capability and binding that produced it.
+
+For example:
+
+    Logical Capability
+          │
+          ▼
+    Factory Registry
+          │
+          ▼
+    Binding
+          │
+          ▼
+    Package
+          │
+          ▼
+    Generated Module
+
+This is important when the same logical capability can have multiple implementation bindings.
+
+---
+
+# Multiple Deployment Profiles
+
+The same framework/application definition may generate different deployments.
+
+For example:
+
+    Framework + Factory
+          │
+          ├── VPS Profile
+          │      └── Generated Deployment A
+          │
+          ├── Cloud Profile
+          │      └── Generated Deployment B
+          │
+          ├── Private Cloud Profile
+          │      └── Generated Deployment C
+          │
+          └── Bare Metal Profile
+                 └── Generated Deployment D
+
+The generated deployments may differ in infrastructure and implementation bindings while retaining the same higher-level framework intent.
+
+---
+
+# Deployment Profiles and Architecture
+
+Deployment profiles must not be confused with architecture.
+
+A deployment profile answers questions such as:
+
+- where the system runs;
+- which infrastructure is used;
+- which runtime profile is selected;
+- which implementation bindings are appropriate.
+
+The General Framework answers higher-level semantic and architectural questions.
+
+The General Factory resolves logical requirements to implementations.
+
+The Generated Deployment materializes the selected combination.
+
+---
+
+# Generation Workflow
+
+A representative generation workflow is:
+
+    1. Load Framework Definitions
+    2. Load Bootstrap Configuration
+    3. Select Deployment Profile
+    4. Resolve Industry
+    5. Resolve Problem
+    6. Resolve Required Capabilities
+    7. Resolve Factory Bindings
+    8. Resolve Packages
+    9. Load Templates
+    10. Generate Deployment Structure
+    11. Generate Configuration
+    12. Generate Modules
+    13. Generate Client Structures
+    14. Generate Validation Structures
+    15. Validate Generated Output
+    16. Record Generation Metadata
+    17. Publish Generated Deployment
+
+The exact order may evolve with the Bootstrapper implementation.
+
+---
+
+# Bootstrap Configuration
+
+The Bootstrap configuration provides the starting point for generation.
+
+A conceptual structure is:
+
+    Bootstrap Configuration
+    ├── Framework
+    ├── Factory
+    ├── Deployment Profile
+    ├── Industry
+    ├── Problem
+    ├── Modules
+    ├── Packages
+    ├── Templates
+    └── Validation
+
+The Bootstrapper should resolve references rather than duplicate the complete definitions into the generated output.
+
+---
+
+# Generated Deployment Structure
+
+A representative generated structure may be:
+
+    generated_deployment/
+    ├── client/
+    ├── configuration/
+    ├── industry/
+    ├── modules/
+    ├── problem/
+    ├── validation/
+    ├── deployment.yaml
+    ├── profile.yaml
+    └── generation metadata
+
+The exact structure may differ between deployment profiles.
+
+---
+
+# Generated Deployment as Materialized State
+
+Generated output can be considered a materialized representation of selected architecture and implementation decisions.
+
+Conceptually:
+
+    Authoritative Definitions
+             │
+             ▼
+       Generation Process
+             │
+             ▼
+      Materialized Output
+             │
+             ▼
+       Deployment Runtime
+
+If the source definitions change, the generated deployment may become stale.
+
+Therefore generated output should expose sufficient provenance to determine when regeneration is required.
+
+---
+
+# Regeneration
+
+A deployment should be regenerable from authoritative inputs.
+
+A conceptual process is:
+
+    Existing Generated Deployment
+              │
+              ▼
+       Compare Provenance
+              │
+              ▼
+    Detect Changed Inputs
+              │
+              ▼
+          Regenerate
+              │
+              ▼
+      Validate New Output
+              │
+              ▼
+       Promote / Deploy
+
+Regeneration should be deterministic to the extent practical.
+
+---
+
+# Deterministic Generation
+
+Where possible, equivalent inputs should produce equivalent generated structures.
+
+Determinism helps with:
+
+- source control;
+- review;
+- testing;
+- reproducibility;
+- debugging;
+- deployment comparison.
+
+Non-deterministic values such as timestamps or generated identifiers should be explicitly identified rather than unnecessarily embedded throughout the generated structure.
+
+---
+
+# Generated vs Hand-Maintained Content
+
+Generated content should be distinguishable from manually authored source material.
+
+Where appropriate, generated files may contain metadata such as:
+
+    generated: true
+    generator: General Factory Bootstrapper
+    generation_version: ...
+    generation_id: ...
+
+The exact metadata schema is implementation-dependent.
+
+Manual edits to generated output should be treated carefully because regeneration may overwrite them.
+
+---
+
+# Generated Output Policy
+
+Unless a specific workflow explicitly supports manual modification:
+
+> **Generated output should be modified by changing the authoritative inputs and regenerating the deployment.**
+
+This reduces configuration drift between:
+
+- Framework definitions;
+- Factory bindings;
+- profiles;
+- templates;
+- packages;
+- generated output.
+
+---
+
+# Drift
+
+Generated deployment drift can occur when generated output is modified without updating the source definitions.
+
+Potential drift sources include:
+
+- manual edits;
+- outdated templates;
+- changed factory bindings;
+- changed package versions;
+- changed deployment profiles;
+- changed framework definitions;
+- different generator versions.
+
+A useful control is:
+
+    Source Definitions
+          │
+          ▼
+    Generation
+          │
+          ▼
+    Generated Output
+          │
+          ▼
+    Validation
+          │
+          ▼
+    Deployment
+
+---
+
+# Configuration Drift Detection
+
+Future tooling may compare generated output against the output expected from the current authoritative inputs.
+
+Conceptually:
+
+    Current Sources
+         │
+         ▼
+    Regenerate in Validation Mode
+         │
+         ▼
+    Compare
+         │
+         ├── No Difference
+         │
+         └── Difference Detected
+                 │
+                 ▼
+             Investigate Drift
+
+This can provide a useful deployment integrity mechanism.
+
+---
+
+# Deployment Validation
+
+Validation should occur before a generated deployment is promoted to a runtime environment.
+
+Potential checks include:
+
+### Structural
+
+- expected directories;
+- expected files;
+- valid schemas;
+- required metadata.
+
+### Dependency
+
+- required packages;
+- compatible versions;
+- required services;
+- runtime dependencies.
+
+### Binding
+
+- valid factory bindings;
+- available implementations;
+- connector compatibility;
+- adapter compatibility.
+
+### Configuration
+
+- valid configuration;
+- environment consistency;
+- required parameters;
+- missing references.
+
+### Resource
+
+- required resource classes;
+- available resource profiles;
+- quota constraints;
+- deployment compatibility.
+
+### Security
+
+- authorization configuration;
+- secret references;
+- exposed endpoints;
+- isolation configuration.
+
+---
+
+# Promotion
+
+A generated deployment may move through controlled stages.
+
+For example:
+
+    Generated
+       │
+       ▼
+    Validated
+       │
+       ▼
+    Reviewed
+       │
+       ▼
+    Approved
+       │
+       ▼
+    Deployable
+       │
+       ▼
+    Deployed
+
+Generation and deployment should remain distinct operations.
+
+A successfully generated deployment is not automatically a deployed system.
+
+---
+
+# Deployment Execution
+
+The generated deployment may be consumed by the appropriate deployment mechanisms.
+
+Conceptually:
+
+    Generated Deployment
+          │
+          ▼
+    Deployment Service
+          │
+          ▼
+    Deployment Profile
+          │
+          ▼
+    Infrastructure
+          │
+          ▼
+    Runtime
+
+The Generated Deployments directory should not become a replacement for the Deployment Service.
+
+---
+
+# Client Generation
+
+If the selected profile requires a client application, the Bootstrapper may generate:
+
+- shell configuration;
+- route definitions;
+- micro-frontend references;
+- environment configuration;
+- API endpoint configuration;
+- feature configuration.
+
+The generated client remains subject to the Web Platform architecture.
+
+---
+
+# Module Generation
+
+Modules may be generated according to selected capabilities.
+
+For example:
+
+    Problem Requirements
+          │
+          ▼
+    Capability Selection
+          │
+          ▼
+    Factory Bindings
+          │
+          ▼
+    Modules
+          │
+          ├── Workflow
+          ├── Simulation
+          ├── AI/ML
+          ├── Quantum
+          └── Evidence
+
+The generated module structure should retain provenance to the binding and package that produced it.
+
+---
+
+# Industry Generation
+
+Industry-specific generation may assemble reusable platform capabilities with industry-specific components.
+
+For example:
+
+    General Platform
+          │
+          ├── Workflow
+          ├── Virtual Assets
+          ├── Simulation
+          ├── Resources
+          └── Evidence
+          │
+          +
+    Agriculture Definition
+          │
+          ▼
+    Generated Agriculture Deployment
+
+The industry layer should not redefine the underlying General Factory.
+
+---
+
+# Problem Generation
+
+A problem definition may select a narrower set of capabilities.
+
+For example:
+
+    Industry
+       │
+       ▼
+    Problem
+       │
+       ├── Required Assets
+       ├── Required Workflow
+       ├── Required Compute
+       ├── Required Simulation
+       └── Required Evidence
+              │
+              ▼
+       Factory Resolution
+              │
+              ▼
+       Generated Deployment
+
+This supports reusable generation across different problem contexts.
+
+---
+
+# Configuration Resolution
+
+Configuration may come from multiple levels.
+
+A conceptual hierarchy is:
+
+    Platform Defaults
+          │
+          ▼
+    Deployment Profile
+          │
+          ▼
+    Tenant Configuration
+          │
+          ▼
+    Project Configuration
+          │
+          ▼
+    Workspace Configuration
+          │
+          ▼
+    Generated Deployment Configuration
+
+The exact precedence rules should be explicitly defined by the Bootstrapper.
+
+Generated configuration should make important resolved values traceable.
+
+---
+
+# Environment Separation
+
+Generated deployments may target different environments.
+
+For example:
+
+    Development
+    Test
+    Staging
+    Production
+
+Environment-specific generation should use explicit profiles rather than modifying the framework definitions for each environment.
+
+---
+
+# Tenant and Project Context
+
+Where the generated deployment is tenant/project scoped, that scope should be represented explicitly.
+
+For example:
+
+    Tenant
+      │
+      ▼
+    Project
+      │
+      ▼
+    Generated Deployment
+          │
+          ├── Configuration
+          ├── Modules
+          ├── Client
+          └── Runtime
+
+The generated output must not bypass the platform's tenant and project isolation mechanisms.
+
+---
+
+# Relationship to Workspace Manager
+
+A generated deployment may include or reference workspace configuration.
+
+For example:
+
+    Generated Deployment
+          │
+          ▼
+    Workspace Profile
+          │
+          ├── IDE
+          ├── Notebook
+          ├── Runtime
+          ├── Storage
+          ├── Workflow Runtime
+          └── Resources
+
+The Workspace Manager remains responsible for workspace lifecycle.
+
+Generated deployment output may provide the inputs or definitions needed to instantiate the workspace.
+
+---
+
+# Relationship to Web Platform
+
+Generated deployments may include Web Platform structures such as:
+
+- Web Shell configuration;
+- API Gateway configuration;
+- authentication configuration;
+- authorization configuration;
+- micro-frontend configuration;
+- service configuration;
+- tenant configuration;
+- workspace configuration.
+
+The generated output must remain consistent with the Web Platform architecture.
+
+---
+
+# Relationship to General Factory Services
+
+Generated modules may correspond to services such as:
+
+- Project Management;
+- Experiment Management;
+- Workflow;
+- Virtual Assets;
+- Resource Management;
+- Simulation;
+- Quantum Resources;
+- Evidence;
+- Deployment;
+- Administration.
+
+The generated deployment materializes selected service implementations.
+
+The service architecture itself remains defined in the appropriate General Factory source.
+
+---
+
+# Relationship to Resource Fabric
+
+Generated deployments may contain resource requirements or resource profile references.
+
+For example:
+
+    Generated Deployment
+          │
+          ▼
+    Resource Requirements
+          │
+          ▼
+    Resource Fabric
+          │
+          ▼
+    CPU / GPU / HPC / TPU / QPU / Virtual Compute
+
+The generated deployment should not become the authoritative inventory of physical resources.
+
+The Resource Fabric remains authoritative for resource resolution.
+
+---
+
+# AI/ML and Quantum Generation
+
+A deployment may include AI/ML or quantum capabilities where selected by the framework and profile.
+
+Potential generated components include:
+
+- AI/ML runtime references;
+- model-serving configuration;
+- experiment configuration;
+- quantum simulator configuration;
+- quantum emulator configuration;
+- QPU integration configuration.
+
+The generation process must preserve the distinction between:
+
+- AI/ML software;
+- quantum simulation;
+- quantum emulation;
+- physical QPU integration.
+
+Generated configuration should not imply physical quantum hardware availability merely because a QPU-capable binding exists.
+
+---
+
+# Simulation and Virtual-First Generation
+
+Generated deployments may support:
+
+- system simulation;
+- digital twin;
+- quantum simulation;
+- AI emulation;
+- virtual devices;
+- virtual-first execution.
+
+A conceptual flow is:
+
+    Problem
+      │
+      ▼
+    Virtual Asset Requirements
+      │
+      ▼
+    Simulation / Emulation Binding
+      │
+      ▼
+    Generated Deployment
+      │
+      ▼
+    Virtual Execution
+
+This supports progressive validation before higher-fidelity execution.
+
+---
+
+# Evidence Generation
+
+The Bootstrapper should preserve generation evidence.
+
+Potential evidence includes:
+
+- generation identifier;
+- input versions;
+- selected profile;
+- factory bindings;
+- package versions;
+- template versions;
+- validation results;
+- generated artifact manifest.
+
+This provides traceability from generated output back to its sources.
+
+---
+
+# Generation Manifest
+
+A future generated deployment may include a manifest similar conceptually to:
+
+    Generation Manifest
+    ├── deployment_id
+    ├── generation_id
+    ├── generator_version
+    ├── framework_version
+    ├── factory_version
+    ├── profile
+    ├── packages
+    ├── templates
+    ├── bindings
+    ├── generated_at
+    └── validation_status
+
+The exact schema should be defined by the Bootstrapper implementation.
+
+---
+
+# Source Control
+
+Generated deployments may be committed to source control when useful for:
+
+- review;
+- audit;
+- deployment reproducibility;
+- release packaging;
+- change comparison.
+
+However, source control of generated output does not make the generated output authoritative.
+
+The source definitions must remain identifiable.
+
+---
+
+# Generated Output and Git
+
+A generated deployment may produce a Git change set such as:
+
+    Framework Change
+          │
+          ▼
+    Factory Generation
+          │
+          ▼
+    Generated Diff
+          │
+          ▼
+    Review
+          │
+          ▼
+    Commit
+          │
+          ▼
+    Deployment
+
+This makes generated deployment changes reviewable.
+
+---
+
+# Generated Output Comparison
+
+Two generated deployments can be compared to identify changes caused by:
+
+- framework changes;
+- factory binding changes;
+- package changes;
+- profile changes;
+- template changes;
+- generator changes.
+
+For example:
+
+    Deployment A
+         │
+         ├── Profile v1
+         └── Factory Binding v1
+
+    Deployment B
+         │
+         ├── Profile v2
+         └── Factory Binding v1
+
+              │
+              ▼
+          Deployment Diff
+
+This can help distinguish intentional deployment changes from unexpected generation drift.
+
+---
+
+# Failure Handling
+
+Generation may fail because of:
+
+- missing framework definition;
+- invalid bootstrap configuration;
+- missing binding;
+- incompatible package;
+- missing template;
+- invalid profile;
+- unavailable implementation;
+- dependency conflict;
+- validation failure.
+
+Generation failures should be explicit.
+
+A partially generated deployment should not automatically be treated as deployable.
+
+---
+
+# Partial Generation
+
+If generation fails partway through, the Bootstrapper should clearly identify:
+
+- completed generation steps;
+- failed step;
+- unresolved dependencies;
+- generated artifacts;
+- validation state.
+
+Where practical, generation should use temporary output followed by controlled publication.
+
+Conceptually:
+
+    Inputs
+      │
+      ▼
+    Generate to Temporary Area
+      │
+      ▼
+    Validate
+      │
+      ├── Fail → Discard / Preserve Diagnostic Output
+      │
+      └── Pass
+           │
+           ▼
+      Publish Generated Deployment
+
+---
+
+# Idempotency
+
+Repeated generation from equivalent inputs should not create unnecessary differences.
+
+Idempotent generation supports:
+
+- reproducibility;
+- CI validation;
+- drift detection;
+- easier review;
+- reliable regeneration.
+
+Any intentionally generated unique identifiers should be documented.
+
+---
+
+# Security
+
+Generated deployments may contain configuration that influences security.
+
+Validation should consider:
+
+- authentication configuration;
+- authorization configuration;
+- tenant isolation;
+- project isolation;
+- endpoint exposure;
+- secret references;
+- network configuration;
+- resource access;
+- service permissions.
+
+Secrets should be handled through secure mechanisms rather than copied into generated source-controlled files.
+
+---
+
+# Non-Goals
+
+This directory does not define:
+
+- the General Framework;
+- the General Factory architecture;
+- the Resource Fabric architecture;
+- the authoritative deployment architecture;
+- the source of framework semantics;
+- the source of factory semantics;
+- physical resource inventory;
+- production readiness by generation alone;
+- a universal deployment schema for every environment.
+
+---
+
+# Scope
+
+Generated Deployments covers:
+
+- generated deployment structures;
+- generated client structures;
+- generated configuration;
+- industry composition;
+- problem composition;
+- generated modules;
+- generated validation;
+- deployment profiles;
+- generation metadata;
+- traceability;
+- provenance;
+- generated artifact validation;
+- regeneration;
+- deployment materialization.
+
+It does not replace the authoritative definitions from which the generated deployment is produced.
+
+---
+
+# Current Status
+
+**Status:** Post-pilot architecture / generated-output definition.
+
+The `generated_deployments` area establishes the output boundary for the General Factory Bootstrapper.
+
+The presence of directories or files under this area should be interpreted as generated or generation-oriented artifacts, not as proof that every corresponding runtime capability has been implemented or deployed.
+
+---
+
+# Guiding Principles
+
+The central principles are:
+
+> **Generated deployments are outputs, not architectural sources of truth.**
+
+> **Framework definitions remain semantically authoritative.**
+
+> **Factory definitions and bindings remain implementation-resolution authorities.**
+
+> **Deployment profiles determine deployment-specific realization.**
+
+> **Packages and templates provide reusable implementation material.**
+
+> **Generation must remain traceable.**
+
+> **Validation must precede controlled deployment.**
+
+> **Generated output should be reproducible where practical.**
+
+> **Changes should normally be made in authoritative inputs and then regenerated rather than manually modifying generated artifacts.**
+
+> **Generated deployments must not be confused with deployed runtime environments.**
+
+---
+
+# Future Evolution
+
+Future development may include:
+
+- formal generation manifest;
+- generated deployment schema;
+- deterministic generation;
+- generation IDs;
+- source provenance;
+- framework/factory version tracking;
+- package lock information;
+- template version tracking;
+- deployment diff tooling;
+- drift detection;
+- regeneration tooling;
+- structural validation;
+- security validation;
+- deployment-profile validation;
+- generated artifact signing;
+- artifact integrity checks;
+- promotion workflows;
+- deployment approval;
+- generated-output cleanup;
+- rollback to previously generated deployments;
+- deployment reproducibility tests;
+- Bootstrapper integration tests;
+- generated deployment conformance tests.
+
+The `generated_deployments` area is therefore intended to provide a **traceable, validated and reproducible materialization boundary** between the authoritative General Framework / General Factory definitions and concrete deployment structures.
+---
