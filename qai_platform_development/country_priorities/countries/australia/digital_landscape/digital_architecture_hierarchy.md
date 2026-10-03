@@ -406,3 +406,70 @@ Begin with the classical baseline and existing demonstrable features. Add advanc
 **Tag:** `@vijaymohire`
 
 ---
+## 14. Architecture Source and Requirement Traceability
+
+For each authoritative source used to inform an architecture decision, maintain a source record containing:
+
+| Field                       | Description                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------- |
+| Source ID                   | Unique reference used across related documentation                           |
+| Source title                | Official title of the policy, standard, guidance, or technical document      |
+| Issuing authority           | Government department, regulator, standards body, or other publisher         |
+| Canonical URL               | Official source or publication page                                          |
+| Publication / revision      | Publication date or version, where available                                 |
+| Date accessed               | Date the source was checked                                                  |
+| Relevant provision          | Specific section, clause, requirement, or guidance passage                   |
+| Applicability               | Jurisdiction, project type, organisation, and relevant conditions            |
+| Requirement classification  | Law, regulation, policy, contract, standard, guidance, or strategic priority |
+| Related architecture layers | One or more affected layers, L1–L10                                          |
+| Evidence and action         | Evidence reference, identified gap, action owner, and review trigger         |
+
+A policy or strategic priority must not automatically be recorded as a mandatory technical requirement. Record the applicable obligation and its basis separately.
+
+## 15. Architecture Decision Records
+
+Record material architecture decisions using a consistent identifier, such as `ADR-AU-001`.
+
+Each record should capture:
+
+* Decision ID, title, date, and accountable decision owner.
+* Business or operational requirement.
+* Relevant architecture layers and affected components.
+* Options considered and reasons for the selected approach.
+* Applicable source requirements and jurisdictional profile.
+* Security, privacy, interoperability, resilience, safety, and IP implications.
+* Dependencies, assumptions, risks, and unresolved questions.
+* Verification approach and evidence required.
+* Decision status and conditions for review or reversal.
+
+Architecture decisions remain proposals until they are approved through the applicable project governance process.
+
+## 16. Implementation and Verification Boundaries
+
+Maintain a distinction between the reference architecture and its implementation in each project.
+
+| Evidence state                     | Permitted interpretation                                                     |
+| ---------------------------------- | ---------------------------------------------------------------------------- |
+| Conceptual architecture documented | The proposed structure and relationships have been described.                |
+| Component designed                 | A component design or specification exists.                                  |
+| Component implemented              | Implementation evidence is available for the defined scope.                  |
+| Integration demonstrated           | A defined interaction has been demonstrated in a recorded environment.       |
+| Acceptance criteria met            | Recorded test results satisfy the specified acceptance criteria.             |
+| Independently assessed             | A suitably independent assessment has been completed and its scope recorded. |
+
+Do not infer end-to-end implementation from the existence of individual components. Do not infer production readiness, legal compliance, security certification, or quantum advantage from an architecture diagram or demonstration alone.
+
+## 17. Update Record — 3 October 2026
+
+Review actions:
+
+* Retain the ten-layer reference architecture and its cross-cutting controls.
+* Verify the official policy sources, relevant provisions, and applicable dates.
+* Check Markdown rendering and confirm whether escaped characters are present in the actual source file.
+* Validate the related-document paths against the current repository.
+* Establish source IDs and architecture decision records as project work proceeds.
+* Record implementation and verification evidence before upgrading readiness statuses.
+
+**Review outcome:** Existing architecture retained as a proposed reference model. Source traceability, repository-link validation, and project-specific implementation evidence remain follow-up actions.
+
+---

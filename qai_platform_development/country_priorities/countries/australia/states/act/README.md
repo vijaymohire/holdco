@@ -249,19 +249,41 @@ Keep policy alignment separate from stakeholder validation, implementation evide
 
 ## 12. Related Documents
 
-- `../../README.md` — Australia country-priorities overview.
-- `../../national_priorities.md` — Australian national priorities.
-- `../../product_alignment.md` — QAI product alignment.
-- `../../sector_priorities.md` — sector opportunity mapping.
-- `../../gap_analysis.md` — capability readiness and gaps.
-- `../../frameworks/README.md` — common frameworks.
-- `../../frameworks/government_development_alignment.md` — government alignment method.
-- `../../frameworks/jurisdictional_compliance.md` — jurisdictional applicability.
-- `../../digital_landscape/act_digital_landscape.md` — ACT digital landscape.
-- `../../procurement/README.md` — procurement workflow.
-- `../../commercialization/README.md` — commercialization overview.
+### Australia-wide references
+
+* `../../README.md` — Australia country-priorities overview.
+* `../../national_priorities.md` — Australian national priorities.
+* `../../product_alignment.md` — QAI product alignment.
+* `../../sector_priorities.md` — sector opportunity mapping.
+* `../../gap_analysis.md` — capability readiness and gaps.
+
+### Shared frameworks
+
+* `../../frameworks/README.md` — common frameworks.
+* `../../frameworks/government_development_alignment.md` — government alignment method.
+* `../../frameworks/jurisdictional_compliance.md` — jurisdictional applicability and compliance governance.
+* `../../frameworks/standards_assurance_framework.md` — standards and assurance mapping.
+* `../../frameworks/procurement_alignment_framework.md` — procurement requirements and supplier readiness.
+* `../../frameworks/commercialization_pathways.md` — commercialization pathways.
+
+### Digital landscape and delivery
+
+* `../../digital_landscape/README.md` — digital landscape index.
+* `../../digital_landscape/national_digital_landscape.md` — Australian national digital landscape.
+* `../../digital_landscape/act_digital_landscape.md` — ACT digital landscape.
+* `../../digital_landscape/digital_architecture_hierarchy.md` — digital architecture layers.
+* `../../digital_landscape/government_project_lifecycle.md` — public-sector project lifecycle.
+* `../../digital_landscape/private_project_lifecycle.md` — private-sector commercialization lifecycle.
+
+### Procurement and commercialization
+
+* `../../procurement/README.md` — procurement workflow.
+* `../../commercialization/README.md` — commercialization overview.
+
+**Path verification:** Confirm that each linked file or folder exists in the repository. Remove or revise any link whose target has not yet been created.
 
 ---
+
 
 **Maintainer:** Bhadale IT / QAI–FAEP
 **Working principle:** Reuse suitable systems, design for integration, validate needs, and demonstrate measurable value.
