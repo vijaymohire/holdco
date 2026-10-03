@@ -651,3 +651,159 @@ The current structure establishes the relationship between:
 **Use Australian evidence to identify genuine priority and sector relationships, distinguish those facts from inferred opportunities, and then trace validated opportunities into QAI Platform product development.**
 ~~~
 ---
+
+---
+
+## 24. Release Update — 3 October 2026: FAEP–QAI Industrial Future Alignment
+
+**Release date:** 3 October 2026
+**Status:** Strategic extension to the working country profile
+**Change method:** Appended release note; existing sections 1–23 are retained as supplied.
+
+### 24.1 Purpose
+
+This release extends the Australia Country Priority Profile with the emerging FAEP–QAI vision for supporting Australian industrial capability, productivity, resilience, responsible technology adoption and commercialization. The existing profile remains the baseline for evidence collection, country-to-sector mapping, product alignment and gap analysis. This section adds strategic context; it does not replace earlier analysis or convert inferred opportunities into documented government priorities.
+
+### 24.2 Updated Vision
+
+**FAEP–QAI is envisioned as a people-centred, cross-industry technology and engineering ecosystem that can help Australian organizations reuse existing capabilities, connect them through interoperable digital infrastructure, augment human work with AI and quantum technologies where validated, and progressively develop more productive, resilient and sustainable industrial systems.**
+
+The approach is collaborative and problem-first. QAI is an enabling capability, not an end in itself. Projects should begin with a concrete industrial, organizational or community need and establish the technical, operational and economic case before selecting technologies or committing to scale.
+
+### 24.3 National-Priority and Critical-Technology Alignment
+
+Continue investigating official Australian evidence relevant to:
+
+- Artificial intelligence, AI adoption and responsible AI.
+- Quantum technologies and hybrid quantum-classical systems.
+- Advanced manufacturing and materials.
+- Advanced information and communications technologies.
+- Autonomous systems, robotics, positioning, timing and sensing.
+- Clean energy generation, storage and resource efficiency.
+- Critical minerals, industrial capability and supply-chain resilience.
+- Data centres, compute infrastructure and digital infrastructure.
+- Research, skills, productivity and technology commercialisation.
+- Agriculture, food systems and regional development, supported by sector-specific evidence.
+
+These are areas for evidence-led analysis, not a ranked list. Their inclusion does not imply that every proposed QAI product is requested, endorsed, funded or commercially validated by the Australian Government.
+
+### 24.4 People-First Industrial Development Principles
+
+1. **People first:** augment the capabilities of workers, engineers, researchers, businesses and communities.
+2. **Problem first:** begin with a defined need and measurable outcomes.
+3. **Reuse before replace:** use compatible existing infrastructure, software, equipment, data and partner capabilities where practical.
+4. **Interoperate by design:** prefer modular architectures, clear separation of concerns, open standards and well-defined interfaces.
+5. **Hybrid by design:** select classical computing, AI and quantum technologies according to workload, evidence, maturity, cost and risk.
+6. **Automate responsibly:** introduce automation progressively, with appropriate safety, governance and human oversight.
+7. **Partner before duplicating:** collaborate with established industry, research, manufacturing and service capabilities where appropriate.
+8. **Protect and validate:** apply suitable IP protection, controlled disclosure, technical validation and commercial due diligence.
+9. **Build sustainably:** consider productivity, resilience, resource use, workforce development and long-term operating viability.
+10. **Scale on evidence:** progress from assessment and experimentation to pilots and production through explicit decision gates.
+
+### 24.5 Operating Sequence
+
+```text
+Reuse → Connect → Augment → Automate → Optimize → Innovate
+```
+
+- **Reuse:** identify compatible assets, capabilities, systems and knowledge already available.
+- **Connect:** establish interoperable data, communication and workflow interfaces.
+- **Augment:** add analytics, AI, engineering intelligence or quantum capabilities where justified.
+- **Automate:** automate suitable repeatable tasks once operational and safety requirements are understood.
+- **Optimize:** improve resource allocation, energy use, production, logistics and system performance.
+- **Innovate:** develop new products, services, operating models and market opportunities.
+
+This is a guiding method, not a requirement that every project follow every step in a fixed order.
+
+### 24.6 FAEP–QAI Industrial Ecosystem Model
+
+```text
+QAI IP and R&D Core
+        ↓
+Shared Technology and Engineering Platforms
+        ↓
+Industry Partners and Specialized Subsidiaries
+        ↓
+Pilots, Demonstration Facilities and Niche Production
+        ↓
+Products and Services
+        ↓
+Australian Customers, Domestic Markets and Exports
+        ↓
+Evidence, Revenue and Reinvestment into R&D
+```
+
+Shared engineering and research capabilities may support multiple sector-specific initiatives. Potential capabilities include systems engineering, software and data engineering, AI/agent frameworks, simulation, digital twins, security, verification and validation, lifecycle management, governance and resource orchestration.
+
+The model should remain modular. Each industrial opportunity should be assessed independently, with clear ownership, licensing, investment, governance and commercialization boundaries. Investment in one venture should not automatically require transfer of the entire QAI IP portfolio.
+
+### 24.7 Potential Cross-Sector Application Areas
+
+| Application area | Potential areas for investigation |
+|---|---|
+| Advanced manufacturing | Digital engineering, production optimization, predictive maintenance, robotics and factory digital twins |
+| AI and digital infrastructure | AI workflows, hybrid compute orchestration, resource optimization and data-centre digital twins |
+| Clean energy and utilities | Energy management, storage scheduling, renewable integration and resource efficiency |
+| Critical minerals and resources | Process modelling, sensing, operational optimization and supply-chain intelligence |
+| Agriculture and food | Digital Farm, precision agriculture, water/resource management and farm-to-market visibility |
+| Robotics and autonomous systems | Human–machine collaboration, simulation, validation and operational orchestration |
+| Logistics and supply chains | Scenario modelling, inventory/workflow optimization and resilience analysis |
+| Regional industrial development | Shared engineering, demonstration facilities, specialist partners and skills development |
+| Public services and infrastructure | Workflow modernization, digital twins and evidence-based decision support, subject to relevant requirements |
+
+These are potential analytical directions, not established product performance or confirmed market demand. Sector-specific claims should be substantiated in the detailed country files.
+
+### 24.8 IP, Investment and Commercialization Approach
+
+```text
+Official Evidence and Industry Need
+              ↓
+Problem and Opportunity Definition
+              ↓
+QAI Capability and IP Screening
+              ↓
+Technical, Patent and Market Assessment
+              ↓
+Selected Candidate Families
+              ↓
+Controlled Disclosure and IP Protection
+              ↓
+Partner / Capital / Pilot Assessment
+              ↓
+Product Development and Validation
+              ↓
+Commercialization, Licensing or Production
+```
+
+Connect priority analysis to a controlled commercialization process. Avoid premature disclosure of unpublished inventions and avoid treating the full internal IP catalogue as a single investment proposition. Select candidate technologies based on differentiation, relevance to a real problem, technical readiness, potential customer or partner demand, protection options, development cost and a credible path to deployment.
+
+Assess public programs and private-sector investment separately against their actual eligibility and due-diligence requirements. Strategic alignment alone does not establish funding eligibility or approval.
+
+### 24.9 Evidence and Validation Rules
+
+- Label official statements as documented evidence and preserve source references.
+- Identify analytical interpretations and inferred opportunities explicitly.
+- Describe proposed QAI contributions as potential until validated.
+- Do not imply government endorsement, procurement interest, funding approval or commercial maturity without supporting evidence.
+- Record publication dates, source URLs, sector mappings and validation status in the detailed files.
+- Validate Australian sector-specific claims using relevant Australian sources.
+- Assess applicable security, privacy, regulatory, procurement and export-control requirements for each opportunity.
+
+### 24.10 Relationship to Existing Country Files
+
+- `national_priorities.md` — retain official national evidence and source details.
+- `sector_priorities.md` — connect documented priorities to sectors and specific problem classes.
+- `product_alignment.md` — record potential QAI product relationships separately from official policy statements.
+- `gap_analysis.md` — identify validated technical, operational, regulatory, partner and commercialization gaps.
+
+The README remains the country-level entry point. Detailed evidence and implementation decisions should be maintained in the relevant supporting files.
+
+### 24.11 Release Summary
+
+The October 2026 update introduces a clearer industrial ecosystem perspective while preserving the original country-priority analysis. It connects Australian evidence to a people-first approach, shared QAI engineering capabilities, sector-specific opportunities, controlled IP commercialization and staged industrial development.
+
+**Guiding principle:** Use Australian evidence to identify genuine priorities and needs; distinguish documented facts from inferred opportunities; and trace validated opportunities into QAI Platform development and responsible commercialization.
+
+**Attribution:** @vijaymohire
+
+---
