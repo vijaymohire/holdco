@@ -1,0 +1,5 @@
+# QAI Resource Fabric configuration placeholder.
+
+resource_fabric:
+  discovery: enabled
+  allocation: contract_driven

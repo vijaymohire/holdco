@@ -1,0 +1,7 @@
+# Release metadata placeholder.
+
+release:
+  name: example-release
+  version: 0.1.0
+  promotion: manual
+  rollback: supported

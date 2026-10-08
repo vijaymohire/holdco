@@ -1,0 +1,7 @@
+# Evidence manifest placeholder.
+
+evidence:
+  provenance: true
+  metrics: true
+  traces: true
+  artifacts: true

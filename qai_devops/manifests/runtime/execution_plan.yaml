@@ -1,0 +1,11 @@
+# Runtime execution plan placeholder.
+
+execution_plan:
+  name: example-plan
+  stages: []
+
+routing:
+  policy: default
+
+evidence:
+  required: true

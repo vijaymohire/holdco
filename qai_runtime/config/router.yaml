@@ -1,0 +1,5 @@
+# QAI Router configuration placeholder.
+
+routing:
+  provider_neutral: true
+  failover_enabled: false

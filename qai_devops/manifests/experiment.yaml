@@ -1,0 +1,11 @@
+# Experiment manifest placeholder.
+
+experiment:
+  name: example-experiment
+  purpose: validation
+
+execution:
+  mode: simulation
+
+evidence:
+  required: true

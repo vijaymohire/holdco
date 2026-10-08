@@ -1,0 +1,4 @@
+# QAI Runtime logging configuration placeholder.
+
+logging:
+  level: INFO

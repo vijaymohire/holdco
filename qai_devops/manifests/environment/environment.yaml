@@ -1,0 +1,9 @@
+# Environment definition.
+
+environment:
+  name: dev
+  type: development
+  target: local
+
+runtime:
+  mode: development

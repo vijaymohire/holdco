@@ -1,0 +1,11 @@
+# QAI Runtime configuration placeholder.
+
+runtime:
+  mode: development
+  provider_neutral: true
+
+evidence:
+  enabled: true
+
+secrets:
+  committed: false

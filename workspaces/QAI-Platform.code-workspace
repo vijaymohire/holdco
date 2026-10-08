@@ -1,0 +1,32 @@
+{
+    "folders": [
+        {
+            "name": "HoldCo",
+            "path": ".."
+        },
+        {
+            "name": "QAI Runtime",
+            "path": "../qai_runtime"
+        },
+        {
+            "name": "QAI DevOps",
+            "path": "../qai_devops"
+        },
+        {
+            "name": "QAI Lab",
+            "path": "../qai_lab"
+        },
+        {
+            "name": "General Framework",
+            "path": "../general_framework"
+        },
+        {
+            "name": "General Factory",
+            "path": "../general_factory"
+        }
+    ],
+    "settings": {
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+    }
+}

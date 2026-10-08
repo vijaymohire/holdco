@@ -1,0 +1,10 @@
+# Deployment intent.
+# This is NOT the future Deployment Operator implementation.
+
+deployment:
+  name: example-deployment
+  environment: dev
+  target: local
+
+runtime:
+  version: 0.1.0

@@ -1,0 +1,5 @@
+# QAI Optimiser configuration placeholder.
+
+optimisation:
+  resource_reduction: true
+  cycle_time: true

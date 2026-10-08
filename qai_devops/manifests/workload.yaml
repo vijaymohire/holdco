@@ -1,0 +1,14 @@
+# Logical workload manifest.
+# Describes WHAT is required, not a specific infrastructure product.
+
+workload:
+  name: example-workload
+  type: generic
+  execution_profile: default
+
+requirements:
+  capabilities: []
+  constraints: []
+
+evidence:
+  required: true

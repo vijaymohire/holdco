@@ -1,0 +1,5 @@
+# QAI Planner configuration placeholder.
+
+planner:
+  decomposition: contract_driven
+  mapping: resource_aware

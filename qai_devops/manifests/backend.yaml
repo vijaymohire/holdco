@@ -1,0 +1,6 @@
+# Backend declaration placeholder.
+
+backend:
+  name: example-backend
+  class: simulator
+  adapter: generic

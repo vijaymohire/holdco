@@ -1,0 +1,15 @@
+# Product-neutral resource profile.
+
+resource_profile:
+  name: default
+
+capabilities:
+  cpu: true
+  gpu: false
+  fpga: false
+  hpc: false
+  qpu: false
+  storage: true
+  communication: true
+
+constraints: []
