@@ -136,11 +136,23 @@ function Test-RegistryEvidenceReference {
     $ResolvedBase = [System.IO.Path]::GetFullPath($BaseDirectory)
     $ResolvedPath = [System.IO.Path]::GetFullPath($CandidatePath)
 
+
     # Enforce containment within the declared base directory.
-    $BasePrefix = $ResolvedBase.TrimEnd(
-        [System.IO.Path]::DirectorySeparatorChar,
-        [System.IO.Path]::AltDirectorySeparatorChar
-    ) + [System.IO.Path]::DirectorySeparatorChar
+    # Preserve filesystem roots such as C:\ when building the prefix.
+    $BaseRoot = [System.IO.Path]::GetPathRoot($ResolvedBase)
+
+    if ($ResolvedBase.Equals(
+        $BaseRoot,
+        [System.StringComparison]::OrdinalIgnoreCase
+    )) {
+        $BasePrefix = $ResolvedBase
+    }
+    else {
+        $BasePrefix = $ResolvedBase.TrimEnd(
+            [System.IO.Path]::DirectorySeparatorChar,
+            [System.IO.Path]::AltDirectorySeparatorChar
+        ) + [System.IO.Path]::DirectorySeparatorChar
+    }
 
     $PathIsInsideBase = (
         $ResolvedPath.StartsWith(
@@ -152,6 +164,7 @@ function Test-RegistryEvidenceReference {
             [System.StringComparison]::OrdinalIgnoreCase
         )
     )
+
 
     if (-not $PathIsInsideBase) {
         return [pscustomobject]@{

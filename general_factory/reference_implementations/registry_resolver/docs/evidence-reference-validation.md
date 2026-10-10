@@ -54,6 +54,8 @@ are true.
 
 The validator normalizes the candidate path and checks that it is inside the
 declared base directory before checking file existence or calculating a hash.
+The containment-prefix calculation preserves filesystem roots such as `C:\`
+rather than trimming away the root separator.
 
 Directory traversal using ordinary normalized paths is rejected.
 
@@ -62,15 +64,15 @@ The validator also checks existing path components for the filesystem
 junctions, or other reparse points are rejected with status
 `LINK_NOT_ALLOWED`.
 
-The symbolic-link test successfully created a link to an external file and
-confirmed that the validator rejected it. The reference-validation test suite
-reported **12 passed and 0 failed**.
+The focused test suite reported **17 passed and 0 failed**, including a
+successful symbolic-link rejection test and a filesystem-root containment
+regression test. The root regression test uses a unique missing path and does
+not create a file at the filesystem root.
 
 This is a defensive path-validation measure, not a complete filesystem
 security boundary. Filesystem changes between validation and subsequent file
 access may still create time-of-check/time-of-use risks. The validator does
 not claim to eliminate those risks.
-
 ## 7. Network and mutation boundaries
 
 The validator does not retrieve URLs, execute evidence, or modify evidence
@@ -78,15 +80,15 @@ files. File hashes are read-only integrity checks.
 
 ## 8. Current test evidence
 
-The local test run reported:
+The latest local reference-validation test run reported:
 
-- 11 passed.
+- 17 passed.
 - 0 failed.
-- Symbolic-link test skipped because of Windows permissions.
+- Symbolic-link rejection test passed.
+- Filesystem-root containment regression test passed.
 
-The results cover synthetic test fixtures and do not establish deployment
+The results cover local test fixtures and do not establish deployment
 readiness, evidence authenticity, or live infrastructure correctness.
-
 ## 9. Integration policy
 
 Before integrating this validator into the permanent adapter:

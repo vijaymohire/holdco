@@ -49,12 +49,85 @@ try {
     $Existing = Test-RegistryEvidenceReference -Reference $FileUri -BaseDirectory $BaseDirectory
     Assert-Test "Existing local file is recognized" ($Existing.status -eq "EXISTS" -and $Existing.exists)
 
+
+   # Additional edge case: a file URI containing an encoded space.
+   $SpacedFile = Join-Path $BaseDirectory "report with spaces.txt"
+   Set-Content -LiteralPath $SpacedFile -Value "encoded path test" -Encoding UTF8
+   $SpacedFileUri = ([System.Uri]$SpacedFile).AbsoluteUri
+
+   $SpacedFileResult = Test-RegistryEvidenceReference `
+       -Reference $SpacedFileUri `
+       -BaseDirectory $BaseDirectory
+
+   Assert-Test "File URI with encoded spaces resolves correctly" (
+       $SpacedFileResult.status -eq "EXISTS" -and
+       $SpacedFileResult.exists
+   )
+
+
     $MissingUri = ([System.Uri](Join-Path $BaseDirectory "missing.txt")).AbsoluteUri
     $Missing = Test-RegistryEvidenceReference -Reference $MissingUri -BaseDirectory $BaseDirectory
     Assert-Test "Missing local file is reported" ($Missing.status -eq "MISSING" -and -not $Missing.exists)
 
+       # Regression test: filesystem-root base directory.
+   # Uses a unique missing path and does not create anything at the root.
+   $FilesystemRoot = [System.IO.Path]::GetPathRoot(
+       [System.IO.Path]::GetFullPath($TempRoot)
+   )
+
+   $RootChildName = "registry-resolver-missing-" +
+       [guid]::NewGuid().ToString("N") + ".txt"
+
+   $RootChildPath = Join-Path $FilesystemRoot $RootChildName
+   $RootChildUri = ([System.Uri]$RootChildPath).AbsoluteUri
+
+   $RootContainmentResult = Test-RegistryEvidenceReference `
+       -Reference $RootChildUri `
+       -BaseDirectory $FilesystemRoot
+
+   Assert-Test "Filesystem-root base accepts a contained missing path" (
+       $RootContainmentResult.status -eq "MISSING" -and
+       -not $RootContainmentResult.exists
+   )
+
+
     $Outside = Test-RegistryEvidenceReference -Reference $OutsideUri -BaseDirectory $BaseDirectory
     Assert-Test "Outside path is rejected" ($Outside.status -eq "OUTSIDE_BASE_DIRECTORY" -and -not $Outside.exists)
+   # Additional edge case: the base directory itself is not a file.
+   $BaseUri = ([System.Uri]$BaseDirectory).AbsoluteUri
+   $BaseReferenceResult = Test-RegistryEvidenceReference `
+       -Reference $BaseUri `
+       -BaseDirectory $BaseDirectory
+
+   Assert-Test "Base directory is not accepted as a file" (
+       $BaseReferenceResult.status -eq "MISSING" -and
+       -not $BaseReferenceResult.exists
+   )
+
+
+   # Additional edge case: a nested directory is not accepted as a file.
+   $NestedDirectory = Join-Path $BaseDirectory "nested"
+   New-Item -ItemType Directory -Path $NestedDirectory -Force | Out-Null
+   $NestedDirectoryUri = ([System.Uri]$NestedDirectory).AbsoluteUri
+
+   $DirectoryReferenceResult = Test-RegistryEvidenceReference `
+       -Reference $NestedDirectoryUri `
+       -BaseDirectory $BaseDirectory
+
+   Assert-Test "Directory reference is not accepted as a file" (
+       $DirectoryReferenceResult.status -eq "MISSING" -and
+       -not $DirectoryReferenceResult.exists
+   )
+
+
+   # Additional edge case: HTTPS URL without a host.
+   $InvalidUrl = Test-RegistryEvidenceReference `
+       -Reference "https:///missing-host/report.pdf" `
+       -BaseDirectory $BaseDirectory
+
+   Assert-Test "HTTPS URL without a host is rejected" (
+       $InvalidUrl.status -eq "INVALID"
+   )
 
 
     # Additional adversarial test: directory traversal.
