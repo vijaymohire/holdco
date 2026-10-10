@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General Factory Resolution Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "status",
+    "requested_capability",
+    "matched_bindings",
+    "findings",
+    "evidence_references"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "COMPATIBLE",
+        "INCOMPATIBLE",
+        "INSUFFICIENT_INFORMATION"
+      ]
+    },
+    "requested_capability": {
+      "type": "string",
+      "minLength": 1
+    },
+    "matched_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

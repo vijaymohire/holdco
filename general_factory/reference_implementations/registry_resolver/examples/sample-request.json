@@ -1,0 +1,9 @@
+{
+  "request_id": "REQ-QAI-001",
+  "framework_capability_id": "qai_experimentation",
+  "environment": "local",
+  "execution_mode": "virtual",
+  "required_resources": [
+    "cpu"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General Factory Resolution Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "framework_capability_id"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "framework_capability_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "environment": {
+      "type": "string"
+    },
+    "execution_mode": {
+      "type": "string"
+    },
+    "implementation_version": {
+      "type": "string"
+    },
+    "required_resources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
