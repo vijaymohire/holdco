@@ -40,6 +40,10 @@ adapter.
 
 Invalid base directories and malformed expected hashes raise errors.
 
+Local filesystem I/O errors encountered while resolving or hashing a file may also
+raise errors rather than return a structured result. A failed hash calculation
+does not establish integrity and must not be treated as successful verification.
+
 ## 5. SHA-256 validation
 
 An optional expected SHA-256 value must contain exactly 64 hexadecimal
