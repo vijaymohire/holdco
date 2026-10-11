@@ -93,6 +93,22 @@ try {
 
     $Outside = Test-RegistryEvidenceReference -Reference $OutsideUri -BaseDirectory $BaseDirectory
     Assert-Test "Outside path is rejected" ($Outside.status -eq "OUTSIDE_BASE_DIRECTORY" -and -not $Outside.exists)
+    # Adversarial test: sibling directory shares the base directory name prefix.
+    $SiblingDirectory = Join-Path $TempRoot "evidence-backup"
+    New-Item -ItemType Directory -Path $SiblingDirectory -Force | Out-Null
+
+    $SiblingFile = Join-Path $SiblingDirectory "report.txt"
+    Set-Content -LiteralPath $SiblingFile -Value "sibling content" -Encoding UTF8
+    $SiblingUri = ([System.Uri]$SiblingFile).AbsoluteUri
+
+    $SiblingResult = Test-RegistryEvidenceReference `
+        -Reference $SiblingUri `
+        -BaseDirectory $BaseDirectory
+
+    Assert-Test "Sibling directory prefix collision is rejected" (
+        $SiblingResult.status -eq "OUTSIDE_BASE_DIRECTORY" -and
+        -not $SiblingResult.exists
+    )
    # Additional edge case: the base directory itself is not a file.
    $BaseUri = ([System.Uri]$BaseDirectory).AbsoluteUri
    $BaseReferenceResult = Test-RegistryEvidenceReference `
@@ -128,7 +144,6 @@ try {
    Assert-Test "HTTPS URL without a host is rejected" (
        $InvalidUrl.status -eq "INVALID"
    )
-
 
     # Additional adversarial test: directory traversal.
     $TraversalPath = Join-Path $BaseDirectory "..\outside\outside.txt"
