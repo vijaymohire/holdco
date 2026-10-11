@@ -115,7 +115,26 @@ function Test-RegistryEvidenceReference {
                 }
             }
 
+
+            if (-not [string]::IsNullOrEmpty($FileUri.Query) -or
+                -not [string]::IsNullOrEmpty($FileUri.Fragment)) {
+                return [pscustomobject]@{
+                    reference = $Reference
+                    status = "INVALID"
+                    reference_type = "file"
+                    resolved_path = $null
+                    exists = $false
+                    hash_status = "NOT_CHECKED"
+                    expected_sha256 = $ExpectedSha256
+                    actual_sha256 = $null
+                    findings = @(
+                        "File URI must not contain a query or fragment component."
+                    )
+                }
+            }
+
             $CandidatePath = $FileUri.LocalPath
+
         }
 
         default {

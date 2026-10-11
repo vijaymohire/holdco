@@ -64,6 +64,26 @@ try {
        $SpacedFileResult.exists
    )
 
+    # File URIs with query or fragment components are ambiguous for local evidence.
+    $FragmentUri = $FileUri + "#section"
+    $FragmentResult = Test-RegistryEvidenceReference `
+        -Reference $FragmentUri `
+        -BaseDirectory $BaseDirectory
+
+    Assert-Test "File URI with fragment is rejected" (
+        $FragmentResult.status -eq "INVALID" -and
+        -not $FragmentResult.exists
+    )
+
+    $QueryUri = $FileUri + "?version=1"
+    $QueryResult = Test-RegistryEvidenceReference `
+        -Reference $QueryUri `
+        -BaseDirectory $BaseDirectory
+
+    Assert-Test "File URI with query is rejected" (
+        $QueryResult.status -eq "INVALID" -and
+        -not $QueryResult.exists
+    )
 
     $MissingUri = ([System.Uri](Join-Path $BaseDirectory "missing.txt")).AbsoluteUri
     $Missing = Test-RegistryEvidenceReference -Reference $MissingUri -BaseDirectory $BaseDirectory
