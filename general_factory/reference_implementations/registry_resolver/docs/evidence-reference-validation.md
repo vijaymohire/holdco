@@ -27,6 +27,11 @@ adapter.
 | `synthetic` | Accepts synthetic references for testing but does not verify a real resource |
 | Other schemes | Returns `INVALID` |
 
+For `file:` URIs, non-empty query and fragment components are rejected
+with status `INVALID`. This prevents the validator from silently ignoring
+URI components when resolving a local filesystem path.
+
+
 ## 4. Result statuses
 
 | Status | Meaning |
@@ -68,10 +73,10 @@ The validator also checks existing path components for the filesystem
 junctions, or other reparse points are rejected with status
 `LINK_NOT_ALLOWED`.
 
-The focused test suite reported **17 passed and 0 failed**, including a
-successful symbolic-link rejection test and a filesystem-root containment
-regression test. The root regression test uses a unique missing path and does
-not create a file at the filesystem root.
+The focused test suite most recently reported **20 passed and 0 failed**,
+including file URI query/fragment rejection, symbolic-link rejection, and
+filesystem-root containment regression tests. The root regression test uses
+a unique missing path and does not create a file at the filesystem root.
 
 This is a defensive path-validation measure, not a complete filesystem
 security boundary. Filesystem changes between validation and subsequent file
@@ -84,10 +89,11 @@ files. File hashes are read-only integrity checks.
 
 ## 8. Current test evidence
 
-The latest local reference-validation test run reported:
+The latest focused reference-validation test run reported:
 
-- 17 passed.
+- 20 passed.
 - 0 failed.
+- File URI query and fragment rejection tests passed.
 - Symbolic-link rejection test passed.
 - Filesystem-root containment regression test passed.
 
