@@ -1,0 +1,10 @@
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+# Local secret material
+*.pem
+*.key
+secrets/**
+!secrets/README.md
