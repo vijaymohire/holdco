@@ -1,0 +1,95 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "HoldCo QAI Deployment Contract",
+    "description": "Structural schema for a declarative QAI deployment request. This schema does not implement reference resolution, authorization, secret scanning, or deployment execution.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "api_version",
+        "kind",
+        "metadata",
+        "spec"
+    ],
+    "properties": {
+        "api_version": {
+            "const": "holdco.qai/v1alpha1"
+        },
+        "kind": {
+            "const": "Deployment"
+        },
+        "metadata": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "namespace",
+                "name",
+                "stable_id",
+                "version"
+            ],
+            "properties": {
+                "namespace": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "name": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "stable_id": {
+                    "type": "string",
+                    "pattern": "^DPL-[0-9]{6}$"
+                },
+                "version": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        },
+        "spec": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "target_environment_ref",
+                "workload_ref",
+                "requested_operation",
+                "execution_mode",
+                "policy_ref"
+            ],
+            "properties": {
+                "target_environment_ref": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "workload_ref": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "requested_operation": {
+                    "type": "string",
+                    "enum": [
+                        "deploy"
+                    ]
+                },
+                "configuration_refs": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "execution_mode": {
+                    "type": "string",
+                    "enum": [
+                        "plan",
+                        "execute"
+                    ]
+                },
+                "policy_ref": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            }
+        }
+    }
+}
