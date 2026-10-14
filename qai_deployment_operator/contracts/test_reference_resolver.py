@@ -14,7 +14,28 @@ class Resource:
 
     reference: str
     category: str
+    stable_id: str
+    version: str
 
+def validate_resource_registration(resource: Resource) -> str | None:
+    """Validate required catalog entry fields.
+
+    Returns None for a valid entry or an error code for invalid input.
+    This checks entry fields only, not catalog-wide uniqueness.
+    """
+    if not isinstance(resource, Resource):
+        return "invalid_resource"
+
+    for value in (
+        resource.reference,
+        resource.category,
+        resource.stable_id,
+        resource.version,
+    ):
+        if not isinstance(value, str) or not value.strip():
+            return "invalid_resource"
+
+    return None
 
 @dataclass(frozen=True)
 class ResolutionResult:
@@ -64,11 +85,81 @@ def run_tests() -> None:
     environment = Resource(
         reference="test.environments.dev",
         category="environment",
+        stable_id="ENV-TEST-001",
+        version="1.0.0",
     )
     workload = Resource(
         reference="test.workloads.example",
         category="workload",
+        stable_id="WRK-TEST-001",
+        version="1.0.0",
     )
+
+    registration_tests = [
+        (
+            "valid resource registration",
+            Resource(
+                reference="test.environments.dev",
+                category="environment",
+                stable_id="ENV-TEST-010",
+                version="1.0.0",
+            ),
+            None,
+        ),
+        (
+            "empty resource reference",
+            Resource(
+                reference="",
+                category="environment",
+                stable_id="ENV-TEST-011",
+                version="1.0.0",
+            ),
+            "invalid_resource",
+        ),
+        (
+            "empty resource category",
+            Resource(
+                reference="test.environments.test",
+                category="",
+                stable_id="ENV-TEST-012",
+                version="1.0.0",
+            ),
+            "invalid_resource",
+        ),
+        (
+            "empty stable ID",
+            Resource(
+                reference="test.environments.test",
+                category="environment",
+                stable_id="",
+                version="1.0.0",
+            ),
+            "invalid_resource",
+        ),
+        (
+            "empty version",
+            Resource(
+                reference="test.environments.test",
+                category="environment",
+                stable_id="ENV-TEST-013",
+                version="",
+            ),
+            "invalid_resource",
+        ),
+    ]
+
+    for name, resource, expected_error in registration_tests:
+        actual_error = validate_resource_registration(resource)
+        passed = actual_error == expected_error
+        print(f"[{'PASS' if passed else 'FAIL'}] registration: {name}")
+
+        if not passed:
+            print(
+                f"       Expected: {expected_error}; "
+                f"actual: {actual_error}"
+            )
+            failed = True
+
 
     tests = [
         (
@@ -94,6 +185,8 @@ def run_tests() -> None:
                 Resource(
                     reference="test.environments.dev",
                     category="environment",
+                    stable_id="ENV-TEST-002",
+                    version="1.0.0",
                 ),
             ],
             "ambiguous",
