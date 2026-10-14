@@ -41,6 +41,22 @@ missing_reference = json.loads(json.dumps(valid_request))
 del missing_reference["spec"]["target_environment_ref"]
 tests.append(("missing required reference", missing_reference, False))
 
+missing_workload_ref = json.loads(json.dumps(valid_request))
+del missing_workload_ref["spec"]["workload_ref"]
+tests.append((
+    "missing workload reference",
+    missing_workload_ref,
+    False
+))
+
+missing_policy_ref = json.loads(json.dumps(valid_request))
+del missing_policy_ref["spec"]["policy_ref"]
+tests.append((
+    "missing policy reference",
+    missing_policy_ref,
+    False
+))
+
 unsupported_mode = json.loads(json.dumps(valid_request))
 unsupported_mode["spec"]["execution_mode"] = "immediate"
 tests.append(("unsupported execution mode", unsupported_mode, False))
