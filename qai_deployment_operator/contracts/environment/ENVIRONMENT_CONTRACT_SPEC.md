@@ -216,3 +216,61 @@ The environment-type enumeration is defined provisionally by the current schema 
 ## 13. Implementation status
 
 This document defines proposed declarative contract semantics. It does not claim that a schema, registry, resolver, validator, provisioning mechanism, or runtime binding implementation exists.
+
+## 14. Cross-Contract Integration Notes
+
+### 14.1 Deployment-to-Environment Reference
+
+The Deployment Contract defines `spec.target_environment_ref` as a logical reference to the intended Environment Contract object.
+
+The Environment Contract defines `spec.target_ref` as a logical reference to the intended deployment target.
+
+These fields have different responsibilities:
+
+- `Deployment.spec.target_environment_ref` identifies the environment definition selected for a deployment request.
+- `Environment.spec.target_ref` identifies the intended deployment target declared by that environment definition.
+
+The references must not be treated as interchangeable. A deployment request's environment reference and the environment definition's target reference describe separate relationships.
+
+The reference syntax and resolution rules remain provisional. Structural schema validation does not establish that either referenced object exists or can be resolved.
+
+### 14.2 Mapping to the Existing QAI DevOps Environment Manifest
+
+The existing `qai_devops/manifests/environment/environment.yaml` contains:
+
+- `environment.name: dev`
+- `environment.type: development`
+- `environment.target: local`
+- `runtime.mode: development`
+
+The following mapping is proposed for review:
+
+| Existing manifest field | Environment Contract field | Mapping interpretation |
+|---|---|---|
+| `environment.name` | `metadata.name` | Human-readable environment name; confirm naming conventions before migration. |
+| `environment.type` | `spec.environment_type` | Proposed mapping from `development` to canonical type `dev`; not an automatic conversion. |
+| `environment.target` | `spec.target_ref` | The manifest's `local` value is a target label, while the contract expects a logical reference. A reference convention is required. |
+| `runtime.mode` | `spec.runtime.mode` | Both represent runtime mode; the allowed values and compatibility rules remain to be agreed. |
+
+The existing manifest does not currently provide all Environment Contract fields, including `metadata.namespace`, `metadata.stable_id`, and `metadata.version`. Their values must not be invented during migration.
+
+This mapping documents intended relationships only. It does not implement a parser, converter, reference resolver, or runtime binding mechanism.
+
+### 14.3 Configuration Binding Boundary
+
+The environment-variable binding model documents selection of environment, project, runtime mode, resource, storage, database, adapters, deployment target, evidence path, artifact path, and secret provider.
+
+The current Environment Contract schema explicitly supports references for project, resource profile, storage profile, and database profile. It does not yet represent every documented binding variable as a contract field.
+
+The relationship between these variables, adapter selections, target references, and future configuration contracts remains an open design decision. Do not add all environment variables directly to the Environment Contract merely to achieve one-to-one coverage.
+
+### 14.4 Integration Acceptance Boundary
+
+Cross-contract integration is acceptable at the specification level when:
+
+1. The deployment-to-environment relationship is distinguished from the environment-to-target relationship.
+2. The existing manifest's values and the proposed contract mapping are documented without silently changing their meaning.
+3. Missing identity fields and unresolved reference conventions are explicitly acknowledged.
+4. Structural validation is kept separate from reference resolution, authorization, provisioning, and runtime binding.
+
+These notes document proposed integration semantics. They do not establish that the manifest is automatically convertible or that any operational integration exists.

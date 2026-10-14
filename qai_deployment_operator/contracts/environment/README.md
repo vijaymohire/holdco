@@ -33,3 +33,15 @@ The environment-type enumeration and stable-identifier convention remain provisi
 ## Implementation Status
 
 Initial declarative specification, JSON Schema, and standalone structural tests are present. Runtime binding, reference resolution, and operational validation remain unimplemented.
+
+## Cross-Contract Integration
+
+`ENVIRONMENT_CONTRACT_SPEC.md` documents the proposed relationship between:
+
+- `Deployment.spec.target_environment_ref`, which references an environment definition.
+- `Environment.spec.target_ref`, which references the intended deployment target.
+- The existing QAI DevOps environment manifest and environment-variable binding model.
+
+These mappings are specification-level guidance only. Automatic manifest conversion, logical-reference resolution, runtime binding, provisioning, and authorization are not implemented.
+
+The reference grammar, canonical target representation, and manifest migration conventions remain subject to review.
