@@ -19,9 +19,9 @@ Contracts describe intent and requirements. They must not imply that deployment,
 - [ ] Acceptance: represent a deployment request without executing it.
 
 ### 2.2 Environment Contract
-- [ ] Define environment identity and environment type.
+- [x] Define environment identity and environment type.
 - [ ] Represent configuration references and execution constraints.
-- [ ] Distinguish development, test, production, and other target environments.
+- [x] Distinguish development, test, production, and other target environments.
 - [ ] Acceptance: describe an environment without embedding provider-specific behavior.
 
 ### 2.3 Resource Contract
