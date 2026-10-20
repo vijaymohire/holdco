@@ -63,6 +63,19 @@ The standard mapping chain is:
 
 Each link must be recorded explicitly. Where evidence is missing, the mapping must identify the gap rather than infer that the requirement has been satisfied.
 
+Authoritative Source
+→ Policy or Requirement
+→ Public/Buyer Need
+→ Required Outcome
+→ QAI/FAEP Capability
+→ Implementation Status
+→ Evidence
+→ Gap
+→ Work Package
+→ Acceptance Criterion
+→ Stage-Gate Decision
+→ Client/Public Outcome
+
 ### 4.1 Required mapping record
 
 | Field                   | Description                                                           |
@@ -89,6 +102,12 @@ Each link must be recorded explicitly. Where evidence is missing, the mapping mu
 | Owner                   | Responsible person or team                                            |
 | Review date             | Next planned review                                                   |
 | Decision                | Proceed, investigate, remediate, defer or exclude                     |
+| Work package ID	      | Links the requirement to an executable delivery task
+| Dependencies and risks  | Identifies external services, approvals, technical dependencies and delivery risks
+| Cost assumptions	      | Records estimated effort, resources and third-party costs without implying a confirmed quote
+| Stage gate	          | Identifies the review point at which progress is assessed
+| Outcome measure	      | Defines the observable client, operational or public benefit being pursued
+
 
 ## 5. Initial authoritative source register
 
@@ -210,6 +229,10 @@ Each material gap must have a unique identifier and a clear closure condition.
 | Owner                | Assigned responsible person or team                                           |
 | Status               | Open, In Progress, Blocked, Ready for Review or Closed                        |
 | Closure evidence     | Link to the completed artefact or test result                                 |
+| Work package ID      | the controlled task intended to close the gap                                 |
+| Dependencies/
+cost assumptions       | key prerequisites and estimated resource implications
+| Stage-gate reference | where completion evidence will be reviewed
 
 Prioritisation should consider actual requirement applicability, safety and security risk, project dependencies, delivery effort and commercial relevance.
 
@@ -226,6 +249,34 @@ Maintain:
 * A **project-specific configuration** for buyer requirements, data classification, contracts, assurance and acceptance.
 
 Do not assume that satisfying one jurisdiction's requirements establishes compliance with another jurisdiction's rules.
+
+
+### 9.1 Integration with QAI-DCaaS delivery
+
+This document is the policy and jurisdictional mapping layer. It does not replace the canonical technical architecture, deployment controls, service-management records or commercial work-package definitions.
+
+Use the existing repository components as follows:
+
+- `qai_datacenter_asaservice/assurance/` — requirements assurance and supporting evidence.
+- `qai_datacenter_asaservice/work_packages/` — delivery scope, ownership, dependencies and acceptance criteria.
+- `qai_datacenter_asaservice/lifecycle/` — stage-gate lifecycle and progression decisions.
+- `qai_datacenter_asaservice/investment/` — financial model inputs and cost assumptions.
+- `qai_datacenter/` — canonical QAI data-centre architecture and technical designs.
+- `qai_deployment_operator/` — controlled deployment contracts and implementation.
+
+For each selected policy or client requirement:
+
+1. Validate the source, applicability and actual stakeholder need.
+2. Identify the related capability and its evidenced readiness.
+3. Record the gap, owner, dependencies and proposed work package.
+4. Define acceptance criteria, evidence requirements and cost assumptions.
+5. Execute only through the applicable approved delivery and deployment controls.
+6. Review the evidence at the relevant stage gate.
+7. Record the decision, unresolved risks and measurable outcome.
+8. Update capability readiness only when the required evidence supports the change.
+
+Policy alignment, legal compliance, procurement eligibility, funding eligibility, technical readiness and commercial viability remain separate assessments.
+
 
 ## 10. Government and private-sector lifecycle separation
 
@@ -312,7 +363,7 @@ Maintain a change log containing the date, author, sections changed and reason f
 * [ ] Link existing repository artefacts as evidence without overstating readiness.
 * [ ] Record gaps, owners, priorities and acceptance criteria.
 * [ ] Assess the Digital Farm CPS/Digital Twin against the mapping.
-* [ ] Feed the resulting configuration requirements into Step 8.
+* [ ] Feed the resulting configuration requirements into Step 8.Identify the specific roadmap or plan that defines Step 8, ideally with a relative repository path. Otherwise, this cross-reference may become ambiguous as plans evolve.
 * [ ] Keep procurement and commercialization decisions separate from policy alignment.
 
 **Next document:** QAI/FAEP Jurisdictional Configuration Model.

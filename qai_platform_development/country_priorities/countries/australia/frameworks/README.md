@@ -113,7 +113,49 @@ Prefer official legislation, government policy, procurement documentation, and s
 
 Distinguish **policy alignment, stakeholder-validated demand, technical feasibility, demonstrated capability, procurement eligibility, funding eligibility, and commercial viability**. These are separate assessment outcomes.
 
-## 8. Initial Work Plan
+## 8. Policy-to-Delivery Traceability
+
+For opportunities involving QAI Data Center as a Service (QAI-DCaaS), translate applicable policy objectives and validated client needs into controlled delivery records.
+
+Use the following traceability sequence:
+
+**Source / Need → Requirement → Applicability → Capability → Gap → Work Package → Acceptance Criteria → Evidence → Stage-Gate Decision → Outcome**
+
+Each material requirement should identify, where applicable:
+
+- A unique requirement or opportunity identifier.
+- The authoritative source and relevant provision.
+- Requirement classification and applicability rationale.
+- The related QAI / FAEP capability and current readiness state.
+- Any implementation, compliance, integration, or evidence gap.
+- The accountable owner and proposed work package.
+- Cost assumptions, dependencies, risks, and acceptance criteria.
+- The evidence required to demonstrate completion.
+- The stage gate at which the requirement will be reviewed.
+- The resulting decision, actions, and client or public outcome.
+
+Do not assume that a policy objective creates a legal obligation, that a mapped capability is implemented, or that a completed work package establishes regulatory compliance. Record these as separate assessment outcomes.
+
+## 9. Integration with QAI-DCaaS Delivery
+
+Use the existing `qai_datacenter_asaservice/` directory for service delivery, investment, assurance, lifecycle, reporting, stakeholder, and work-package records. Use `qai_datacenter/` and `qai_deployment_operator/` for the corresponding technical architecture and deployment implementation.
+
+The Australia frameworks directory remains the policy and jurisdictional assessment layer. It should not duplicate technical specifications, deployment logic, financial models, or service-management procedures maintained in their canonical locations.
+
+For each proposed pilot or service engagement:
+
+1. Validate the policy source and the actual stakeholder need.
+2. Determine applicability, constraints, and evidence requirements.
+3. Identify reusable capabilities and unresolved gaps.
+4. Define a bounded work package with an owner, budget assumptions, and acceptance criteria.
+5. Execute the approved technical work using the existing platform and deployment controls.
+6. Capture results and review them against the agreed criteria.
+7. Record the stage-gate decision and any conditions for progression.
+8. Update the capability and commercialization records based on verified results.
+
+Policy alignment, procurement eligibility, funding eligibility, technical readiness, and commercial viability must remain distinct decisions.
+
+## 10. Initial Work Plan
 
 1. Populate the framework documents using authoritative sources.
 2. Establish the national digital landscape and the NSW and ACT jurisdictional views.
@@ -123,7 +165,7 @@ Distinguish **policy alignment, stakeholder-validated demand, technical feasibil
 6. Connect validated opportunities to buyer portals, procurement processes, and commercialization pathways.
 7. Review source currency and update the records when requirements change.
 
-## 9. Related Directories
+## 11. Related Directories
 
 - `../digital_landscape/` — national, NSW, ACT, and project lifecycle views.
 - `../states/nsw/` — NSW priorities and opportunities.
@@ -132,7 +174,7 @@ Distinguish **policy alignment, stakeholder-validated demand, technical feasibil
 - `../commercialization/` — Australian market entry, local capability, and supply-chain considerations.
 - `../README.md` — Australia country-priorities overview.
 
-## 10. Completion Criteria
+## 12. Completion Criteria
 
 This framework directory is ready for operational use when:
 
